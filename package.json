@@ -1,0 +1,18 @@
+{
+  "name": "travel",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "sedona-2026"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace sedona-2026",
+    "typecheck": "npm run typecheck --workspace sedona-2026",
+    "test": "npm run test --workspace sedona-2026",
+    "build": "npm run build --workspace sedona-2026 && node scripts/assemble.mjs",
+    "preview": "node scripts/serve.mjs",
+    "preview:install": "node scripts/preview-service.mjs install",
+    "preview:status": "node scripts/preview-service.mjs status",
+    "preview:uninstall": "node scripts/preview-service.mjs uninstall"
+  }
+}

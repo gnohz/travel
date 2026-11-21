@@ -1,0 +1,56 @@
+export function serviceWorkerSource({ base, version, files }) {
+  return `const BASE = ${JSON.stringify(base)};
+const CACHE = 'sedona-2026-' + ${JSON.stringify(version)};
+const REQUIRED = ${JSON.stringify(files)};
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    try { await cache.addAll(REQUIRED); }
+    catch (error) { await caches.delete(CACHE); throw error; }
+  })());
+});
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.filter(k => k.startsWith('sedona-2026-') && k !== CACHE).map(k => caches.delete(k)));
+    await self.clients.claim();
+  })());
+});
+self.addEventListener('message', event => {
+  if (event.data?.type === 'SKIP_WAITING') { self.skipWaiting(); return; }
+  if (event.data?.type === 'CACHE_STATUS') {
+    event.waitUntil((async () => {
+      const cache = await caches.open(CACHE);
+      const ready = (await Promise.all(REQUIRED.map(url => cache.match(url)))).every(Boolean);
+      event.ports[0]?.postMessage({ ready, version: CACHE });
+    })());
+  }
+});
+self.addEventListener('fetch', event => {
+  const request = event.request;
+  const url = new URL(request.url);
+  if (request.method !== 'GET' || url.origin !== self.location.origin || !url.pathname.startsWith(BASE)) return;
+  if (url.pathname === BASE + 'sw.js') return;
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE);
+    if (url.pathname === BASE + 'data/travel.json') {
+      try {
+        const response = await fetch(request, { cache: 'no-store', signal: AbortSignal.timeout(6000) });
+        if (!response.ok) throw new Error('Network error');
+        await cache.put(request, response.clone());
+        return response;
+      } catch { return await cache.match(request) || new Response('{}', { status: 503 }); }
+    }
+    if (request.mode === 'navigate') {
+      return await cache.match(BASE + 'index.html') || await cache.match(BASE + 'offline.html') || fetch(request);
+    }
+    const cached = await cache.match(request, { ignoreSearch: true });
+    if (cached) return cached;
+    try {
+      const response = await fetch(request);
+      if (response.ok) await cache.put(request, response.clone());
+      return response;
+    } catch { return new Response('Offline resource unavailable', { status: 503 }); }
+  })());
+});\n`;
+}

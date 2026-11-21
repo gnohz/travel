@@ -1,0 +1,1122 @@
+{
+  "title": "Sedona 2026｜感恩节红岩之旅",
+  "dates": "2026.11.22—11.26",
+  "party": "两个家庭 · 4 位成人 · 2 位约七岁儿童",
+  "updatedAt": "2026-11-21",
+  "days": [
+    {
+      "date": "2026-11-22",
+      "weekday": "星期日",
+      "title": "抵达 Sedona · 红岩日落",
+      "subtitle": "从城市出发，去追第一场红岩日落",
+      "image": "hero.jpg",
+      "summary": "BUR → PHX · 取车 · Airport Mesa · 入住",
+      "activities": [
+        {
+          "id": "flight-out",
+          "time": "08:20",
+          "title": "Southwest WN 3108 · BUR → PHX",
+          "description": "Southwest Airlines；10:55 Arizona 时间抵达。",
+          "placeId": "bur",
+          "status": "confirmed",
+          "notes": [
+            "飞行跨时区，Arizona 在本次旅行期间比 California 快 1 小时。"
+          ],
+          "timeZone": "America/Los_Angeles"
+        },
+        {
+          "id": "arrival",
+          "time": "10:55",
+          "title": "抵达 Phoenix · 取行李与接驳",
+          "description": "先取行李，再搭 PHX Sky Train 前往 Rental Car Center；为机场流程预留到 12:00。",
+          "placeId": "phx",
+          "status": "confirmed",
+          "notes": [
+            "取行李、候车与机场内移动时间视当天情况调整。"
+          ]
+        },
+        {
+          "id": "car",
+          "time": "12:00",
+          "title": "领取 Budget Minivan",
+          "description": "领取 Chrysler Pacifica 或同级 7 座 Minivan，办理手续并装行李；预订取车时间为 12:30，计划提前领取。",
+          "placeId": "rental",
+          "duration": "以实际办理进度为准",
+          "status": "planned",
+          "notes": [
+            "12:00 为计划提前取车时间，是否可以提前领取以 Budget 当天安排为准。",
+            "4 成人 + 2 儿童；1 件 28 寸 + 3 件 20 寸行李。",
+            "必须确认两位儿童的 Booster Seat。"
+          ]
+        },
+        {
+          "id": "lunch1",
+          "time": "12:30",
+          "title": "Phoenix 午餐",
+          "description": "取车后吃午餐，首选非辣韩式炸鸡；备选 In-N-Out。",
+          "placeId": "bbq",
+          "endTime": "13:20",
+          "status": "preferred",
+          "notes": [
+            "午餐时间随实际取车进度顺延。"
+          ],
+          "optionGroup": "lunch1",
+          "option": "A"
+        },
+        {
+          "id": "lunch1b",
+          "time": "12:30",
+          "title": "In-N-Out 午餐备选",
+          "description": "按当天排队和实时导航选择。",
+          "placeId": "in-n-out",
+          "endTime": "13:20",
+          "status": "alternative",
+          "notes": [],
+          "optionGroup": "lunch1",
+          "option": "B"
+        },
+        {
+          "id": "drive1",
+          "time": "13:20",
+          "title": "开往 Sedona",
+          "description": "预计 15:45–16:15 到 Airport Mesa 一带，实际以导航为准。",
+          "placeId": "airport-lookout",
+          "duration": "预计 2.5–3 小时",
+          "status": "planned",
+          "notes": [
+            "不要在 Phoenix 采购生鲜，以免耽误日落。"
+          ]
+        },
+        {
+          "id": "sunset",
+          "time": "16:00",
+          "title": "Airport Mesa · 红岩日落",
+          "description": "目标 16:00–16:20 到，轻量探索后回观景点等日落。",
+          "placeId": "airport-lookout",
+          "endTime": "17:30",
+          "duration": "约 1–1.5 小时",
+          "status": "planned",
+          "notes": [
+            "日落约 17:17–17:18 为估算；查当天 API。",
+            "延误就取消徒步，直接看日落；准备外套、随身带贵重物品。"
+          ]
+        },
+        {
+          "id": "checkin",
+          "time": "17:45",
+          "title": "入住红岩小屋",
+          "description": "已确认 16:00 后可入住，住三晚。",
+          "placeId": "airbnb",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "groceries",
+          "time": "18:15",
+          "title": "Sedona 晚间采购",
+          "description": "早餐、徒步午餐、饮水、零食和 BBQ 食材。",
+          "placeId": "whole-foods",
+          "duration": "约 45 分钟",
+          "status": "planned",
+          "notes": [
+            "备选 Safeway；完整购物清单见“更多”。"
+          ]
+        },
+        {
+          "id": "dinner1",
+          "time": "19:15",
+          "title": "小屋 BBQ 与休息",
+          "description": "家庭晚餐、整理明天徒步物品，早点休息。",
+          "placeId": "airbnb",
+          "status": "planned",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "weekday": "星期一",
+      "title": "Cathedral Rock + Bell Rock",
+      "subtitle": "在红岩之间，慢慢往上走",
+      "image": "cathedral-rock.jpg",
+      "summary": "教堂岩攀爬 · 墨西哥午餐 · 钟岩探索",
+      "activities": [
+        {
+          "id": "breakfast2",
+          "time": "07:45",
+          "title": "小屋早餐",
+          "description": "07:45–08:30，准备饮水、零食与防滑徒步鞋。",
+          "placeId": "airbnb",
+          "endTime": "08:30",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "park2",
+          "time": "08:30",
+          "title": "出发去 Cathedral 接驳停车场",
+          "description": "预计 08:45–09:00 到 North SR-179 Park & Ride，乘 Route 15。",
+          "placeId": "north-park",
+          "status": "planned",
+          "notes": [
+            "预留候车时间，以当天班次为准。"
+          ]
+        },
+        {
+          "id": "hike2",
+          "time": "09:15",
+          "title": "Cathedral Rock · 红岩攀爬",
+          "description": "计划 09:15–11:45，按儿童体力与路况折返。",
+          "placeId": "cathedral",
+          "endTime": "11:45",
+          "duration": "2–3 小时",
+          "status": "planned",
+          "notes": [
+            "湿滑、结冰或风大时不强求登顶；下山尤其小心。"
+          ]
+        },
+        {
+          "id": "lunch2",
+          "time": "12:30",
+          "title": "Tortas de Fuego 午餐",
+          "description": "首选墨西哥餐厅；位于 West Sedona，去 Bell Rock 有绕路。",
+          "placeId": "tortas",
+          "endTime": "13:30",
+          "status": "preferred",
+          "notes": [],
+          "optionGroup": "lunch2",
+          "option": "A"
+        },
+        {
+          "id": "lunch2b",
+          "time": "12:30",
+          "title": "The Hudson 午餐备选",
+          "description": "位置较顺路，但可能用餐较久。",
+          "placeId": "hudson",
+          "endTime": "13:30",
+          "status": "alternative",
+          "notes": [],
+          "optionGroup": "lunch2",
+          "option": "B"
+        },
+        {
+          "id": "bell2",
+          "time": "14:00",
+          "title": "Bell Rock · 安全探索",
+          "description": "从 Courthouse Vista / Midway 入口出发，1–2 miles 短程折返。",
+          "placeId": "bell",
+          "endTime": "15:45",
+          "duration": "1.5–2 小时",
+          "status": "planned",
+          "notes": [
+            "不登危险岩壁，不走非正式攀爬路线。"
+          ]
+        },
+        {
+          "id": "home2",
+          "time": "16:00",
+          "title": "返回小屋",
+          "description": "预计 16:00–16:30 到；晚餐、Hot Tub、游戏与休息。",
+          "placeId": "airbnb",
+          "status": "planned",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "weekday": "星期二",
+      "title": "峡谷与洞穴探索",
+      "subtitle": "带上野餐，留一点时间给风景",
+      "image": "boynton-canyon.jpg",
+      "summary": "Plan A Boynton Canyon · Plan B Devil’s Bridge",
+      "activities": [
+        {
+          "id": "leave3",
+          "time": "08:30",
+          "title": "出发 · 选择今天的路线",
+          "description": "首选 Boynton Canyon；备选 Devil’s Bridge。两条路线只选一条。",
+          "status": "planned",
+          "notes": [
+            "提前准备 Picnic Lunch；不要把两套方案都安排进一天。"
+          ]
+        },
+        {
+          "id": "boynton3",
+          "time": "09:00",
+          "title": "Plan A · Boynton Canyon",
+          "description": "主步道为主；Subway Cave 仅在安全合适时考虑，绝不强求。",
+          "placeId": "boynton",
+          "endTime": "14:00",
+          "duration": "家庭预留 4–5+ 小时",
+          "status": "preferred",
+          "notes": [
+            "官方主线 6 miles 往返；设折返点，儿童疲劳时缩短。",
+            "附件原估 3–4 小时，现按官方信息留出更宽时间。"
+          ],
+          "optionGroup": "hike3",
+          "option": "A"
+        },
+        {
+          "id": "bridge3",
+          "time": "09:00",
+          "title": "Plan B · Devil’s Bridge",
+          "description": "开车到 West SR-89A Park & Ride，乘 Route 11 到 Mescal。",
+          "placeId": "bridge",
+          "endTime": "13:00",
+          "duration": "徒步约 3–4 小时，另加接驳",
+          "status": "alternative",
+          "notes": [
+            "从 Mescal 出发约 4 miles；不要求儿童上无护栏石桥拍照。"
+          ],
+          "optionGroup": "hike3",
+          "option": "B"
+        },
+        {
+          "id": "picnic3",
+          "time": "12:00",
+          "title": "步道野餐",
+          "description": "自带三明治、水果、零食、饮水；实际时间随徒步进度。",
+          "duration": "约 30 分钟",
+          "status": "planned",
+          "notes": [
+            "带走所有垃圾；不要喂野生动物。"
+          ]
+        },
+        {
+          "id": "chapel3",
+          "time": "15:00",
+          "title": "圣十字教堂 · 可选",
+          "description": "有体力且赶得上开放时间再去，否则直接回小屋休息。",
+          "placeId": "chapel",
+          "duration": "约 45–60 分钟",
+          "status": "planned",
+          "notes": [
+            "常规 17:00 关闭，16:45 最后进入；当天再核实。"
+          ]
+        },
+        {
+          "id": "dinner3",
+          "time": "18:00",
+          "title": "小屋家庭晚餐",
+          "description": "可以安排火锅或 BBQ，提前确认厨房设备。",
+          "placeId": "airbnb",
+          "status": "planned",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "weekday": "星期三",
+      "title": "山口漫步 · 小镇 · Phoenix",
+      "subtitle": "不急着离开，把白天留给 Sedona",
+      "image": "soldier-pass.jpg",
+      "summary": "退房 · Soldier Pass · 艺术村 · Phoenix",
+      "activities": [
+        {
+          "id": "pack4",
+          "time": "07:30",
+          "title": "早餐、整理行李",
+          "description": "计划 07:30–08:30，所有行李装车。",
+          "placeId": "airbnb",
+          "endTime": "08:30",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "checkout4",
+          "time": "09:00",
+          "title": "小屋退房",
+          "description": "10:00 前必须退房，建议 09:00 左右离开。",
+          "placeId": "airbnb",
+          "status": "planned",
+          "notes": [
+            "车内有全部行李，贵重物品随身带；不要留在可见处。"
+          ]
+        },
+        {
+          "id": "park4",
+          "time": "09:10",
+          "title": "前往 Soldier Pass 接驳停车场",
+          "description": "到 Posse Grounds Park & Ride，争取 09:30 班次。",
+          "placeId": "posse-park",
+          "status": "planned",
+          "notes": [
+            "09:30 来自当前官方表；出发前复核，预留等车。"
+          ],
+          "condition": {
+            "group": "hike4",
+            "option": "A"
+          }
+        },
+        {
+          "id": "soldier4",
+          "time": "10:00",
+          "title": "首选 · Soldier Pass",
+          "description": "看 Devil’s Kitchen 与 Seven Sacred Pools，视体力折返。",
+          "placeId": "soldier",
+          "endTime": "12:00",
+          "duration": "含接驳预留 2–3 小时",
+          "status": "preferred",
+          "notes": [],
+          "optionGroup": "hike4",
+          "option": "A"
+        },
+        {
+          "id": "doe4",
+          "time": "09:45",
+          "title": "备选 · Doe Mountain",
+          "description": "Soldier Pass 关闭、接驳满员或停车不便时替换。",
+          "placeId": "doe",
+          "endTime": "12:00",
+          "duration": "1.5–2.5 小时",
+          "status": "alternative",
+          "notes": [],
+          "optionGroup": "hike4",
+          "option": "B"
+        },
+        {
+          "id": "lunch4",
+          "time": "12:30",
+          "title": "Sedona 午餐",
+          "description": "结合艺术村周边选择餐厅，不安排需要长时间排队的餐厅。",
+          "placeId": "tlaquepaque",
+          "duration": "约 1 小时",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "village4",
+          "time": "13:30",
+          "title": "Tlaquepaque · 庭院与画廊",
+          "description": "西南风格建筑、商店和庭院，慢慢逛。",
+          "placeId": "tlaquepaque",
+          "endTime": "15:00",
+          "duration": "1–1.5 小时",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "uptown4",
+          "time": "15:00",
+          "title": "Uptown Sedona · 可选",
+          "description": "咖啡、冰激凌与纪念品；根据时间可跳过。",
+          "placeId": "uptown",
+          "duration": "30–60 分钟",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "drive4",
+          "time": "16:00",
+          "title": "开往 Phoenix",
+          "description": "计划 16:00–16:30 离开，预计 18:30–19:30 到酒店。",
+          "placeId": "doubletree",
+          "duration": "以当天交通为准",
+          "status": "planned",
+          "notes": [
+            "不为赶 16:00 入住而提前离开 Sedona。"
+          ]
+        },
+        {
+          "id": "hotel4",
+          "time": "19:00",
+          "title": "DoubleTree 入住与晚餐",
+          "description": "凤凰城住一晚；到达时间随交通调整。",
+          "placeId": "doubletree",
+          "status": "planned",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "weekday": "星期四",
+      "title": "Phoenix → Burbank",
+      "subtitle": "带着红岩的颜色，回家",
+      "image": "hero.jpg",
+      "summary": "酒店早餐 · 还车 · PHX → BUR",
+      "activities": [
+        {
+          "id": "breakfast5",
+          "time": "08:30",
+          "title": "酒店早餐与整理",
+          "description": "检查随身物品和行李，预留机场时间。",
+          "placeId": "doubletree",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "checkout5",
+          "time": "10:00",
+          "title": "酒店退房",
+          "description": "11:00 前退房，计划 10:00 左右离开。",
+          "placeId": "doubletree",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "return5",
+          "time": "10:30",
+          "title": "归还 Budget Minivan",
+          "description": "前往 PHX Rental Car Center；办理还车并乘 Sky Train。",
+          "placeId": "rental",
+          "duration": "预留 60–90 分钟",
+          "status": "planned",
+          "notes": [
+            "加油与还车流程按 Budget 合同；不晚于中午前后完成还车和安检。"
+          ]
+        },
+        {
+          "id": "airport5",
+          "time": "12:00",
+          "title": "安检与机场午餐",
+          "description": "在机场解决午餐，留意登机口与航班动态。",
+          "placeId": "phx",
+          "status": "planned",
+          "notes": [
+            "感恩节当天出行；按航司建议预留充足时间。"
+          ]
+        },
+        {
+          "id": "flight-back",
+          "time": "15:15",
+          "title": "WN 2512 · PHX → BUR",
+          "description": "Southwest Airlines；15:40 California 时间抵达。",
+          "placeId": "phx",
+          "status": "confirmed",
+          "notes": [
+            "PHX 起飞为 Arizona 时间，BUR 抵达为 California 时间。"
+          ]
+        },
+        {
+          "id": "home5",
+          "time": "15:40",
+          "title": "抵达 Burbank",
+          "description": "提取行李，结束五天四晚的家庭旅行。",
+          "placeId": "bur",
+          "status": "confirmed",
+          "notes": [],
+          "timeZone": "America/Los_Angeles"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "bur",
+      "name": "Hollywood Burbank Airport",
+      "chineseName": "伯班克机场",
+      "category": "airport",
+      "address": "2627 N Hollywood Way, Burbank, CA 91505",
+      "description": "往返机场；California 时间。",
+      "notes": [
+        "去程 08:20 起飞，返程 15:40 抵达。",
+        "航班时间来自用户提供的预订信息，出发前再次查看 Southwest。"
+      ],
+      "verificationStatus": "confirmed",
+      "officialUrl": "https://www.hollywoodburbankairport.com/"
+    },
+    {
+      "id": "phx",
+      "name": "Phoenix Sky Harbor Airport",
+      "chineseName": "凤凰城机场",
+      "category": "airport",
+      "address": "3400 E Sky Harbor Blvd, Phoenix, AZ 85034",
+      "description": "Arizona 时间；航站楼以航司当天通知为准。",
+      "notes": [],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://www.skyharbor.com/"
+    },
+    {
+      "id": "rental",
+      "name": "PHX Rental Car Center",
+      "chineseName": "机场租车中心",
+      "category": "parking",
+      "address": "1805 E Sky Harbor Circle South, Phoenix, AZ 85034",
+      "description": "Budget 取车与还车；搭 PHX Sky Train 往返航站楼。",
+      "notes": [
+        "返程建议中午前后完成还车和安检。",
+        "核对 Budget 还车入口及油量要求。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://www.skyharbor.com/ground-transportation/rental-cars/"
+    },
+    {
+      "id": "bbq",
+      "name": "bb.q Chicken Midtown Phoenix",
+      "chineseName": "韩式炸鸡",
+      "category": "restaurant",
+      "address": "305 E Thomas Rd, Suite B, Phoenix, AZ 85012",
+      "description": "Day 1 午餐首选；选择适合儿童的非辣口味。",
+      "notes": [
+        "官方门店列表中查找 Midtown Phoenix，对应 305 E Thomas Rd, Suite B。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "官方常规周日 11:00–21:00；节假日另核实",
+      "officialUrl": "https://bbqchicken.com/locations/",
+      "officialLinkLabel": "官方门店列表 · Midtown Phoenix"
+    },
+    {
+      "id": "in-n-out",
+      "name": "In-N-Out Burger",
+      "chineseName": "汉堡午餐备选",
+      "category": "restaurant",
+      "address": "19407 N 27th Ave, Phoenix, AZ 85027",
+      "description": "取车延误时按实时路线与排队情况选择。",
+      "notes": [],
+      "verificationStatus": "needs_verification",
+      "openingHours": "常规周日至周四 10:30–次日 01:00；以当天为准",
+      "officialUrl": "https://locations.in-n-out.com/177"
+    },
+    {
+      "id": "airport-lookout",
+      "name": "Sedona Airport Scenic Lookout",
+      "chineseName": "机场高地日落",
+      "category": "attraction",
+      "address": "Sedona Airport Scenic Lookout, Airport Road, Sedona, AZ 86336",
+      "description": "上部收费观景停车场看红岩日落；不走完整 Airport Loop。",
+      "notes": [
+        "目标 16:00–16:20 到达；日落约 17:17–17:18，仅为计划估算，以天气页为准。",
+        "可在 Sedona View Trail 安全路段探索 20–40 分钟；不沿 Airport Road 步行。",
+        "车内有全部行李，贵重物品随身携带；日落前保暖。",
+        "若延误，直接看日落，取消短途徒步。"
+      ],
+      "verificationStatus": "needs_verification",
+      "parkingNotes": "上部 Scenic Lookout 收费停车场，勿导航到下部 Vortex 小停车点。官网当前 $3/日，以现场为准。",
+      "officialUrl": "https://sedonaairport.org/airport-scenic-overlook",
+      "image": "airport-lookout.jpg",
+      "photoCredit": {
+        "author": "Anita Ritenour (puliarf)",
+        "source": "https://www.flickr.com/photos/puliarfanita/5085711034/",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "airbnb",
+      "name": "Views + Hot Tub + Lifesize Games",
+      "chineseName": "Sedona 住宿 · 三晚",
+      "category": "hotel",
+      "address": "205 Elysian Dr, Sedona, AZ 86336",
+      "description": "两个家庭的红岩小屋：家庭晚餐、Hot Tub 与游戏。",
+      "notes": [
+        "11/22 16:00 后入住；11/25 10:00 前退房。",
+        "火锅或 BBQ 前确认厨房、锅具及烧烤设备。"
+      ],
+      "verificationStatus": "confirmed",
+      "officialUrl": "https://www.airbnb.com/rooms/1504995701353572647"
+    },
+    {
+      "id": "whole-foods",
+      "name": "Whole Foods Market",
+      "chineseName": "晚间采购首选",
+      "category": "shopping",
+      "address": "1420 W State Route 89A, Sedona, AZ 86336",
+      "description": "抵达 Sedona 后采购早餐、徒步午餐和 BBQ 食材。",
+      "notes": [],
+      "verificationStatus": "needs_verification",
+      "openingHours": "官方常规周日 07:00–21:00；以当天为准",
+      "officialUrl": "https://www.wholefoodsmarket.com/stores/sedona"
+    },
+    {
+      "id": "safeway",
+      "name": "Safeway",
+      "chineseName": "采购备选",
+      "category": "shopping",
+      "address": "2300 W Hwy 89A, Sedona, AZ 86336",
+      "description": "Whole Foods 的备选采购点。",
+      "notes": [],
+      "verificationStatus": "needs_verification",
+      "openingHours": "官方常规周日 06:00–22:00；以当天为准",
+      "officialUrl": "https://local.safeway.com/safeway/az/sedona/2300-w-hwy-89a.html"
+    },
+    {
+      "id": "north-park",
+      "name": "North SR-179 Park & Ride",
+      "chineseName": "Cathedral Rock 接驳停车场",
+      "category": "parking",
+      "address": "1294 SR-179, Sedona, AZ 86336",
+      "description": "停车后乘免费 Trailhead Shuttle Route 15。",
+      "notes": [
+        "官方已公布 11/19–11/29 扩展运营，11/26 感恩节当天除外。",
+        "当日班次与末班回程须出发前查官方表。"
+      ],
+      "verificationStatus": "needs_verification",
+      "parkingNotes": "接驳运行期间 Cathedral Rock Trailhead 停车场不对私家车开放。",
+      "officialUrl": "https://sedonashuttle.com/routes/route-15/"
+    },
+    {
+      "id": "cathedral",
+      "name": "Cathedral Rock Trail",
+      "chineseName": "教堂岩 · 红岩攀爬",
+      "category": "hiking",
+      "address": null,
+      "description": "陡峭红岩与开阔景观，部分路段需要手脚并用。",
+      "notes": [
+        "湿滑、结冰或风况不合适时折返，不强求登顶。",
+        "下山特别小心；儿童需成人照看，避开暴露路段。",
+        "官方同页距离存在不同口径，约 1.1–1.5 miles。"
+      ],
+      "verificationStatus": "needs_verification",
+      "navigationId": "north-park",
+      "image": "cathedral-rock.jpg",
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/cathedral-rock-trail-no-170",
+      "trail": {
+        "distance": "约 1.1–1.5 miles 往返",
+        "duration": "家庭预留 2–3 小时",
+        "elevation": "669 ft",
+        "difficulty": "较难 · 陡岩攀爬",
+        "route": "Cathedral Rock Trail 原路往返，按路况随时折返。",
+        "shuttle": "Route 15；开车到 North SR-179 Park & Ride。"
+      },
+      "photoCredit": {
+        "author": "Richard Carson",
+        "source": "https://unsplash.com/photos/red-rock-formations-glow-in-the-setting-sun-C4buvpVjajk",
+        "license": "Unsplash License",
+        "licenseUrl": "https://unsplash.com/license"
+      }
+    },
+    {
+      "id": "tortas",
+      "name": "Tortas de Fuego",
+      "chineseName": "墨西哥午餐首选",
+      "category": "restaurant",
+      "address": "1630 AZ-89A, Sedona, AZ 86336",
+      "description": "Tacos、Burritos、Quesadillas、Tortas。",
+      "notes": [
+        "West Sedona 分店，前往 Bell Rock 有绕路。",
+        "官网门店页请点 Sedona 标签，查看 1630 AZ-89A 的 West Sedona 分店；不要选 Village of Oak Creek。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "常规每日 08:00–21:00；以当天为准",
+      "officialUrl": "https://tortasfuegosedona.com/locations",
+      "officialLinkLabel": "官方门店信息 · 选择 Sedona"
+    },
+    {
+      "id": "hudson",
+      "name": "The Hudson",
+      "chineseName": "午餐备选 · 路线较顺",
+      "category": "restaurant",
+      "address": "671 State Route 179 Suite D, Sedona, AZ 86336",
+      "description": "Burger、Sandwich、Salad；位置更顺路，但可能用餐较久。",
+      "notes": [
+        "六人家庭用餐留意官方团体服务费政策。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "常规每日 11:30–21:00；以当天为准",
+      "officialUrl": "https://www.thehudsonsedona.com/"
+    },
+    {
+      "id": "bell-parking",
+      "name": "Courthouse Vista / Midway Trailhead",
+      "chineseName": "Bell Rock 停车场",
+      "category": "parking",
+      "address": null,
+      "description": "从 Bell Rock Pathway 官方中段入口开始短程探索。",
+      "notes": [
+        "需要 Red Rock Pass 或适用的 America the Beautiful Pass；以现场标示为准。"
+      ],
+      "verificationStatus": "needs_verification",
+      "coordinates": {
+        "latitude": 34.8055,
+        "longitude": -111.7668056
+      },
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/bell-rock-pathway-no-96"
+    },
+    {
+      "id": "bell",
+      "name": "Bell Rock Pathway",
+      "chineseName": "钟岩 · 轻量探索",
+      "category": "hiking",
+      "address": null,
+      "description": "红岩景观与安全的岩石探索，不强求登顶。",
+      "notes": [
+        "计划走 1–2 miles 后折返，并非完整 3.5 miles 单程路径。",
+        "不走危险的非正式攀爬路线。"
+      ],
+      "verificationStatus": "needs_verification",
+      "navigationId": "bell-parking",
+      "image": "bell-rock.jpg",
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/bell-rock-pathway-no-96",
+      "trail": {
+        "distance": "计划 1–2 miles",
+        "duration": "1.5–2 小时",
+        "elevation": "主路径高差约 185 ft",
+        "difficulty": "主路较轻松",
+        "route": "Bell Rock Pathway 短程探索，按体力原路折返。"
+      },
+      "photoCredit": {
+        "author": "Simon Hurry",
+        "source": "https://unsplash.com/photos/red-rock-landscape-with-a-striking-blue-sky-_gxuXqbhGv0",
+        "license": "Unsplash License",
+        "licenseUrl": "https://unsplash.com/license"
+      }
+    },
+    {
+      "id": "boynton-parking",
+      "name": "Boynton Canyon Trailhead",
+      "chineseName": "Boynton 停车场",
+      "category": "parking",
+      "address": null,
+      "description": "位于 Enchantment Resort 入口外的官方步道停车点。",
+      "notes": [
+        "停车需 Red Rock Pass 或适用通票；车位先到先得。"
+      ],
+      "verificationStatus": "needs_verification",
+      "coordinates": {
+        "latitude": 34.9078056,
+        "longitude": -111.8490556
+      },
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/boynton-canyon-trail-no-47"
+    },
+    {
+      "id": "boynton",
+      "name": "Boynton Canyon / Subway Cave",
+      "chineseName": "峡谷与洞穴 · Plan A",
+      "category": "hiking",
+      "address": null,
+      "description": "主步道峡谷景观；洞穴只作为视情况考虑的非正式支线。",
+      "notes": [
+        "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
+        "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
+        "附件计划约 5–6 miles、3–4 小时，但官方主线 6 miles 往返、参考单程 2.5 小时；带孩子建议预留 4–5+ 小时并设折返点。",
+        "自带三明治、水果、零食和充足饮水。"
+      ],
+      "verificationStatus": "needs_verification",
+      "navigationId": "boynton-parking",
+      "image": "boynton-canyon.jpg",
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/boynton-canyon-trail-no-47",
+      "trail": {
+        "distance": "主线 6 miles 往返；支线另计",
+        "duration": "计划 4–5+ 小时，视体力缩短",
+        "elevation": "官方主线 931 ft",
+        "difficulty": "中等；洞穴段风险更高",
+        "route": "Boynton Canyon 官方主线；Subway Cave 不是必须完成项。"
+      },
+      "photoCredit": {
+        "author": "Vasilis Karkalas",
+        "source": "https://unsplash.com/photos/a-person-standing-in-a-canyon-v8r1DDxaWt4",
+        "license": "Unsplash License",
+        "licenseUrl": "https://unsplash.com/license"
+      }
+    },
+    {
+      "id": "west-park",
+      "name": "West SR-89A Park & Ride",
+      "chineseName": "Devil’s Bridge 接驳停车场",
+      "category": "parking",
+      "address": "905 Upper Red Rock Loop Road, Sedona, AZ 86336",
+      "description": "乘 Route 11 到 Mescal Trailhead。",
+      "notes": [
+        "假期接驳具体班次查官网。",
+        "不要将 Minivan 导航到需要高底盘车辆的 FR152 未铺装路。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://sedonashuttle.com/routes/route-11/"
+    },
+    {
+      "id": "bridge",
+      "name": "Devil’s Bridge",
+      "chineseName": "魔鬼桥 · Plan B",
+      "category": "hiking",
+      "address": null,
+      "description": "天然红岩石桥，作为 Day 3 的备选路线。",
+      "notes": [
+        "最后有陡石阶；石桥无护栏，不要求儿童走上桥拍照。",
+        "从 Mescal 经 Chuckwagon 约 4 miles 往返；不同入口距离不同。",
+        "搭 Route 11 到 Mescal；勿驾驶 Minivan 进入 FR152。"
+      ],
+      "verificationStatus": "needs_verification",
+      "navigationId": "west-park",
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/devils-bridge-trail-no-120",
+      "trail": {
+        "distance": "Mescal 出发约 4 miles 往返",
+        "duration": "计划 3–4 小时",
+        "elevation": "末段明显爬升；总值待核实",
+        "difficulty": "中等至较难 · 陡阶",
+        "route": "Mescal → Chuckwagon → Devil’s Bridge，原路折返。",
+        "shuttle": "Route 11；开车到 West SR-89A Park & Ride。"
+      },
+      "image": "devils-bridge.jpg",
+      "photoCredit": {
+        "author": "Kitten Fleming (kittenfc)",
+        "source": "https://www.flickr.com/photos/smercury98/2352565693/",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "chapel",
+      "name": "Chapel of the Holy Cross",
+      "chineseName": "圣十字教堂 · 可选",
+      "category": "attraction",
+      "address": "780 Chapel Rd, Sedona, AZ 86336",
+      "description": "红岩中的教堂；徒步结束后如有体力和时间再去。",
+      "notes": [
+        "停车位有限；最后进入时间常规为 16:45。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "常规每日 09:00–17:00；以当天为准",
+      "officialUrl": "https://www.chapeloftheholycross.com/hours",
+      "image": "chapel.jpg",
+      "photoCredit": {
+        "author": "James A. Molnar",
+        "source": "https://unsplash.com/photos/a-church-built-into-the-side-of-a-mountain-RpL_0DfvqFE",
+        "license": "Unsplash License",
+        "licenseUrl": "https://unsplash.com/license"
+      }
+    },
+    {
+      "id": "posse-park",
+      "name": "Posse Grounds Park & Ride",
+      "chineseName": "Soldier Pass 接驳停车场",
+      "category": "parking",
+      "address": "20 Carruth Dr, Sedona, AZ 86336",
+      "description": "停车后乘 Route 14 前往 Soldier Pass。",
+      "notes": [
+        "当前公布上午有 08:40、09:30、10:20 等班次；09:00 不是已确认发车时间。",
+        "有每日 300 人接送上限，预留等待；回程末班查官网。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://sedonashuttle.com/routes/route-14/"
+    },
+    {
+      "id": "soldier",
+      "name": "Soldier Pass Trail",
+      "chineseName": "士兵山口 · 首选",
+      "category": "hiking",
+      "address": null,
+      "description": "Devil’s Kitchen Sinkhole 与 Seven Sacred Pools，轻量探索后折返。",
+      "notes": [
+        "到 Seven Sacred Pools 约 0.5 mile 单程；加入口连接、探索和等车。",
+        "2–3 小时是家庭停留及接驳预算，并非全程徒步时长。",
+        "不把非正式洞穴支线作为必走路线；入口无厕所和垃圾设施。",
+        "接驳运营时步道口停车场不对私家车开放。"
+      ],
+      "verificationStatus": "needs_verification",
+      "navigationId": "posse-park",
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/soldier-pass-trail-no-66",
+      "trail": {
+        "distance": "Pools 折返约 1 mile，另加探索",
+        "duration": "家庭及接驳预留 2–3 小时",
+        "elevation": "短线待核实；全线 641 ft",
+        "difficulty": "短线中等",
+        "route": "Trailhead → Devil’s Kitchen → Seven Sacred Pools，视体力折返。",
+        "shuttle": "Route 14；开车到 Posse Grounds Park & Ride。"
+      },
+      "image": "soldier-pass.jpg",
+      "photoCredit": {
+        "author": "Deborah Lee Soltesz / USFS Coconino National Forest",
+        "source": "https://www.flickr.com/photos/coconinonationalforest/25964548160/",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "doe-parking",
+      "name": "Doe Mountain Trailhead",
+      "chineseName": "Doe Mountain 停车场",
+      "category": "parking",
+      "address": null,
+      "description": "Boynton Pass Road 沿线官方步道停车点。",
+      "notes": [
+        "停车需 Red Rock Pass 或适用通票。"
+      ],
+      "verificationStatus": "needs_verification",
+      "coordinates": {
+        "latitude": 34.8935278,
+        "longitude": -111.8651389
+      },
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/doe-mountain-trail-no-60"
+    },
+    {
+      "id": "doe",
+      "name": "Doe Mountain",
+      "chineseName": "平顶山 · 备选",
+      "category": "hiking",
+      "address": null,
+      "description": "登顶看开阔红岩景观；Soldier Pass 不便时的替代。",
+      "notes": [
+        "官方登顶约 0.7 mile 单程；山顶探索另计。",
+        "山顶边缘有明显落差，儿童远离悬崖；不走完整边缘环线。"
+      ],
+      "verificationStatus": "needs_verification",
+      "navigationId": "doe-parking",
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/doe-mountain-trail-no-60",
+      "trail": {
+        "distance": "登顶往返 1.4 miles；探索约 1.5–2",
+        "duration": "计划 1.5–2.5 小时",
+        "elevation": "542 ft",
+        "difficulty": "中等 · 持续爬升",
+        "route": "Doe Mountain Trail 原路登顶折返，山顶只走安全区域。"
+      },
+      "image": "doe-mountain.jpg",
+      "photoCredit": {
+        "author": "Deborah Lee Soltesz / USFS Coconino National Forest",
+        "source": "https://www.flickr.com/photos/coconinonationalforest/19920459525/",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "tlaquepaque",
+      "name": "Tlaquepaque Arts & Shopping Village",
+      "chineseName": "艺术村 · 下午漫步",
+      "category": "shopping",
+      "address": "336 AZ-179, Sedona, AZ 86336",
+      "description": "西南风格庭院、画廊、商店与餐厅，停留约 1–1.5 小时。",
+      "notes": [
+        "11/25 周三计划可行；官方感恩节当天关闭。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "常规周一至周四 10:00–17:00；节假日查官网",
+      "parkingNotes": "访客停车场免费，按现场引导停车。",
+      "officialUrl": "https://tlaq.com/hours",
+      "image": "tlaquepaque.jpg",
+      "photoCredit": {
+        "author": "Norton Gusky (zgusky)",
+        "source": "https://www.flickr.com/photos/nlgconsulting/36109856510/",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "uptown",
+      "name": "Uptown Sedona",
+      "chineseName": "小镇逛街 · 可选",
+      "category": "attraction",
+      "address": "Sedona Municipal Parking, 260 Schnebly Rd, Sedona, AZ 86336",
+      "description": "咖啡、冰激凌与纪念品，停留约 30–60 分钟。",
+      "notes": [
+        "导航到市政停车场；按现场限制与收费标示停车。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://www.scenicsedona.com/getting-around/",
+      "officialLinkLabel": "官方城市交通信息",
+      "image": "uptown.jpg",
+      "photoCredit": {
+        "author": "inkknife_2000 (Don Graham)",
+        "source": "https://www.flickr.com/photos/23155134@N06/9546430991/",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      }
+    },
+    {
+      "id": "doubletree",
+      "name": "DoubleTree Suites by Hilton Phoenix",
+      "chineseName": "Phoenix 住宿 · 一晚",
+      "category": "hotel",
+      "address": "320 North 44th St, Phoenix, AZ 85008",
+      "description": "11/25 晚住宿；傍晚或晚上抵达，不为入住时间提早离开 Sedona。",
+      "notes": [
+        "用户提供：11/25 16:00 后入住；11/26 11:00 前退房。"
+      ],
+      "verificationStatus": "confirmed",
+      "officialUrl": "https://www.hilton.com/en/hotels/phxfvdt-doubletree-suites-phoenix/"
+    }
+  ],
+  "flights": [
+    {
+      "label": "去程 · 11 月 22 日",
+      "number": "WN 3108",
+      "from": "BUR",
+      "to": "PHX",
+      "departure": "08:20 · California",
+      "arrival": "10:55 · Arizona",
+      "notes": "Southwest Airlines；用户提供的已确认预订，出发前查动态。"
+    },
+    {
+      "label": "返程 · 11 月 26 日",
+      "number": "WN 2512",
+      "from": "PHX",
+      "to": "BUR",
+      "departure": "15:15 · Arizona",
+      "arrival": "15:40 · California",
+      "notes": "Southwest Airlines；本次旅行 Arizona 比 California 快 1 小时。"
+    }
+  ],
+  "rental": {
+    "company": "Budget",
+    "vehicle": "Chrysler Pacifica 或同级 Minivan · 7 座",
+    "details": [
+      "11/22 计划 12:00 取车；预订时间为 12:30，提前领取以 Budget 当天安排为准。",
+      "Automatic transmission · Unlimited mileage",
+      "Additional Driver Included",
+      "4 成人 + 2 儿童；1 × 28 寸 + 3 × 20 寸行李",
+      "儿童 Booster Seat 尚待确认",
+      "PHX Rental Car Center 取还车；搭 PHX Sky Train"
+    ]
+  },
+  "stays": [
+    {
+      "placeId": "airbnb",
+      "nights": 3,
+      "checkIn": "11/22 16:00 后",
+      "checkOut": "11/25 10:00 前",
+      "url": "https://www.airbnb.com/rooms/1504995701353572647"
+    },
+    {
+      "placeId": "doubletree",
+      "nights": 1,
+      "checkIn": "11/25 16:00 后",
+      "checkOut": "11/26 11:00 前"
+    }
+  ],
+  "shopping": [
+    "牛奶、鸡蛋、面包、早餐食材",
+    "水果、饮用水、Hiking Snacks",
+    "三明治食材、野餐用品",
+    "牛排、蔬菜、BBQ 食材",
+    "饮料"
+  ],
+  "checklist": [
+    "确认两位儿童的 Booster Seat",
+    "确认厨房、火锅及 BBQ 设备",
+    "查看官方步道封闭与洪水公告",
+    "核对 Shuttle 当日班次与末班车",
+    "确认餐厅节假日营业时间",
+    "下载离线行程及中文 PDF",
+    "准备保暖外套、防滑鞋、饮水与零食",
+    "核对航班、登机口与 Budget 还车要求"
+  ],
+  "verification": [
+    "用户已确认：航班号与时间、住宿地址和日期、Budget 与车型类别；未向供应商二次核验。",
+    "计划估算：出发时间、车程、餐饮及徒步时长，按交通、路况与儿童体力调整。",
+    "官方已公布：2026/11/19–11/29 Shuttle 扩展运营，但 11/26 感恩节不运行。",
+    "仍须出发前核实：临时封路、步道开放、接驳班次变化、停车费、餐厅节假日营业。",
+    "USFS 11/2 洪水公告、11/13 更新：Oak Creek Canyon 多处关闭。不能据此推断本行程其他步道已经确认开放。",
+    "Subway Cave 不是正式维护主路线，洞穴并非必达点。"
+  ],
+  "sources": [
+    {
+      "title": "Sedona Shuttle · 假期运营与乘车须知",
+      "url": "https://sedonashuttle.com/how-to-ride/"
+    },
+    {
+      "title": "Route 15 · Cathedral Rock",
+      "url": "https://sedonashuttle.com/routes/route-15/"
+    },
+    {
+      "title": "Route 11 · Mescal / Devil’s Bridge",
+      "url": "https://sedonashuttle.com/routes/route-11/"
+    },
+    {
+      "title": "Route 14 · Soldier Pass",
+      "url": "https://sedonashuttle.com/routes/route-14/"
+    },
+    {
+      "title": "USFS · 最新步道封闭公告",
+      "url": "https://www.fs.usda.gov/r03/coconino/alerts"
+    },
+    {
+      "title": "USFS · Red Rock 洪水公告",
+      "url": "https://www.fs.usda.gov/r03/coconino/alerts/red-rock-ranger-district-affected-severe-flooding-many-closures-effect"
+    },
+    {
+      "title": "Open-Meteo · 天气数据",
+      "url": "https://open-meteo.com/"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+tmp/
+*.log
+.env*
+!.env.example
+sedona-2026/public/sedona-2026-guide.pdf
+sedona-2026/public/data/
+
+.venv/
+.local/
+output/
