@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from xml.sax.saxutils import escape
+from urllib.parse import quote
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak
@@ -41,6 +42,10 @@ def location(place):
     para('车辆目的地：' + target['name'], 'small')
     if address(target): para(address(target), 'small')
     if target.get('parkingNotes'): para('停车：' + target['parkingNotes'], 'small')
+    if target['id'] == 'vespa':
+        query = quote(address(target), safe='')
+        link('Apple Maps 导航到 Vespa', f'https://maps.apple.com/?daddr={query}&dirflg=d')
+        link('Google Maps 导航到 Vespa', f'https://www.google.com/maps/dir/?api=1&destination={query}&travelmode=driving')
 def newpage(): story.append(PageBreak())
 def chapter(text, label, key):
     heading = Paragraph(escape(text), styles['h1'])
@@ -77,7 +82,7 @@ toc = TableOfContents()
 toc.levelStyles = [ParagraphStyle('toc', fontName='NotoSC', fontSize=11, leading=19, leftIndent=0, firstLineIndent=0, rightIndent=22, spaceBefore=6, textColor=HexColor('#353b31'))]
 toc.dotsMinLevel = 0
 story.append(toc)
-para('点击目录跳转；首选与备选只选其一。资料核对：' + data['updatedAt'] + '。', 'small')
+para('点击目录跳转；首选与备选只选其一。行程更新：' + data['updatedAt'] + '。', 'small')
 for index, day in enumerate(data['days']):
     newpage()
     para(f"DAY {index+1} | {day['date'][5:].replace('-', '/')} {day['weekday']}", 'small')

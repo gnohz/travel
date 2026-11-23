@@ -2,7 +2,7 @@
   "title": "Sedona 2026｜感恩节红岩之旅",
   "dates": "2026.11.22—11.26",
   "party": "两个家庭 · 4 位成人 · 2 位约七岁儿童",
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-22",
   "days": [
     {
       "date": "2026-11-22",
@@ -155,18 +155,43 @@
           "id": "park2",
           "time": "08:30",
           "title": "出发去 Cathedral 接驳停车场",
-          "description": "预计 08:45–09:00 到 North SR-179 Park & Ride，乘 Route 15。",
+          "description": "08:30 从小屋出发，目标 08:45 到 North SR-179 Park & Ride（1294 SR-179）；先停车、再排队乘 Route 15。",
           "placeId": "north-park",
           "status": "planned",
           "notes": [
-            "预留候车时间，以当天班次为准。"
+            "11/23 周一属于官方 11/19–11/29 感恩节扩展运营日期；11/26 当天停运。",
+            "停车与固定线路接驳车均免费，无须预约，现场排队；不要开到 Cathedral Rock Trailhead 停车场。"
           ]
+        },
+        {
+          "id": "park2-arrive",
+          "time": "08:45",
+          "title": "停车、排队乘 Route 15",
+          "description": "在 North SR-179 Park & Ride 停车，预留约 15 分钟排队上车。",
+          "placeId": "north-park",
+          "status": "planned",
+          "notes": [],
+          "duration": "目标候车约 15 分钟"
+        },
+        {
+          "id": "shuttle2",
+          "time": "09:00",
+          "title": "Route 15 · 前往 Cathedral Rock",
+          "description": "官方班次：09:00 从接驳停车场发车，09:10 抵达 Cathedral Rock Trailhead。",
+          "placeId": "north-park",
+          "status": "planned",
+          "notes": [
+            "若未赶上或该班满员，下一班 09:15 发车、09:25 到步道口。",
+            "班次核对于 2026/11/22；当天临时变化以运营方通知为准。"
+          ],
+          "endTime": "09:10",
+          "duration": "约 10 分钟"
         },
         {
           "id": "hike2",
           "time": "09:15",
           "title": "Cathedral Rock · 红岩攀爬",
-          "description": "计划 09:15–11:45，按儿童体力与路况折返。",
+          "description": "接驳车 09:10 到 Cathedral Rock Trailhead，计划 09:15–11:45 徒步，按儿童体力与路况折返。",
           "placeId": "cathedral",
           "endTime": "11:45",
           "duration": "2–3 小时",
@@ -174,6 +199,18 @@
           "notes": [
             "湿滑、结冰或风大时不强求登顶；下山尤其小心。"
           ]
+        },
+        {
+          "id": "return2",
+          "time": "11:55",
+          "title": "Route 15 回程 · 回停车场",
+          "description": "从 Cathedral Rock Trailhead 上车，11:55 发车、12:09 回 North SR-179 Park & Ride 取车。",
+          "placeId": "north-park",
+          "status": "planned",
+          "notes": [
+            "备选回程：12:10 发车、12:24 到停车场；午餐随实际下山与候车进度调整。"
+          ],
+          "endTime": "12:09"
         },
         {
           "id": "lunch2",
@@ -310,9 +347,9 @@
       "date": "2026-11-25",
       "weekday": "星期三",
       "title": "山口漫步 · 小镇 · Phoenix",
-      "subtitle": "不急着离开，把白天留给 Sedona",
+      "subtitle": "先在 West Sedona 午餐，再逛小镇与艺术村，顺着 SR-179 南下",
       "image": "soldier-pass.jpg",
-      "summary": "退房 · Soldier Pass · 艺术村 · Phoenix",
+      "summary": "Soldier Pass → Vespa → Uptown → Tlaquepaque → Phoenix",
       "activities": [
         {
           "id": "pack4",
@@ -339,11 +376,12 @@
           "id": "park4",
           "time": "09:10",
           "title": "前往 Soldier Pass 接驳停车场",
-          "description": "到 Posse Grounds Park & Ride，争取 09:30 班次。",
+          "description": "到 Posse Grounds Park & Ride（20 Carruth Dr），停车后排队乘 09:30 的 Route 14。",
           "placeId": "posse-park",
           "status": "planned",
           "notes": [
-            "09:30 来自当前官方表；出发前复核，预留等车。"
+            "目标 09:15 左右到停车场，预留候车；11/25 周三有感恩节扩展运营。",
+            "停车和固定线路接驳车免费，无须预约；当天候车与满员情况现场确认。"
           ],
           "condition": {
             "group": "hike4",
@@ -351,15 +389,34 @@
           }
         },
         {
+          "id": "shuttle4",
+          "time": "09:30",
+          "title": "Route 14 · 前往 Soldier Pass",
+          "description": "09:30 从 Posse Grounds Park & Ride 发车，09:38 到 Soldier Pass Trailhead。",
+          "placeId": "posse-park",
+          "status": "planned",
+          "notes": [
+            "此路线班次较疏；如果未能上车，下一班 10:20 发车、10:28 到达，徒步与午餐需相应调整。"
+          ],
+          "endTime": "09:38",
+          "duration": "约 8 分钟",
+          "condition": {
+            "group": "hike4",
+            "option": "A"
+          }
+        },
+        {
           "id": "soldier4",
-          "time": "10:00",
+          "time": "09:45",
           "title": "首选 · Soldier Pass",
-          "description": "看 Devil’s Kitchen 与 Seven Sacred Pools，视体力折返。",
+          "description": "09:38 接驳车到步道口，09:45 左右开始走 Devil’s Kitchen 与 Seven Sacred Pools 短线，计划 11:45 回到步道口附近。",
           "placeId": "soldier",
-          "endTime": "12:00",
-          "duration": "含接驳预留 2–3 小时",
+          "endTime": "11:45",
+          "duration": "徒步与拍照约 2 小时",
           "status": "preferred",
-          "notes": [],
+          "notes": [
+            "不走完整长线、不把非正式洞穴支线作为必达点；预留时间排队搭 12:08 回程车。"
+          ],
           "optionGroup": "hike4",
           "option": "A"
         },
@@ -377,41 +434,69 @@
           "option": "B"
         },
         {
-          "id": "lunch4",
-          "time": "12:30",
-          "title": "Sedona 午餐",
-          "description": "结合艺术村周边选择餐厅，不安排需要长时间排队的餐厅。",
-          "placeId": "tlaquepaque",
-          "duration": "约 1 小时",
+          "id": "return4",
+          "time": "12:08",
+          "title": "Route 14 回程 · 回停车场",
+          "description": "12:08 从 Soldier Pass Trailhead 发车，12:16 回 Posse Grounds Park & Ride 取车，再去 Vespa。",
+          "placeId": "posse-park",
           "status": "planned",
-          "notes": []
+          "notes": [
+            "下一班为 12:58 发车、13:06 到停车场；错过 12:08 时午餐顺延，缩短 Uptown 停留。",
+            "计划 11:45 完成短线，预留走回站点及排队时间。"
+          ],
+          "endTime": "12:16",
+          "condition": {
+            "group": "hike4",
+            "option": "A"
+          }
         },
         {
-          "id": "village4",
-          "time": "13:30",
-          "title": "Tlaquepaque · 庭院与画廊",
-          "description": "西南风格建筑、商店和庭院，慢慢逛。",
-          "placeId": "tlaquepaque",
-          "endTime": "15:00",
-          "duration": "1–1.5 小时",
+          "id": "lunch4",
+          "time": "12:30",
+          "title": "Vespa · 意大利午餐",
+          "description": "从接驳停车场取车后，先去 West Sedona 的 Vespa 午餐；六人用餐预留候位与上菜时间。",
+          "placeId": "vespa",
+          "duration": "计划约 75 分钟",
           "status": "planned",
-          "notes": []
+          "notes": [
+            "地址：1350 W State Route 89A, Suite 22, Sedona, AZ 86336。",
+            "官网周三常规 11:00–21:00，不接受预约、现场入座；午晚餐之间不休息。",
+            "下午顺序：Vespa → Uptown → Tlaquepaque，艺术村放最后，逛完顺着 SR-179 接 I-17 去 Phoenix。"
+          ],
+          "endTime": "13:45"
         },
         {
           "id": "uptown4",
-          "time": "15:00",
-          "title": "Uptown Sedona · 可选",
-          "description": "咖啡、冰激凌与纪念品；根据时间可跳过。",
+          "time": "14:00",
+          "title": "Uptown Sedona · 小镇逛街",
+          "description": "午餐后先逛 Uptown，买纪念品、咖啡或冰激凌，再向南去 Tlaquepaque。",
           "placeId": "uptown",
-          "duration": "30–60 分钟",
+          "duration": "计划约 45 分钟",
           "status": "planned",
-          "notes": []
+          "notes": [
+            "如午餐或交通延误，可缩短这一站，给艺术村保留时间。"
+          ],
+          "endTime": "14:45"
+        },
+        {
+          "id": "village4",
+          "time": "15:00",
+          "title": "Tlaquepaque · 庭院与画廊",
+          "description": "作为离开 Sedona 前的最后一站，慢逛庭院、画廊和商店；结束后顺着 SR-179 向南出城。",
+          "placeId": "tlaquepaque",
+          "endTime": "16:15",
+          "duration": "计划约 75 分钟",
+          "status": "planned",
+          "notes": [
+            "艺术村周三常规 10:00–17:00；11/25 是感恩节前一天，具体营业以店家当天为准。",
+            "艺术村结束后不再返回 Uptown 或 West Sedona；按导航经 SR-179、I-17 前往 Phoenix。"
+          ]
         },
         {
           "id": "drive4",
-          "time": "16:00",
+          "time": "16:15",
           "title": "开往 Phoenix",
-          "description": "计划 16:00–16:30 离开，预计 18:30–19:30 到酒店。",
+          "description": "计划 16:15 左右从艺术村离开，经 SR-179 接 I-17 南下 Phoenix；预计 18:30–19:30 到酒店，实际以交通为准。",
           "placeId": "doubletree",
           "duration": "以当天交通为准",
           "status": "planned",
@@ -640,8 +725,11 @@
       "address": "1294 SR-179, Sedona, AZ 86336",
       "description": "停车后乘免费 Trailhead Shuttle Route 15。",
       "notes": [
-        "官方已公布 11/19–11/29 扩展运营，11/26 感恩节当天除外。",
-        "当日班次与末班回程须出发前查官方表。"
+        "已核对：11/23 周一有感恩节扩展运营；11/26 感恩节当天无服务。",
+        "停车与 Route 15 均免费，无须预约，现场排队。",
+        "11/23 计划 09:00 发车 → 09:10 Cathedral Rock；下一班 09:15 → 09:25。",
+        "计划回程 11:55 → 12:09 停车场；备选 12:10 → 12:24。",
+        "班次核对：2026/11/22。临时变化、末班车与现场排队以运营方当天通知为准。"
       ],
       "verificationStatus": "needs_verification",
       "parkingNotes": "接驳运行期间 Cathedral Rock Trailhead 停车场不对私家车开放。",
@@ -669,7 +757,7 @@
         "elevation": "669 ft",
         "difficulty": "较难 · 陡岩攀爬",
         "route": "Cathedral Rock Trail 原路往返，按路况随时折返。",
-        "shuttle": "Route 15；开车到 North SR-179 Park & Ride。"
+        "shuttle": "Route 15；开车到 North SR-179 Park & Ride，1294 SR-179。11/23 计划去程 09:00–09:10，回程 11:55–12:09；备选去程 09:15–09:25、回程 12:10–12:24。"
       },
       "photoCredit": {
         "author": "Richard Carson",
@@ -707,6 +795,25 @@
       "verificationStatus": "needs_verification",
       "openingHours": "常规每日 11:30–21:00；以当天为准",
       "officialUrl": "https://www.thehudsonsedona.com/"
+    },
+    {
+      "id": "vespa",
+      "name": "Vespa Healthy Italian Café",
+      "chineseName": "Vespa · 周三意大利午餐",
+      "category": "restaurant",
+      "address": "1350 W State Route 89A, Suite 22, Sedona, AZ 86336",
+      "description": "West Sedona 的意大利餐厅，供应 Roman Pinsa、意大利热食与沙拉。周三徒步后先在这里午餐，再去 Uptown 和艺术村。",
+      "notes": [
+        "11/25 计划 12:30–13:45 用餐；地点在 West Sedona，不在 Tlaquepaque 艺术村内。",
+        "官网不接受预约，现场入座；六人用餐预留候位及上菜时间。",
+        "午晚餐之间不休息；广场停车位免费，按现场标示停车。",
+        "地址、周三常规营业时间和预约政策核对于 2026/11/22；节假日临时调整以店家当天通知为准。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "周三常规 11:00–21:00；午晚餐之间不休息",
+      "parkingNotes": "餐厅所在广场的停车场，按现场标示停车。",
+      "officialUrl": "https://vespaitaliancafe.com/",
+      "officialLinkLabel": "Vespa 餐厅官网"
     },
     {
       "id": "bell-parking",
@@ -876,8 +983,11 @@
       "address": "20 Carruth Dr, Sedona, AZ 86336",
       "description": "停车后乘 Route 14 前往 Soldier Pass。",
       "notes": [
-        "当前公布上午有 08:40、09:30、10:20 等班次；09:00 不是已确认发车时间。",
-        "有每日 300 人接送上限，预留等待；回程末班查官网。"
+        "11/25 周三有感恩节扩展运营，停车与固定线路接驳免费，无须预约。",
+        "计划 Route 14 去程 09:30 → 09:38；下一班 10:20 → 10:28。",
+        "计划回程 12:08 → 12:16；下一班 12:58 → 13:06，错过后午餐需顺延。",
+        "路线有每日 300 人接送上限，预留排队；临时变化及末班以运营方当天通知为准。",
+        "班次核对：2026/11/22。"
       ],
       "verificationStatus": "needs_verification",
       "officialUrl": "https://sedonashuttle.com/routes/route-14/"
@@ -904,7 +1014,7 @@
         "elevation": "短线待核实；全线 641 ft",
         "difficulty": "短线中等",
         "route": "Trailhead → Devil’s Kitchen → Seven Sacred Pools，视体力折返。",
-        "shuttle": "Route 14；开车到 Posse Grounds Park & Ride。"
+        "shuttle": "Route 14；开车到 Posse Grounds Park & Ride，20 Carruth Dr。11/25 计划去程 09:30–09:38，回程 12:08–12:16；下一班回程 12:58–13:06。"
       },
       "image": "soldier-pass.jpg",
       "photoCredit": {
@@ -1117,6 +1227,10 @@
     {
       "title": "Open-Meteo · 天气数据",
       "url": "https://open-meteo.com/"
+    },
+    {
+      "title": "Vespa · 餐厅地址、营业时间与入座政策",
+      "url": "https://vespaitaliancafe.com/"
     }
   ]
 }
