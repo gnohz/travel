@@ -2,7 +2,7 @@
   "title": "Sedona 2026｜感恩节红岩之旅",
   "dates": "2026.11.22—11.26",
   "party": "两个家庭 · 4 位成人 · 2 位约七岁儿童",
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-23",
   "days": [
     {
       "date": "2026-11-22",
@@ -143,19 +143,19 @@
       "activities": [
         {
           "id": "breakfast2",
-          "time": "07:45",
+          "time": "08:15",
           "title": "小屋早餐",
-          "description": "07:45–08:30，准备饮水、零食与防滑徒步鞋。",
+          "description": "08:15–09:00，准备饮水、零食与防滑徒步鞋。",
           "placeId": "airbnb",
-          "endTime": "08:30",
+          "endTime": "09:00",
           "status": "planned",
           "notes": []
         },
         {
           "id": "park2",
-          "time": "08:30",
+          "time": "09:00",
           "title": "出发去 Cathedral 接驳停车场",
-          "description": "08:30 从小屋出发，目标 08:45 到 North SR-179 Park & Ride（1294 SR-179）；先停车、再排队乘 Route 15。",
+          "description": "09:00 从小屋出发，目标 09:15 到 North SR-179 Park & Ride（1294 SR-179）；先停车、再排队乘 Route 15。",
           "placeId": "north-park",
           "status": "planned",
           "notes": [
@@ -165,7 +165,7 @@
         },
         {
           "id": "park2-arrive",
-          "time": "08:45",
+          "time": "09:15",
           "title": "停车、排队乘 Route 15",
           "description": "在 North SR-179 Park & Ride 停车，预留约 15 分钟排队上车。",
           "placeId": "north-park",
@@ -175,25 +175,25 @@
         },
         {
           "id": "shuttle2",
-          "time": "09:00",
+          "time": "09:30",
           "title": "Route 15 · 前往 Cathedral Rock",
-          "description": "官方班次：09:00 从接驳停车场发车，09:10 抵达 Cathedral Rock Trailhead。",
+          "description": "官方班次：09:30 从接驳停车场发车，09:40 抵达 Cathedral Rock Trailhead。",
           "placeId": "north-park",
           "status": "planned",
           "notes": [
-            "若未赶上或该班满员，下一班 09:15 发车、09:25 到步道口。",
-            "班次核对于 2026/11/22；当天临时变化以运营方通知为准。"
+            "若未赶上或该班满员，下一班 09:45 发车、09:55 到步道口。",
+            "班次核对于 2026/11/23；当天临时变化以运营方通知为准。"
           ],
-          "endTime": "09:10",
+          "endTime": "09:40",
           "duration": "约 10 分钟"
         },
         {
           "id": "hike2",
-          "time": "09:15",
+          "time": "09:45",
           "title": "Cathedral Rock · 红岩攀爬",
-          "description": "接驳车 09:10 到 Cathedral Rock Trailhead，计划 09:15–11:45 徒步，按儿童体力与路况折返。",
+          "description": "接驳车 09:40 到 Cathedral Rock Trailhead，计划 09:45–12:15 徒步，按儿童体力与路况折返。",
           "placeId": "cathedral",
-          "endTime": "11:45",
+          "endTime": "12:15",
           "duration": "2–3 小时",
           "status": "planned",
           "notes": [
@@ -202,23 +202,23 @@
         },
         {
           "id": "return2",
-          "time": "11:55",
+          "time": "12:25",
           "title": "Route 15 回程 · 回停车场",
-          "description": "从 Cathedral Rock Trailhead 上车，11:55 发车、12:09 回 North SR-179 Park & Ride 取车。",
+          "description": "从 Cathedral Rock Trailhead 上车，12:25 发车、12:39 回 North SR-179 Park & Ride 取车。",
           "placeId": "north-park",
           "status": "planned",
           "notes": [
-            "备选回程：12:10 发车、12:24 到停车场；午餐随实际下山与候车进度调整。"
+            "备选回程：12:40 发车、12:54 到停车场；午餐随实际下山与候车进度调整。"
           ],
-          "endTime": "12:09"
+          "endTime": "12:39"
         },
         {
           "id": "lunch2",
-          "time": "12:30",
+          "time": "13:00",
           "title": "Tortas de Fuego 午餐",
           "description": "首选墨西哥餐厅；位于 West Sedona，去 Bell Rock 有绕路。",
           "placeId": "tortas",
-          "endTime": "13:30",
+          "endTime": "14:00",
           "status": "preferred",
           "notes": [],
           "optionGroup": "lunch2",
@@ -226,11 +226,11 @@
         },
         {
           "id": "lunch2b",
-          "time": "12:30",
+          "time": "13:00",
           "title": "The Hudson 午餐备选",
           "description": "位置较顺路，但可能用餐较久。",
           "placeId": "hudson",
-          "endTime": "13:30",
+          "endTime": "14:00",
           "status": "alternative",
           "notes": [],
           "optionGroup": "lunch2",
@@ -238,11 +238,11 @@
         },
         {
           "id": "bell2",
-          "time": "14:00",
+          "time": "14:30",
           "title": "Bell Rock · 安全探索",
           "description": "从 Courthouse Vista / Midway 入口出发，1–2 miles 短程折返。",
           "placeId": "bell",
-          "endTime": "15:45",
+          "endTime": "16:15",
           "duration": "1.5–2 小时",
           "status": "planned",
           "notes": [
@@ -251,9 +251,9 @@
         },
         {
           "id": "home2",
-          "time": "16:00",
+          "time": "16:30",
           "title": "返回小屋",
-          "description": "预计 16:00–16:30 到；晚餐、Hot Tub、游戏与休息。",
+          "description": "预计 16:30–17:00 到；晚餐、Hot Tub、游戏与休息。",
           "placeId": "airbnb",
           "status": "planned",
           "notes": []
@@ -727,9 +727,9 @@
       "notes": [
         "已核对：11/23 周一有感恩节扩展运营；11/26 感恩节当天无服务。",
         "停车与 Route 15 均免费，无须预约，现场排队。",
-        "11/23 计划 09:00 发车 → 09:10 Cathedral Rock；下一班 09:15 → 09:25。",
-        "计划回程 11:55 → 12:09 停车场；备选 12:10 → 12:24。",
-        "班次核对：2026/11/22。临时变化、末班车与现场排队以运营方当天通知为准。"
+        "11/23 计划 09:30 发车 → 09:40 Cathedral Rock；下一班 09:45 → 09:55。",
+        "计划回程 12:25 → 12:39 停车场；备选 12:40 → 12:54。",
+        "班次核对：2026/11/23。临时变化、末班车与现场排队以运营方当天通知为准。"
       ],
       "verificationStatus": "needs_verification",
       "parkingNotes": "接驳运行期间 Cathedral Rock Trailhead 停车场不对私家车开放。",
@@ -757,7 +757,7 @@
         "elevation": "669 ft",
         "difficulty": "较难 · 陡岩攀爬",
         "route": "Cathedral Rock Trail 原路往返，按路况随时折返。",
-        "shuttle": "Route 15；开车到 North SR-179 Park & Ride，1294 SR-179。11/23 计划去程 09:00–09:10，回程 11:55–12:09；备选去程 09:15–09:25、回程 12:10–12:24。"
+        "shuttle": "Route 15；开车到 North SR-179 Park & Ride，1294 SR-179。11/23 计划去程 09:30–09:40，回程 12:25–12:39；备选去程 09:45–09:55、回程 12:40–12:54。"
       },
       "photoCredit": {
         "author": "Richard Carson",
