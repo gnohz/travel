@@ -263,57 +263,54 @@
     {
       "date": "2026-11-24",
       "weekday": "星期二",
-      "title": "峡谷与洞穴探索",
-      "subtitle": "带上野餐，留一点时间给风景",
+      "title": "Boynton Canyon · 峡谷慢行",
+      "subtitle": "09:00 出发，一天专心走一条步道",
       "image": "boynton-canyon.jpg",
-      "summary": "Plan A Boynton Canyon · Plan B Devil’s Bridge",
+      "summary": "Boynton Canyon · 自带野餐 · 下午按体力休息",
       "activities": [
         {
           "id": "leave3",
-          "time": "08:30",
-          "title": "出发 · 选择今天的路线",
-          "description": "首选 Boynton Canyon；备选 Devil’s Bridge。两条路线只选一条。",
+          "time": "09:00",
+          "title": "出发 · 前往 Boynton Canyon",
+          "description": "09:00 从小屋出发，预计 09:30 左右到 Boynton Canyon Trailhead 停车场；车程为计划估算，按实际交通调整。",
           "status": "planned",
           "notes": [
-            "提前准备 Picnic Lunch；不要把两套方案都安排进一天。"
+            "今天以 Boynton Canyon 为唯一徒步计划，提前准备 Picnic Lunch。",
+            "直接导航到 Boynton Canyon Trailhead 停车场，不使用 Cathedral Rock 的接驳停车场。"
+          ],
+          "placeId": "boynton"
+        },
+        {
+          "id": "park3",
+          "time": "09:30",
+          "title": "停车、整理装备",
+          "description": "预计 09:30 到 Boynton Canyon Trailhead，预留约 15 分钟停车、整理装备和出发准备；停车与候位会影响实际起步时间。",
+          "placeId": "boynton-parking",
+          "duration": "计划约 15 分钟",
+          "status": "planned",
+          "notes": [
+            "停车需 Red Rock Pass 或适用通票；车位先到先得，按现场标示停车。"
           ]
         },
         {
           "id": "boynton3",
-          "time": "09:00",
-          "title": "Plan A · Boynton Canyon",
-          "description": "主步道为主；Subway Cave 仅在安全合适时考虑，绝不强求。",
+          "time": "09:45",
+          "title": "Boynton Canyon · 主步道徒步",
+          "description": "预计 09:45 开始徒步，含途中野餐预留至 14:30 左右。以峡谷主步道为主，按儿童体力折返；Subway Cave 仅作视情况考虑的支线。",
           "placeId": "boynton",
-          "endTime": "14:00",
-          "duration": "家庭预留 4–5+ 小时",
-          "status": "preferred",
+          "endTime": "14:30",
+          "duration": "含野餐计划约 4 小时 45 分钟，可缩短",
+          "status": "planned",
           "notes": [
-            "官方主线 6 miles 往返；设折返点，儿童疲劳时缩短。",
-            "附件原估 3–4 小时，现按官方信息留出更宽时间。"
-          ],
-          "optionGroup": "hike3",
-          "option": "A"
-        },
-        {
-          "id": "bridge3",
-          "time": "09:00",
-          "title": "Plan B · Devil’s Bridge",
-          "description": "开车到 West SR-89A Park & Ride，乘 Route 11 到 Mescal。",
-          "placeId": "bridge",
-          "endTime": "13:00",
-          "duration": "徒步约 3–4 小时，另加接驳",
-          "status": "alternative",
-          "notes": [
-            "从 Mescal 出发约 4 miles；不要求儿童上无护栏石桥拍照。"
-          ],
-          "optionGroup": "hike3",
-          "option": "B"
+            "官方完整主线为 6 miles 往返，不以走完全程为目标；带孩子按体力及时折返。",
+            "下午不追加 Devil’s Bridge；若停车或徒步延误，后续可选参观直接取消。"
+          ]
         },
         {
           "id": "picnic3",
-          "time": "12:00",
+          "time": "12:30",
           "title": "步道野餐",
-          "description": "自带三明治、水果、零食、饮水；实际时间随徒步进度。",
+          "description": "在 Boynton Canyon 徒步途中找合适地点休息，自带三明治、水果、零食和饮水；时间随徒步进度。",
           "duration": "约 30 分钟",
           "status": "planned",
           "notes": [
@@ -322,9 +319,9 @@
         },
         {
           "id": "chapel3",
-          "time": "15:00",
+          "time": "15:30",
           "title": "圣十字教堂 · 可选",
-          "description": "有体力且赶得上开放时间再去，否则直接回小屋休息。",
+          "description": "徒步结束后，只有体力和时间都合适才去；累了就直接回小屋休息，不作为当天必达项。",
           "placeId": "chapel",
           "duration": "约 45–60 分钟",
           "status": "planned",
@@ -880,16 +877,16 @@
     },
     {
       "id": "boynton",
-      "name": "Boynton Canyon / Subway Cave",
-      "chineseName": "峡谷与洞穴 · Plan A",
+      "name": "Boynton Canyon Trail",
+      "chineseName": "博因顿峡谷 · 主步道徒步",
       "category": "hiking",
       "address": null,
-      "description": "主步道峡谷景观；洞穴只作为视情况考虑的非正式支线。",
+      "description": "11/24 唯一徒步计划：以 Boynton Canyon 主步道欣赏峡谷，带上野餐，按体力折返。",
       "notes": [
         "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
         "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
-        "附件计划约 5–6 miles、3–4 小时，但官方主线 6 miles 往返、参考单程 2.5 小时；带孩子建议预留 4–5+ 小时并设折返点。",
-        "自带三明治、水果、零食和充足饮水。"
+        "自带三明治、水果、零食和充足饮水。",
+        "11/24 计划 09:00 从小屋出发、09:30 到停车场、09:45–14:30 徒步与野餐；不追加 Devil’s Bridge。"
       ],
       "verificationStatus": "needs_verification",
       "navigationId": "boynton-parking",
@@ -897,7 +894,7 @@
       "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/boynton-canyon-trail-no-47",
       "trail": {
         "distance": "主线 6 miles 往返；支线另计",
-        "duration": "计划 4–5+ 小时，视体力缩短",
+        "duration": "含野餐计划约 4–5 小时，视体力缩短",
         "elevation": "官方主线 931 ft",
         "difficulty": "中等；洞穴段风险更高",
         "route": "Boynton Canyon 官方主线；Subway Cave 不是必须完成项。"
