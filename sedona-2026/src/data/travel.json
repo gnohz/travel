@@ -284,19 +284,21 @@
           "id": "park3",
           "time": "09:30",
           "title": "停车、整理装备",
-          "description": "预计 09:30 到 Boynton Canyon Trailhead，预留约 15 分钟停车、整理装备和出发准备；停车与候位会影响实际起步时间。",
+          "description": "目标 09:30 到 Boynton Canyon Trailhead；这一带车位有限，不能保证抵达即有车位。停车与装备整理先预留约 15–45 分钟，视现场情况调整。",
           "placeId": "boynton-parking",
-          "duration": "计划约 15 分钟",
+          "duration": "找位与准备计划预留 15–45 分钟",
           "status": "planned",
           "notes": [
-            "停车需 Red Rock Pass 或适用通票；车位先到先得，按现场标示停车。"
+            "停车需 Red Rock Pass 或适用通票；车位先到先得，按现场标示停车。",
+            "09:45 是顺利停车时的目标起步时间；如找位延误，缩短徒步并取消下午可选参观。",
+            "停车通票不等于车位预订；路边能否停车只按现场标示判断，不把路肩停车作为保证。"
           ]
         },
         {
           "id": "boynton3",
           "time": "09:45",
           "title": "Boynton Canyon · 主步道徒步",
-          "description": "预计 09:45 开始徒步，含途中野餐预留至 14:30 左右。以峡谷主步道为主，按儿童体力折返；Subway Cave 仅作视情况考虑的支线。",
+          "description": "顺利停车时目标 09:45 开始，含途中野餐预留至 14:30 左右。若找位延误则推迟起步、缩短路线；以峡谷主步道为主，按儿童体力折返，Subway Cave 仅作视情况考虑的支线。",
           "placeId": "boynton",
           "endTime": "14:30",
           "duration": "含野餐计划约 4 小时 45 分钟，可缩短",
@@ -866,14 +868,17 @@
       "address": null,
       "description": "位于 Enchantment Resort 入口外的官方步道停车点。",
       "notes": [
-        "停车需 Red Rock Pass 或适用通票；车位先到先得。"
+        "停车需 Red Rock Pass 或适用通票；车位先到先得。",
+        "停车场在 Enchantment Resort 入口外；当前固定 Trailhead Shuttle 没有 Boynton Canyon 站。",
+        "预留找位时间；路边停车只按现场标示，不把其他景点停车场当作本步道的接驳点。"
       ],
       "verificationStatus": "needs_verification",
       "coordinates": {
         "latitude": 34.9078056,
         "longitude": -111.8490556
       },
-      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/boynton-canyon-trail-no-47"
+      "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/boynton-canyon-trail-no-47",
+      "parkingNotes": "车位有限，09:30 抵达不保证有位；停车需 Red Rock Pass 或适用通票，通票不预留车位。"
     },
     {
       "id": "boynton",
@@ -886,7 +891,7 @@
         "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
         "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
         "自带三明治、水果、零食和充足饮水。",
-        "11/24 计划 09:00 从小屋出发、09:30 到停车场、09:45–14:30 徒步与野餐；不追加 Devil’s Bridge。"
+        "11/24 计划 09:00 从小屋出发、09:30 到停车场、顺利停车时目标 09:45–14:30 徒步与野餐；不追加 Devil’s Bridge。"
       ],
       "verificationStatus": "needs_verification",
       "navigationId": "boynton-parking",
