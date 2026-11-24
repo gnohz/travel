@@ -264,15 +264,15 @@
       "date": "2026-11-24",
       "weekday": "星期二",
       "title": "Boynton Canyon · 峡谷慢行",
-      "subtitle": "09:00 出发，一天专心走一条步道",
+      "subtitle": "08:30 出发，一天专心走一条步道",
       "image": "boynton-canyon.jpg",
       "summary": "Boynton Canyon · 自带野餐 · 下午按体力休息",
       "activities": [
         {
           "id": "leave3",
-          "time": "09:00",
+          "time": "08:30",
           "title": "出发 · 前往 Boynton Canyon",
-          "description": "09:00 从小屋出发，预计 09:30 左右到 Boynton Canyon Trailhead 停车场；车程为计划估算，按实际交通调整。",
+          "description": "08:30 从小屋出发，预计 09:00 左右到 Boynton Canyon Trailhead 停车场；车程为计划估算，按实际交通调整。",
           "status": "planned",
           "notes": [
             "今天以 Boynton Canyon 为唯一徒步计划，提前准备 Picnic Lunch。",
@@ -282,25 +282,25 @@
         },
         {
           "id": "park3",
-          "time": "09:30",
+          "time": "09:00",
           "title": "停车、整理装备",
-          "description": "目标 09:30 到 Boynton Canyon Trailhead；这一带车位有限，不能保证抵达即有车位。停车与装备整理先预留约 15–45 分钟，视现场情况调整。",
+          "description": "目标 09:00 到 Boynton Canyon Trailhead；这一带车位有限，不能保证抵达即有车位。停车与装备整理先预留约 15–45 分钟，视现场情况调整。",
           "placeId": "boynton-parking",
           "duration": "找位与准备计划预留 15–45 分钟",
           "status": "planned",
           "notes": [
             "停车需 Red Rock Pass 或适用通票；车位先到先得，按现场标示停车。",
-            "09:45 是顺利停车时的目标起步时间；如找位延误，缩短徒步并取消下午可选参观。",
+            "09:15 是顺利停车时的目标起步时间；如找位延误，缩短徒步并取消下午可选参观。",
             "停车通票不等于车位预订；路边能否停车只按现场标示判断，不把路肩停车作为保证。"
           ]
         },
         {
           "id": "boynton3",
-          "time": "09:45",
+          "time": "09:15",
           "title": "Boynton Canyon · 主步道徒步",
-          "description": "顺利停车时目标 09:45 开始，含途中野餐预留至 14:30 左右。若找位延误则推迟起步、缩短路线；以峡谷主步道为主，按儿童体力折返，Subway Cave 仅作视情况考虑的支线。",
+          "description": "顺利停车时目标 09:15 开始，含途中野餐预留至 14:00 左右。若找位延误则推迟起步、缩短路线；以峡谷主步道为主，按儿童体力折返，Subway Cave 仅作视情况考虑的支线。",
           "placeId": "boynton",
-          "endTime": "14:30",
+          "endTime": "14:00",
           "duration": "含野餐计划约 4 小时 45 分钟，可缩短",
           "status": "planned",
           "notes": [
@@ -310,7 +310,7 @@
         },
         {
           "id": "picnic3",
-          "time": "12:30",
+          "time": "12:00",
           "title": "步道野餐",
           "description": "在 Boynton Canyon 徒步途中找合适地点休息，自带三明治、水果、零食和饮水；时间随徒步进度。",
           "duration": "约 30 分钟",
@@ -321,7 +321,7 @@
         },
         {
           "id": "chapel3",
-          "time": "15:30",
+          "time": "15:00",
           "title": "圣十字教堂 · 可选",
           "description": "徒步结束后，只有体力和时间都合适才去；累了就直接回小屋休息，不作为当天必达项。",
           "placeId": "chapel",
@@ -333,7 +333,7 @@
         },
         {
           "id": "dinner3",
-          "time": "18:00",
+          "time": "17:30",
           "title": "小屋家庭晚餐",
           "description": "可以安排火锅或 BBQ，提前确认厨房设备。",
           "placeId": "airbnb",
@@ -878,7 +878,7 @@
         "longitude": -111.8490556
       },
       "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/boynton-canyon-trail-no-47",
-      "parkingNotes": "车位有限，09:30 抵达不保证有位；停车需 Red Rock Pass 或适用通票，通票不预留车位。"
+      "parkingNotes": "车位有限，09:00 抵达不保证有位；停车需 Red Rock Pass 或适用通票，通票不预留车位。"
     },
     {
       "id": "boynton",
@@ -891,7 +891,7 @@
         "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
         "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
         "自带三明治、水果、零食和充足饮水。",
-        "11/24 计划 09:00 从小屋出发、09:30 到停车场、顺利停车时目标 09:45–14:30 徒步与野餐；不追加 Devil’s Bridge。"
+        "11/24 计划 08:30 从小屋出发、09:00 到停车场、顺利停车时目标 09:15–14:00 徒步与野餐；不追加 Devil’s Bridge。"
       ],
       "verificationStatus": "needs_verification",
       "navigationId": "boynton-parking",
