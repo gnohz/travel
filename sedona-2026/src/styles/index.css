@@ -420,3 +420,16 @@ summary { font-size: 13px; color: var(--muted); min-height: 44px; padding: 11px 
   .offline-banner { font-size: 11px; margin-bottom: 8px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *:before, *:after { animation: none !important; scroll-behavior: auto !important; transition: none !important; } }
+
+.dinner-options { margin: 0 0 38px; padding: 24px; border: 1px solid var(--line); border-top: 3px solid var(--rust); border-radius: 6px; background: #fffdf9; }
+.dinner-options > h2 { margin: 10px 0; font-size: 25px; }
+.dinner-intro { font-size: 16px; color: var(--muted); margin-bottom: 20px; }
+.dinner-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.dinner-card { min-width: 0; padding: 20px; border: 1px solid var(--line); border-radius: 4px; display: flex; flex-direction: column; gap: 12px; }
+.dinner-tag { font-size: 14px; color: var(--rust); }
+.dinner-card h3 { font-size: 20px; line-height: 1.4; overflow-wrap: anywhere; }
+.dinner-card > p { font-size: 16px; }
+.dinner-card .dinner-address, .dinner-card .dinner-hours { font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+.dinner-card .maps { margin-top: auto; flex-direction: column; }
+.dinner-card .maps .button { font-size: 14px; }
+@media (max-width: 760px) { .dinner-options { padding: 20px 16px; } .dinner-grid { grid-template-columns: 1fr; } .dinner-card { padding: 18px; } }

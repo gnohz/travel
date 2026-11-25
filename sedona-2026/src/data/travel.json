@@ -343,7 +343,7 @@
       "date": "2026-11-25",
       "weekday": "星期三",
       "title": "Sedona 慢逛 · Scottsdale 夜游",
-      "subtitle": "白天实际路线已记录，傍晚按体力去 Old Town Scottsdale 散步",
+      "subtitle": "实际 Sedona 路线已记录；今晚三家晚餐候选、老街与运河步行路线均已补齐",
       "image": "soldier-pass.jpg",
       "summary": "蓝色麦当劳 → Tlaquepaque → Hideaway House → Tlaquepaque North → Phoenix 酒店 → Old Town",
       "activities": [
@@ -410,25 +410,39 @@
         {
           "id": "oldtown-park4",
           "time": "17:00",
-          "timeLabel": "傍晚 · 建议",
+          "timeLabel": "17:00 · 建议",
           "title": "前往 Old Town · 先停车",
-          "placeId": "civic-parking",
-          "description": "建议从酒店开车去 Civic Center Library Garage，停一次车步行逛老城。出发时间按你们休息进度安排。",
-          "duration": "车程预留约 25–40 分钟，属估算",
+          "placeId": "oldtown-garage",
+          "description": "建议 17:00 从酒店出发，到 3rd Avenue Parking Garage 停车，随后步行串联老街、LOVE 雕塑、第五大道和运河。",
+          "duration": "开车估算 25–40 分钟，另留约 10 分钟停车",
           "status": "planned",
           "notes": [
-            "导航：3737 N Drinkwater Blvd, Scottsdale, AZ 85251；从 Drinkwater Blvd 找公共车库入口。",
-            "市府列为免费公共停车，按现场限时与公共车位标示停车；没有实时余位保证。",
-            "Brown Avenue / 1st Street 停车结构正在扩建，今晚先避开。"
+            "停车地址：7143 E 5th Ave, Scottsdale, AZ 85251；车库名称虽为 3rd Avenue，导航使用这个地址。",
+            "市府地图列免费公共停车；下两层限 3 小时，上两层不限时，现场标示优先。",
+            "Brown Avenue Parking Corral 正在扩建；Civic Center Library Garage 可作为南段停车备选。"
+          ]
+        },
+        {
+          "id": "historic-walk4",
+          "time": "18:00",
+          "timeLabel": "18:00 左右",
+          "title": "Main Street / Brown Avenue · 老街",
+          "placeId": "oldtown-scottsdale",
+          "description": "停车后先沿 Marshall Way 向南看艺术街橱窗，再走 Main Street / Brown Avenue 老街；接着向东去 Civic Center。",
+          "duration": "艺术街与老街建议约 30–40 分钟",
+          "status": "planned",
+          "notes": [
+            "商店营业时间各异，晚到也可看街景；按孩子体力随时缩短。",
+            "今晚是一条老城散步路线，停车后不用为每一站重新开车。"
           ]
         },
         {
           "id": "civic-walk4",
-          "time": "17:45",
-          "timeLabel": "停车后",
+          "time": "18:30",
+          "timeLabel": "18:30 左右",
           "title": "Civic Center · LOVE 雕塑与草坪",
           "placeId": "scottsdale-civic",
-          "description": "先在 Civic Center 看 LOVE 雕塑、草坪和公共艺术；适合孩子下车后活动一下。",
+          "description": "从 Main Street 走进 Civic Center，看 LOVE 雕塑、草坪与公共艺术；再往第五大道和运河方向走。",
           "duration": "建议约 20–30 分钟",
           "status": "planned",
           "notes": [
@@ -437,41 +451,69 @@
           ]
         },
         {
-          "id": "historic-walk4",
-          "time": "18:15",
-          "timeLabel": "随后",
-          "title": "Main Street / Brown Avenue · 老街",
-          "placeId": "oldtown-scottsdale",
-          "description": "从 Civic Center 向西走进 Main Street、Brown Avenue 一带，看西部风格街景、橱窗和纪念品。",
-          "duration": "建议约 30–45 分钟",
+          "id": "horse4",
+          "time": "18:50",
+          "timeLabel": "往北逛",
+          "title": "第五大道 · 马喷泉与小店",
+          "placeId": "horse-fountain",
+          "description": "从老街向北走到第五大道、Marshall Way 的马喷泉，看看公共艺术、橱窗和街景，再去北段餐厅。",
+          "duration": "建议约 20 分钟",
+          "status": "planned",
+          "notes": []
+        },
+        {
+          "id": "dinner4",
+          "time": "19:00",
+          "timeLabel": "19:00 左右",
+          "title": "正式晚餐 · 三家任选一家",
+          "placeId": "culinary-dropout",
+          "description": "Culinary Dropout · Waterfront、Diego Pops、Rehab Burger Therapy：三家都是正式晚餐候选，任选一家；综合全家口味首推 Culinary Dropout。",
+          "duration": "用餐预留约 1 小时，候位另计",
           "status": "planned",
           "notes": [
-            "商店营业时间各异，晚到也可看街景；按孩子体力随时缩短。",
-            "今晚是一条老城散步路线，停车后不用为每一站重新开车。"
+            "三家餐厅均有地址和导航；Culinary Dropout、Diego Pops 在北段，Rehab 在南段。",
+            "如果选 Rehab，建议在逛南段时约 18:00 先吃；另外两家可逛到北段后约 19:00 吃。",
+            "六人桌出发前查看官网预约或候位情况；当前没有预订。"
+          ],
+          "placeOptions": [
+            "culinary-dropout",
+            "diego-pops",
+            "rehab-burger"
           ]
         },
         {
+          "id": "canal4",
+          "time": "20:00",
+          "timeLabel": "饭后散步",
+          "title": "Waterfront / Soleri Bridge · 运河夜景",
+          "placeId": "soleri-bridge",
+          "description": "晚餐后沿运河走一小段，到 Soleri Bridge 拍照，再根据体力返回车库或去 Sugar Bowl。",
+          "duration": "建议约 30–45 分钟",
+          "status": "planned",
+          "notes": []
+        },
+        {
           "id": "sugar-bowl4",
-          "time": "18:45",
-          "timeLabel": "晚餐／甜点 · 可选",
-          "title": "Sugar Bowl · 冰激凌与复古小店",
+          "time": "20:45",
+          "timeLabel": "饭后甜点 · 可选",
+          "title": "Sugar Bowl · 冰激凌（可选）",
           "placeId": "sugar-bowl",
-          "description": "在粉色复古店面休息，吃冰激凌、圣代或奶昔；若要正餐，可在厨房营业时间内点餐。",
+          "description": "保留冰激凌休息站：正式晚餐另选上面三家中的一家，Sugar Bowl 只作圣代、奶昔或冰激凌的可选停留。也可逛老街时路过先吃。",
           "duration": "建议约 30–45 分钟",
           "status": "planned",
           "notes": [
             "地址：4005 N Scottsdale Rd, Scottsdale, AZ 85251。",
-            "官网周三餐厅至 22:00、厨房至 20:00；感恩节前夕临时安排以门店为准。",
-            "吃完步行回车库；从停车到返回建议控制在约 2–3 小时，并以现场停车限时为准。"
+            "官网周三餐厅至 22:00，厨房至 20:00；今晚以冰激凌和甜点为主，临时安排看门店通知。",
+            "如果在运河吃完晚餐后再来，需额外向南步行；可按孩子体力决定。"
           ]
         },
         {
           "id": "return-hotel4",
-          "time": "19:45",
+          "time": "21:15",
           "timeLabel": "逛完后",
           "title": "回酒店休息",
           "placeId": "doubletree",
-          "description": "取车后返回 DoubleTree；不追赶固定结束时间，按孩子体力安排。",
+          "description": "回到 3rd Avenue 车库取车，再返回 DoubleTree；整圈按约 3–4 小时含晚餐规划，孩子累了随时缩短。",
           "duration": "车程按当时导航",
           "status": "planned",
           "notes": [
@@ -1160,7 +1202,7 @@
     {
       "id": "civic-parking",
       "name": "Civic Center Library Garage",
-      "chineseName": "Old Town 停车首选 · Library Garage",
+      "chineseName": "Old Town 南段停车备选 · Library Garage",
       "category": "parking",
       "address": "3737 N Drinkwater Blvd, Scottsdale, AZ 85251",
       "description": "Scottsdale Civic Center 旁的公共车库，适合停车后步行去 LOVE 雕塑、Main Street 老街与 Sugar Bowl。",
@@ -1168,7 +1210,8 @@
         "市府公共停车页面确认 Civic Center 车库可从 Drinkwater Blvd 或 2nd Street 进入。",
         "市府列为免费公共停车；部分车位有限时，按现场标示，勿停专用或保留车位。",
         "今晚建议走 2–3 小时轻松环线，没有实时空位数据。",
-        "Brown Avenue Parking Corral 正在扩建，今晚先避开该施工点。"
+        "Brown Avenue Parking Corral 正在扩建，今晚先避开该施工点。",
+        "若要串联第五大道和 Waterfront，今晚优先选 3rd Avenue Parking Garage。"
       ],
       "verificationStatus": "needs_verification",
       "parkingNotes": "免费公共停车，以现场限时、开放及车位标示为准；从 Drinkwater Blvd 找公共车库入口。",
@@ -1211,7 +1254,7 @@
       "chineseName": "Sugar Bowl · 冰激凌休息站",
       "category": "restaurant",
       "address": "4005 N Scottsdale Rd, Scottsdale, AZ 85251",
-      "description": "粉色复古冰激凌与苏打店，适合带孩子休息、点圣代或奶昔。",
+      "description": "今晚独立保留的冰激凌与甜点休息站；正式晚餐另有三家餐厅候选。",
       "notes": [
         "官网周三餐厅开放至 22:00，厨房至 20:00；正餐和甜点的截止时间不同。",
         "今天为感恩节前夕，临时调整与等位以门店为准。"
@@ -1219,6 +1262,99 @@
       "verificationStatus": "needs_verification",
       "openingHours": "周三餐厅 11:00–22:00；厨房 11:00–20:00",
       "officialUrl": "https://sugarbowlscottsdale.com/?page_id=250"
+    },
+    {
+      "id": "culinary-dropout",
+      "name": "Culinary Dropout · Waterfront",
+      "chineseName": "Culinary Dropout · 正式晚餐首选",
+      "category": "restaurant",
+      "address": "7135 E Camelback Rd, Suite 125, Scottsdale, AZ 85251",
+      "description": "美式休闲餐厅，炸鸡、肋排、椒盐卷饼配芝士蘸酱；全家口味容易兼顾，吃完可接着逛 Waterfront 运河。",
+      "openingHours": "周三常规 11:00–22:00；感恩节当天关闭",
+      "parkingNotes": "今晚可停 3rd Avenue Garage 后步行前往；店家也列有自助停车，按现场标示。",
+      "notes": [
+        "今晚三家正式晚餐候选之一，推荐首选；没有代为预订。",
+        "地点为 Old Town Scottsdale Waterfront 店，非 Phoenix 其他分店。",
+        "六人桌请提前查看官网预约；这是热闹的休闲餐厅。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://www.culinarydropout.com/locations/scottsdale-az/",
+      "officialLinkLabel": "Culinary Dropout 门店、菜单与预约"
+    },
+    {
+      "id": "diego-pops",
+      "name": "Diego Pops",
+      "chineseName": "Diego Pops · 墨西哥晚餐候选",
+      "category": "restaurant",
+      "address": "4338 N Scottsdale Rd, Scottsdale, AZ 85251",
+      "description": "活泼装饰与露台，适合拍照；创意 Taco、烤玉米、Quesadilla，官网有儿童菜单，想吃墨西哥口味可选它。",
+      "openingHours": "周三常规 11:00–22:00；节假日安排以门店为准",
+      "notes": [
+        "今晚三家正式晚餐候选之一，与另外两家任选一家。",
+        "位于老城北段，可逛完第五大道后用餐；官网可查看预约。",
+        "儿童餐点可要求酱料分开；具体做法向餐厅确认。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://www.diegopops.com/",
+      "officialLinkLabel": "Diego Pops 官网、菜单与预约"
+    },
+    {
+      "id": "rehab-burger",
+      "name": "Rehab Burger Therapy",
+      "chineseName": "Rehab Burger Therapy · 汉堡晚餐候选",
+      "category": "restaurant",
+      "address": "7210 E 2nd St, Scottsdale, AZ 85251",
+      "description": "海滩休闲风格的创意汉堡店，可选经典汉堡或特色 PBJ 培根汉堡；位于老城南段，适合先吃再继续逛。",
+      "openingHours": "近期营业资料列周三 11:00–20:00；建议约 18:00 用餐，门店当天安排为准",
+      "notes": [
+        "今晚三家正式晚餐候选之一，非冰激凌店。",
+        "如果选这家，把晚餐提前到逛南段时，不等走到运河后再折返。",
+        "官网直接点餐菜单可查看菜品；现场候位情况须当天确认。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://rehabburgertherapy.com/",
+      "officialLinkLabel": "Rehab Burger Therapy 官网与菜单"
+    },
+    {
+      "id": "oldtown-garage",
+      "name": "3rd Avenue Parking Garage",
+      "chineseName": "今晚停车首选 · 3rd Avenue Garage",
+      "category": "parking",
+      "address": "7143 E 5th Ave, Scottsdale, AZ 85251",
+      "description": "位置居中的免费公共车库，适合一次停车后串联 Main Street、Civic Center、第五大道和 Waterfront。",
+      "parkingNotes": "市府地图：下两层限 3 小时，上两层不限时；现场开放、限时与公共车位标示优先。",
+      "notes": [
+        "名称是 3rd Avenue，地图列出的导航地址为 7143 E 5th Ave。",
+        "市府公开停车地图已核对到此车库；没有实时余位数据。",
+        "走完整圈约 3 公里上下，绕店和餐厅选择会改变实际距离。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://oldtownscottsdaleaz.com/get-around/public-parking/",
+      "officialLinkLabel": "市府停车页面与官方地图"
+    },
+    {
+      "id": "horse-fountain",
+      "name": "Bronze Horse Fountain · Fifth Avenue",
+      "chineseName": "第五大道 · 马喷泉",
+      "category": "attraction",
+      "address": "N Marshall Way & E 5th Ave, Scottsdale, AZ 85251",
+      "description": "Bob Parks 的马喷泉公共艺术，连同第五大道橱窗与小店一起慢慢逛。",
+      "notes": [
+        "户外公共艺术，喷泉运行与周边店家营业以现场为准。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://oldtownscottsdaleaz.com/get-around/old-town-map/"
+    },
+    {
+      "id": "soleri-bridge",
+      "name": "Soleri Bridge and Plaza",
+      "chineseName": "运河散步",
+      "category": "attraction",
+      "address": "Soleri Bridge and Plaza, Scottsdale, AZ 85251",
+      "description": "Waterfront 运河与 Soleri 人行桥，适合饭后散步、拍夜景。",
+      "notes": [],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://oldtownscottsdaleaz.com/get-around/old-town-map/"
     }
   ],
   "flights": [

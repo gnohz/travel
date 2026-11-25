@@ -42,7 +42,7 @@ def location(place):
     para('车辆目的地：' + target['name'], 'small')
     if address(target): para(address(target), 'small')
     if target.get('parkingNotes'): para('停车：' + target['parkingNotes'], 'small')
-    if target['id'] in ['vespa', 'wildflower', 'blue-mcdonalds', 'hideaway', 'civic-parking', 'sugar-bowl']:
+    if target['id'] in ['vespa', 'wildflower', 'blue-mcdonalds', 'hideaway', 'civic-parking', 'oldtown-garage', 'sugar-bowl', 'culinary-dropout', 'diego-pops', 'rehab-burger']:
         query = quote(address(target), safe='')
         link('Apple Maps 导航到 ' + target['name'], f'https://maps.apple.com/?daddr={query}&dirflg=d')
         link('Google Maps 导航到 ' + target['name'], f'https://www.google.com/maps/dir/?api=1&destination={query}&travelmode=driving')
@@ -65,11 +65,19 @@ def activity_details(activity, seen_places):
     if activity.get('condition'): para('此项仅适用于首选 Soldier Pass 方案。', 'small')
     if activity.get('duration'): para('预留：' + activity['duration'], 'small')
     place_id = activity.get('placeId')
-    if place_id:
+    if place_id and not activity.get('placeOptions'):
         if place_id not in seen_places:
             location(places[place_id])
             seen_places.add(place_id)
     for note in activity['notes']: para('注意：' + note, 'small')
+    for index, option_id in enumerate(activity.get('placeOptions', [])):
+        option = places[option_id]
+        para(('推荐首选：' if index == 0 else '晚餐候选：') + option['name'], 'option')
+        para(option['description'])
+        location(option)
+        seen_places.add(option_id)
+        if option.get('openingHours'): para(option['openingHours'], 'small')
+        if option.get('officialUrl'): link('餐厅官网与菜单', option['officialUrl'])
 
 para('SEDONA 2026', 'title')
 para('感恩节红岩之旅', 'h1')

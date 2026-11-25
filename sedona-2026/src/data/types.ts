@@ -11,7 +11,7 @@ export type Place = {
   trail?: { distance: string; duration: string; elevation: string; difficulty: string; route: string; shuttle?: string };
 };
 export type Activity = {
-  id: string; time: string; timeLabel?: string; endTime?: string; title: string; placeId?: string;
+  id: string; time: string; timeLabel?: string; endTime?: string; title: string; placeId?: string; placeOptions?: string[];
   description: string; duration?: string; notes: string[]; status: Status;
   optionGroup?: string; option?: 'A' | 'B'; timeZone?: string;
   condition?: { group: string; option: 'A' | 'B' };

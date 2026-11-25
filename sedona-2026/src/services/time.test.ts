@@ -28,7 +28,10 @@ test('all activities point to real places and all navigation resolves to vehicle
   assert.equal(trip.days.length, 5);
   const ids = trip.places.map(p => p.id);
   assert.equal(new Set(ids).size, ids.length);
-  for (const d of trip.days) for (const a of d.activities) if (a.placeId) assert.ok(ids.includes(a.placeId), a.id);
+  for (const d of trip.days) for (const a of d.activities) {
+    if (a.placeId) assert.ok(ids.includes(a.placeId), a.id);
+    for (const optionId of a.placeOptions ?? []) assert.ok(ids.includes(optionId), `${a.id}: ${optionId}`);
+  }
   for (const p of trip.places) {
     const target = destination(p, trip.places);
     assert.ok(mapLinks(target), p.id);
