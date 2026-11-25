@@ -343,25 +343,25 @@
       "date": "2026-11-25",
       "weekday": "星期三",
       "title": "山口漫步 · 小镇 · Phoenix",
-      "subtitle": "徒步后午餐，再逛 Uptown 与艺术村，顺着 SR-179 南下",
+      "subtitle": "09:45 前离开小屋，搭 10:20 接驳；午餐后逛小镇与艺术村，再南下 Phoenix",
       "image": "soldier-pass.jpg",
       "summary": "Soldier Pass → 午餐（Wildflower / 蓝色麦当劳）→ Uptown → Tlaquepaque → Phoenix",
       "activities": [
         {
           "id": "pack4",
-          "time": "07:30",
+          "time": "08:15",
           "title": "早餐、整理行李",
-          "description": "计划 07:30–08:30，所有行李装车。",
+          "description": "计划 08:15–09:15 早餐、整理行李，随后完成装车与退房检查。",
           "placeId": "airbnb",
-          "endTime": "08:30",
+          "endTime": "09:15",
           "status": "planned",
           "notes": []
         },
         {
           "id": "checkout4",
-          "time": "09:00",
-          "title": "小屋退房",
-          "description": "10:00 前必须退房，建议 09:00 左右离开。",
+          "time": "09:40",
+          "title": "小屋退房 · 09:45 前离开",
+          "description": "目标 09:40 从小屋出发，最晚 09:45 离开；房源要求 10:00 前退房。",
           "placeId": "airbnb",
           "status": "planned",
           "notes": [
@@ -370,14 +370,14 @@
         },
         {
           "id": "park4",
-          "time": "09:10",
-          "title": "前往 Soldier Pass 接驳停车场",
-          "description": "到 Posse Grounds Park & Ride（20 Carruth Dr），停车后排队乘 09:30 的 Route 14。",
+          "time": "10:00",
+          "title": "到达 Soldier Pass 接驳停车场",
+          "description": "目标 10:00 左右到 Posse Grounds Park & Ride（20 Carruth Dr），停车后排队搭 10:20 的 Route 14。",
           "placeId": "posse-park",
           "status": "planned",
           "notes": [
-            "目标 09:15 左右到停车场，预留候车；11/25 周三有感恩节扩展运营。",
-            "停车和固定线路接驳车免费，无须预约；当天候车与满员情况现场确认。"
+            "从小屋开车与停车为计划估算；预留约 20 分钟候车，不保证空位或当班有座。",
+            "11/25 周三有感恩节扩展运营；停车和固定线路接驳免费，无须预约。"
           ],
           "condition": {
             "group": "hike4",
@@ -386,15 +386,16 @@
         },
         {
           "id": "shuttle4",
-          "time": "09:30",
+          "time": "10:20",
           "title": "Route 14 · 前往 Soldier Pass",
-          "description": "09:30 从 Posse Grounds Park & Ride 发车，09:38 到 Soldier Pass Trailhead。",
+          "description": "10:20 从 Posse Grounds Park & Ride 发车，10:28 到 Soldier Pass Trailhead。",
           "placeId": "posse-park",
           "status": "planned",
           "notes": [
-            "此路线班次较疏；如果未能上车，下一班 10:20 发车、10:28 到达，徒步与午餐需相应调整。"
+            "若错过或满员，下一班 11:10 发车、11:18 到达；徒步与午餐顺延，优先取消 Uptown 停留。",
+            "班次核对于 2026/11/24；当天变化以运营方及现场为准。"
           ],
-          "endTime": "09:38",
+          "endTime": "10:28",
           "duration": "约 8 分钟",
           "condition": {
             "group": "hike4",
@@ -403,44 +404,46 @@
         },
         {
           "id": "soldier4",
-          "time": "09:45",
+          "time": "10:35",
           "title": "首选 · Soldier Pass",
-          "description": "09:38 接驳车到步道口，09:45 左右开始走 Devil’s Kitchen 与 Seven Sacred Pools 短线，计划 11:45 回到步道口附近。",
+          "description": "10:28 接驳车到步道口，目标 10:35 开始 Devil’s Kitchen 与 Seven Sacred Pools 短线，12:35 左右回到步道口附近。",
           "placeId": "soldier",
-          "endTime": "11:45",
+          "endTime": "12:35",
           "duration": "徒步与拍照约 2 小时",
           "status": "preferred",
           "notes": [
-            "不走完整长线、不把非正式洞穴支线作为必达点；预留时间排队搭 12:08 回程车。"
+            "不走完整长线，不把非正式洞穴支线作为必达点；预留排队时间搭 12:58 回程车。"
           ],
           "optionGroup": "hike4",
           "option": "A"
         },
         {
           "id": "doe4",
-          "time": "09:45",
+          "time": "10:35",
           "title": "备选 · Doe Mountain",
           "description": "Soldier Pass 关闭、接驳满员或停车不便时替换。",
           "placeId": "doe",
-          "endTime": "12:00",
-          "duration": "1.5–2.5 小时",
+          "endTime": "12:35",
+          "duration": "计划约 2 小时，按体力缩短",
           "status": "alternative",
-          "notes": [],
+          "notes": [
+            "若在 Posse Grounds 候车后才临时切换本方案，起步与午餐需按实际车程顺延。"
+          ],
           "optionGroup": "hike4",
           "option": "B"
         },
         {
           "id": "return4",
-          "time": "12:08",
+          "time": "12:58",
           "title": "Route 14 回程 · 回停车场",
-          "description": "12:08 从 Soldier Pass Trailhead 发车，12:16 回 Posse Grounds Park & Ride 取车，再去午餐。",
+          "description": "12:58 从 Soldier Pass Trailhead 发车，13:06 回 Posse Grounds Park & Ride 取车，再去午餐。",
           "placeId": "posse-park",
           "status": "planned",
           "notes": [
-            "下一班为 12:58 发车、13:06 到停车场；错过 12:08 时午餐顺延，缩短 Uptown 停留。",
-            "计划 11:45 完成短线，预留走回站点及排队时间。"
+            "下一班 13:48 发车、13:56 到停车场；若错过，午餐顺延并优先跳过 Uptown，给艺术村留时间。",
+            "目标 12:35 结束短线，预留走回站点与排队时间。"
           ],
-          "endTime": "12:16",
+          "endTime": "13:06",
           "condition": {
             "group": "hike4",
             "option": "A"
@@ -448,11 +451,11 @@
         },
         {
           "id": "lunch4",
-          "time": "12:30",
+          "time": "13:20",
           "title": "Wildflower 午餐",
           "description": "推荐 Pinon Pointe 店：换成三明治、汤与沙拉等轻松午餐。餐厅在 Uptown 南端，吃完接着逛 Uptown，再去艺术村。",
           "placeId": "wildflower",
-          "duration": "计划约 75 分钟",
+          "duration": "计划约 1 小时",
           "status": "preferred",
           "notes": [
             "地址：101 Arizona 89A, Sedona, AZ 86336。",
@@ -460,14 +463,14 @@
             "六人用餐与停车均预留时间；停车按商场现场指示，不保证到达即有位。",
             "下午顺序：午餐 → Uptown → Tlaquepaque → SR-179 / I-17 → Phoenix。"
           ],
-          "endTime": "13:45",
+          "endTime": "14:20",
           "optionGroup": "lunch4",
           "option": "A"
         },
         {
           "id": "lunch4b",
-          "time": "12:30",
-          "endTime": "13:45",
+          "time": "13:20",
+          "endTime": "14:20",
           "title": "蓝色麦当劳 午餐备选",
           "placeId": "blue-mcdonalds",
           "description": "如果想吃得简单、顺便看蓝绿色拱门，就改去 West Sedona 的 McDonald’s；吃完向东去 Uptown，再向南去艺术村。",
@@ -483,25 +486,25 @@
         },
         {
           "id": "uptown4",
-          "time": "14:00",
+          "time": "14:30",
           "title": "Uptown Sedona · 小镇逛街",
           "description": "午餐后先逛 Uptown，买纪念品、咖啡或冰激凌，再向南去 Tlaquepaque。",
           "placeId": "uptown",
-          "duration": "计划约 45 分钟",
+          "duration": "计划约 30 分钟",
           "status": "planned",
           "notes": [
-            "如午餐或交通延误，可缩短这一站，给艺术村保留时间。"
+            "若午餐或交通延误，优先缩短或跳过这一站，保留艺术村及南下 Phoenix 的时间。"
           ],
-          "endTime": "14:45"
+          "endTime": "15:00"
         },
         {
           "id": "village4",
-          "time": "15:00",
+          "time": "15:15",
           "title": "Tlaquepaque · 庭院与画廊",
           "description": "作为离开 Sedona 前的最后一站，慢逛庭院、画廊和商店；结束后顺着 SR-179 向南出城。",
           "placeId": "tlaquepaque",
           "endTime": "16:15",
-          "duration": "计划约 75 分钟",
+          "duration": "计划约 1 小时",
           "status": "planned",
           "notes": [
             "艺术村周三常规 10:00–17:00；11/25 是感恩节前一天，具体营业以店家当天为准。",
@@ -1003,10 +1006,10 @@
       "description": "停车后乘 Route 14 前往 Soldier Pass。",
       "notes": [
         "11/25 周三有感恩节扩展运营，停车与固定线路接驳免费，无须预约。",
-        "计划 Route 14 去程 09:30 → 09:38；下一班 10:20 → 10:28。",
-        "计划回程 12:08 → 12:16；下一班 12:58 → 13:06，错过后午餐需顺延。",
-        "路线有每日 300 人接送上限，预留排队；临时变化及末班以运营方当天通知为准。",
-        "班次核对：2026/11/22。"
+        "目标 10:00 到停车场；Route 14 去程 10:20 → 10:28，下一班 11:10 → 11:18。",
+        "计划回程 12:58 → 13:06，下一班 13:48 → 13:56；错过时午餐顺延，优先取消 Uptown 停留。",
+        "路线有每日 300 人接送上限；班次、空位及排队情况以运营方当天通知为准。",
+        "班次核对：2026/11/24。"
       ],
       "verificationStatus": "needs_verification",
       "officialUrl": "https://sedonashuttle.com/routes/route-14/"
@@ -1033,7 +1036,7 @@
         "elevation": "短线待核实；全线 641 ft",
         "difficulty": "短线中等",
         "route": "Trailhead → Devil’s Kitchen → Seven Sacred Pools，视体力折返。",
-        "shuttle": "Route 14；开车到 Posse Grounds Park & Ride，20 Carruth Dr。11/25 计划去程 09:30–09:38，回程 12:08–12:16；下一班回程 12:58–13:06。"
+        "shuttle": "Route 14；开车到 Posse Grounds Park & Ride，20 Carruth Dr。11/25 计划去程 10:20–10:28、回程 12:58–13:06；下一班回程 13:48–13:56。"
       },
       "image": "soldier-pass.jpg",
       "photoCredit": {
@@ -1153,7 +1156,7 @@
       "address": "101 Arizona 89A, Sedona, AZ 86336",
       "description": "Uptown 南端 Pinon Pointe 商场内的轻松午餐选择，提供三明治、汤、沙拉与烘焙食品；适合午餐后接着逛 Uptown。",
       "notes": [
-        "11/25 计划 12:30–13:45 午餐，与蓝色麦当劳二选一。",
+        "11/25 计划 13:20–14:20 午餐，与蓝色麦当劳二选一。",
         "官网提供堂食及自取；六人出行预留点餐、等位及停车时间。",
         "地址与常规营业时间核对于 2026/11/24；节假日临时调整以店家当天为准。"
       ],
@@ -1171,7 +1174,7 @@
       "address": "2380 W State Route 89A, Sedona, AZ 86336",
       "description": "West Sedona 蓝绿色拱门麦当劳，作为周三午餐备选，适合简单用餐和外观打卡。",
       "notes": [
-        "11/25 与 Wildflower 共用 12:30 午餐时段，只选一家。",
+        "11/25 与 Wildflower 共用 13:20 午餐时段，只选一家。",
         "城市旅游官网列出此店地址及蓝绿色拱门；营业时间、餐厅或 Drive-thru 的实际服务以门店当天为准。",
         "用餐后向东去 Uptown，再向南去 Tlaquepaque；此店不在艺术村。"
       ],
