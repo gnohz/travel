@@ -2,7 +2,7 @@
   "title": "Sedona 2026｜感恩节红岩之旅",
   "dates": "2026.11.22—11.26",
   "party": "两个家庭 · 4 位成人 · 2 位约七岁儿童",
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "days": [
     {
       "date": "2026-11-22",
@@ -266,7 +266,7 @@
       "title": "Boynton Canyon · 峡谷慢行",
       "subtitle": "08:30 出发，一天专心走一条步道",
       "image": "boynton-canyon.jpg",
-      "summary": "Boynton Canyon · 自带野餐 · 下午按体力休息",
+      "summary": "Boynton Canyon · Vespa 意大利午餐 · 下午按体力休息",
       "activities": [
         {
           "id": "leave3",
@@ -275,8 +275,8 @@
           "description": "08:30 从小屋出发，预计 09:00 左右到 Boynton Canyon Trailhead 停车场；车程为计划估算，按实际交通调整。",
           "status": "planned",
           "notes": [
-            "今天以 Boynton Canyon 为唯一徒步计划，提前准备 Picnic Lunch。",
-            "直接导航到 Boynton Canyon Trailhead 停车场，不使用 Cathedral Rock 的接驳停车场。"
+            "今天以 Boynton Canyon 为唯一徒步计划；午餐实际改为 Vespa 意大利餐厅。",
+            "直接导航到 Boynton Canyon Trailhead 停车场。"
           ],
           "placeId": "boynton"
         },
@@ -298,10 +298,8 @@
           "id": "boynton3",
           "time": "09:15",
           "title": "Boynton Canyon · 主步道徒步",
-          "description": "顺利停车时目标 09:15 开始，含途中野餐预留至 14:00 左右。若找位延误则推迟起步、缩短路线；以峡谷主步道为主，按儿童体力折返，Subway Cave 仅作视情况考虑的支线。",
+          "description": "以 Boynton Canyon 主步道为主，按儿童体力折返；Subway Cave 仅作视情况考虑的支线。午餐已改为 Vespa 餐厅，实际徒步结束时间未记录。",
           "placeId": "boynton",
-          "endTime": "14:00",
-          "duration": "含野餐计划约 4 小时 45 分钟，可缩短",
           "status": "planned",
           "notes": [
             "官方完整主线为 6 miles 往返，不以走完全程为目标；带孩子按体力及时折返。",
@@ -311,13 +309,12 @@
         {
           "id": "picnic3",
           "time": "12:00",
-          "title": "步道野餐",
-          "description": "在 Boynton Canyon 徒步途中找合适地点休息，自带三明治、水果、零食和饮水；时间随徒步进度。",
-          "duration": "约 30 分钟",
-          "status": "planned",
-          "notes": [
-            "带走所有垃圾；不要喂野生动物。"
-          ]
+          "title": "Vespa · 意大利午餐（实际用餐）",
+          "description": "11/24 中午实际在 Vespa Healthy Italian Café 用餐，替换原定步道野餐；具体到店时间未记录。",
+          "status": "confirmed",
+          "notes": [],
+          "timeLabel": "中午",
+          "placeId": "vespa"
         },
         {
           "id": "chapel3",
@@ -346,9 +343,9 @@
       "date": "2026-11-25",
       "weekday": "星期三",
       "title": "山口漫步 · 小镇 · Phoenix",
-      "subtitle": "先在 West Sedona 午餐，再逛小镇与艺术村，顺着 SR-179 南下",
+      "subtitle": "徒步后午餐，再逛 Uptown 与艺术村，顺着 SR-179 南下",
       "image": "soldier-pass.jpg",
-      "summary": "Soldier Pass → Vespa → Uptown → Tlaquepaque → Phoenix",
+      "summary": "Soldier Pass → 午餐（Wildflower / 蓝色麦当劳）→ Uptown → Tlaquepaque → Phoenix",
       "activities": [
         {
           "id": "pack4",
@@ -436,7 +433,7 @@
           "id": "return4",
           "time": "12:08",
           "title": "Route 14 回程 · 回停车场",
-          "description": "12:08 从 Soldier Pass Trailhead 发车，12:16 回 Posse Grounds Park & Ride 取车，再去 Vespa。",
+          "description": "12:08 从 Soldier Pass Trailhead 发车，12:16 回 Posse Grounds Park & Ride 取车，再去午餐。",
           "placeId": "posse-park",
           "status": "planned",
           "notes": [
@@ -452,17 +449,37 @@
         {
           "id": "lunch4",
           "time": "12:30",
-          "title": "Vespa · 意大利午餐",
-          "description": "从接驳停车场取车后，先去 West Sedona 的 Vespa 午餐；六人用餐预留候位与上菜时间。",
-          "placeId": "vespa",
+          "title": "Wildflower 午餐",
+          "description": "推荐 Pinon Pointe 店：换成三明治、汤与沙拉等轻松午餐。餐厅在 Uptown 南端，吃完接着逛 Uptown，再去艺术村。",
+          "placeId": "wildflower",
           "duration": "计划约 75 分钟",
-          "status": "planned",
+          "status": "preferred",
           "notes": [
-            "地址：1350 W State Route 89A, Suite 22, Sedona, AZ 86336。",
-            "官网周三常规 11:00–21:00，不接受预约、现场入座；午晚餐之间不休息。",
-            "下午顺序：Vespa → Uptown → Tlaquepaque，艺术村放最后，逛完顺着 SR-179 接 I-17 去 Phoenix。"
+            "地址：101 Arizona 89A, Sedona, AZ 86336。",
+            "官网常规每日 08:00–20:00；11/26 感恩节关闭，11/25 按常规时间规划。",
+            "六人用餐与停车均预留时间；停车按商场现场指示，不保证到达即有位。",
+            "下午顺序：午餐 → Uptown → Tlaquepaque → SR-179 / I-17 → Phoenix。"
           ],
-          "endTime": "13:45"
+          "endTime": "13:45",
+          "optionGroup": "lunch4",
+          "option": "A"
+        },
+        {
+          "id": "lunch4b",
+          "time": "12:30",
+          "endTime": "13:45",
+          "title": "蓝色麦当劳 午餐备选",
+          "placeId": "blue-mcdonalds",
+          "description": "如果想吃得简单、顺便看蓝绿色拱门，就改去 West Sedona 的 McDonald’s；吃完向东去 Uptown，再向南去艺术村。",
+          "duration": "与首选共用午餐时段，实际可缩短",
+          "status": "alternative",
+          "optionGroup": "lunch4",
+          "option": "B",
+          "notes": [
+            "地址：2380 W State Route 89A, Sedona, AZ 86336。",
+            "这是替代 Wildflower 的午餐方案，只选一家；不是两顿午餐。",
+            "在 West Sedona，需开车到 Uptown；交通和候餐时间按当天情况调整。"
+          ]
         },
         {
           "id": "uptown4",
@@ -798,18 +815,18 @@
     {
       "id": "vespa",
       "name": "Vespa Healthy Italian Café",
-      "chineseName": "Vespa · 周三意大利午餐",
+      "chineseName": "Vespa · 意大利餐厅",
       "category": "restaurant",
       "address": "1350 W State Route 89A, Suite 22, Sedona, AZ 86336",
-      "description": "West Sedona 的意大利餐厅，供应 Roman Pinsa、意大利热食与沙拉。周三徒步后先在这里午餐，再去 Uptown 和艺术村。",
+      "description": "West Sedona 的意大利餐厅，供应 Roman Pinsa、意大利热食与沙拉；11/24 中午已实际用餐。",
       "notes": [
-        "11/25 计划 12:30–13:45 用餐；地点在 West Sedona，不在 Tlaquepaque 艺术村内。",
+        "11/24 中午实际在此用餐；具体到店时间未记录。地点在 West Sedona，不在 Tlaquepaque 艺术村内。",
         "官网不接受预约，现场入座；六人用餐预留候位及上菜时间。",
         "午晚餐之间不休息；广场停车位免费，按现场标示停车。",
         "地址、周三常规营业时间和预约政策核对于 2026/11/22；节假日临时调整以店家当天通知为准。"
       ],
       "verificationStatus": "needs_verification",
-      "openingHours": "周三常规 11:00–21:00；午晚餐之间不休息",
+      "openingHours": "常规周二、周三 11:00–21:00；午晚餐之间不休息",
       "parkingNotes": "餐厅所在广场的停车场，按现场标示停车。",
       "officialUrl": "https://vespaitaliancafe.com/",
       "officialLinkLabel": "Vespa 餐厅官网"
@@ -886,12 +903,12 @@
       "chineseName": "博因顿峡谷 · 主步道徒步",
       "category": "hiking",
       "address": null,
-      "description": "11/24 唯一徒步计划：以 Boynton Canyon 主步道欣赏峡谷，带上野餐，按体力折返。",
+      "description": "11/24 徒步计划以 Boynton Canyon 主步道为主，按体力折返；午餐实际改为 Vespa 餐厅。",
       "notes": [
         "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
         "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
-        "自带三明治、水果、零食和充足饮水。",
-        "11/24 计划 08:30 从小屋出发、09:00 到停车场、顺利停车时目标 09:15–14:00 徒步与野餐；不追加 Devil’s Bridge。"
+        "随身带零食和充足饮水；午餐实际在 Vespa 餐厅用餐。",
+        "11/24 原计划 08:30 出发、09:00 到停车场；午餐已由步道野餐改为 Vespa，实际徒步结束时间未记录。"
       ],
       "verificationStatus": "needs_verification",
       "navigationId": "boynton-parking",
@@ -899,7 +916,7 @@
       "officialUrl": "https://www.fs.usda.gov/r03/coconino/recreation/trails/boynton-canyon-trail-no-47",
       "trail": {
         "distance": "主线 6 miles 往返；支线另计",
-        "duration": "含野餐计划约 4–5 小时，视体力缩短",
+        "duration": "家庭预留约 4–5 小时，视体力缩短",
         "elevation": "官方主线 931 ft",
         "difficulty": "中等；洞穴段风险更高",
         "route": "Boynton Canyon 官方主线；Subway Cave 不是必须完成项。"
@@ -1127,6 +1144,42 @@
       ],
       "verificationStatus": "confirmed",
       "officialUrl": "https://www.hilton.com/en/hotels/phxfvdt-doubletree-suites-phoenix/"
+    },
+    {
+      "id": "wildflower",
+      "name": "Wildflower · Sedona / Pinon Pointe",
+      "chineseName": "Wildflower · 周三午餐首选",
+      "category": "restaurant",
+      "address": "101 Arizona 89A, Sedona, AZ 86336",
+      "description": "Uptown 南端 Pinon Pointe 商场内的轻松午餐选择，提供三明治、汤、沙拉与烘焙食品；适合午餐后接着逛 Uptown。",
+      "notes": [
+        "11/25 计划 12:30–13:45 午餐，与蓝色麦当劳二选一。",
+        "官网提供堂食及自取；六人出行预留点餐、等位及停车时间。",
+        "地址与常规营业时间核对于 2026/11/24；节假日临时调整以店家当天为准。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "常规每日 08:00–20:00；11/26 感恩节关闭",
+      "parkingNotes": "按 The Shops at Pinon Pointe 商场现场停车指示停车；停车收费及空位以现场为准。",
+      "officialUrl": "https://wildflowerbread.com/location/the-shops-at-pinon-pointe/",
+      "officialLinkLabel": "Wildflower 门店官网"
+    },
+    {
+      "id": "blue-mcdonalds",
+      "name": "McDonald’s · 蓝色麦当劳",
+      "chineseName": "蓝色麦当劳 · 午餐备选",
+      "category": "restaurant",
+      "address": "2380 W State Route 89A, Sedona, AZ 86336",
+      "description": "West Sedona 蓝绿色拱门麦当劳，作为周三午餐备选，适合简单用餐和外观打卡。",
+      "notes": [
+        "11/25 与 Wildflower 共用 12:30 午餐时段，只选一家。",
+        "城市旅游官网列出此店地址及蓝绿色拱门；营业时间、餐厅或 Drive-thru 的实际服务以门店当天为准。",
+        "用餐后向东去 Uptown，再向南去 Tlaquepaque；此店不在艺术村。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "城市旅游官网列常规 05:30–23:00；当天及节假日安排以门店为准",
+      "parkingNotes": "按餐厅现场指示停车，不保证空位。",
+      "officialUrl": "https://www.scenicsedona.com/mcdonald-s/",
+      "officialLinkLabel": "城市旅游官网 · 蓝色麦当劳"
     }
   ],
   "flights": [
@@ -1233,6 +1286,14 @@
     {
       "title": "Vespa · 餐厅地址、营业时间与入座政策",
       "url": "https://vespaitaliancafe.com/"
+    },
+    {
+      "title": "Wildflower · Sedona 门店与营业时间",
+      "url": "https://wildflowerbread.com/location/the-shops-at-pinon-pointe/"
+    },
+    {
+      "title": "城市旅游官网 · 蓝色麦当劳",
+      "url": "https://www.scenicsedona.com/mcdonald-s/"
     }
   ]
 }

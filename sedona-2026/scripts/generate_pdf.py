@@ -42,10 +42,10 @@ def location(place):
     para('车辆目的地：' + target['name'], 'small')
     if address(target): para(address(target), 'small')
     if target.get('parkingNotes'): para('停车：' + target['parkingNotes'], 'small')
-    if target['id'] == 'vespa':
+    if target['id'] in ['vespa', 'wildflower', 'blue-mcdonalds']:
         query = quote(address(target), safe='')
-        link('Apple Maps 导航到 Vespa', f'https://maps.apple.com/?daddr={query}&dirflg=d')
-        link('Google Maps 导航到 Vespa', f'https://www.google.com/maps/dir/?api=1&destination={query}&travelmode=driving')
+        link('Apple Maps 导航到 ' + target['name'], f'https://maps.apple.com/?daddr={query}&dirflg=d')
+        link('Google Maps 导航到 ' + target['name'], f'https://www.google.com/maps/dir/?api=1&destination={query}&travelmode=driving')
 def newpage(): story.append(PageBreak())
 def chapter(text, label, key):
     heading = Paragraph(escape(text), styles['h1'])
@@ -69,8 +69,6 @@ def activity_details(activity, seen_places):
         if place_id not in seen_places:
             location(places[place_id])
             seen_places.add(place_id)
-        else:
-            para('地点：' + places[place_id]['name'] + '（地址见本日首项及地点汇总）', 'small')
     for note in activity['notes']: para('注意：' + note, 'small')
 
 para('SEDONA 2026', 'title')
@@ -98,7 +96,7 @@ for index, day in enumerate(data['days']):
             if group in emitted_groups: continue
             emitted_groups.add(group)
             group_title = '午餐（二选一）' if group.startswith('lunch') else '徒步方案（二选一）'
-            para(f"{a['time']} {zone} | {group_title}", 'h2')
+            para(f"{a.get('timeLabel', a['time'])} {zone} | {group_title}", 'h2')
             options = [option for option in day['activities'] if option.get('optionGroup') == group]
             for option in sorted(options, key=lambda item: item['option']):
                 label = '首选' if option['option'] == 'A' else '备选'
@@ -107,7 +105,7 @@ for index, day in enumerate(data['days']):
                 activity_details(option, seen_places)
             continue
         suffix = ' [用户已确认]' if a['status'] == 'confirmed' else ''
-        para(f"{a['time']} {zone} | {a['title']}{suffix}", 'h2')
+        para(f"{a.get('timeLabel', a['time'])} {zone} | {a['title']}{suffix}", 'h2')
         activity_details(a, seen_places)
 newpage()
 chapter('航班、住宿与租车', '航班、住宿与租车', 'bookings')
