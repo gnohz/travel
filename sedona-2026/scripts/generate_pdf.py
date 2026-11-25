@@ -42,7 +42,7 @@ def location(place):
     para('车辆目的地：' + target['name'], 'small')
     if address(target): para(address(target), 'small')
     if target.get('parkingNotes'): para('停车：' + target['parkingNotes'], 'small')
-    if target['id'] in ['vespa', 'wildflower', 'blue-mcdonalds']:
+    if target['id'] in ['vespa', 'wildflower', 'blue-mcdonalds', 'hideaway', 'civic-parking', 'sugar-bowl']:
         query = quote(address(target), safe='')
         link('Apple Maps 导航到 ' + target['name'], f'https://maps.apple.com/?daddr={query}&dirflg=d')
         link('Google Maps 导航到 ' + target['name'], f'https://www.google.com/maps/dir/?api=1&destination={query}&travelmode=driving')
@@ -86,7 +86,7 @@ for index, day in enumerate(data['days']):
     para(f"DAY {index+1} | {day['date'][5:].replace('-', '/')} {day['weekday']}", 'small')
     chapter(day['title'], f"Day {index+1} · {day['date'][5:].replace('-', '/')} · {day['title']}", f'day-{index+1}')
     para(day['subtitle'])
-    para('以下时间为计划；备选活动会特别标注。', 'small')
+    para('未标为已确认的内容为计划；备选只选其一。', 'small')
     seen_places = set()
     emitted_groups = set()
     for a in day['activities']:

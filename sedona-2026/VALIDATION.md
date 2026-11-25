@@ -1,10 +1,10 @@
-# 验收记录 · 更新于 2026-11-24
+# 验收记录 · 更新于 2026-11-25
 
 ## 构建与类型检查
 
 - `npm test`：13 项通过，无失败（包含照片文件与署名完整性检查）。
 - `npm run build`：TypeScript 检查、中文 PDF、Vite 生产构建和 Travel 总站组装成功。
-- 内容：5 天、45 项活动、30 个地点；同一 JSON 同时驱动网页和 PDF。
+- 内容：5 天、43 项活动、36 个地点；同一 JSON 同时驱动网页和 PDF。
 - 发布路径固定 `/travel/sedona-2026/`；Travel 首页位于 `/travel/`。
 
 ## 浏览器页面与移动布局
@@ -28,7 +28,7 @@
 
 ## 中文 PDF
 
-- 生成完整 29 页 PDF，约 186 KB，内嵌中文字体。
+- 生成完整 30 页 PDF，约 197 KB，内嵌中文字体。
 - Poppler 渲染检查中文和排版；全文提取确认航班、住宿、停车场、各条路线及注意事项存在。
 - Tailscale HTTPS PDF 端点返回 200、`application/pdf`。
 - 浏览器自动下载事件等待超时，未将该流程记为通过；文件与服务端响应已独立检查。
@@ -114,3 +114,12 @@
 - 两个午餐方案统一为 13:20–14:20；Uptown 14:30–15:00、艺术村 15:15–16:15，仍计划 16:15 出发去 Phoenix。
 - 停车场及徒步详情中的班次、餐厅详情的午餐时间同步；Doe 备选也调整，A/B 方案均按时间排序。
 - 13 项测试及生产构建通过；29 页 PDF 的目录及周三四页已渲染检查，午餐仅有一个时间标题。
+
+## 11/25 实际路线与 Old Town 傍晚安排 · 2026-11-25
+
+- 按用户回忆记录：十点多蓝色麦当劳 → Tlaquepaque 主区 → Hideaway House 午餐 → Tlaquepaque North → 约 14:00 离开 Sedona → 约 16:00 到酒店。
+- 从当天移除未进行的 Soldier Pass、Doe、Wildflower 及 Uptown 计划；实际时间不详的条目显示顺序或时段，不补猜分钟。
+- 新增 Old Town Scottsdale 建议：Civic Center Library Garage（3737 N Drinkwater）停车 → Civic Center LOVE → Main/Brown 老街 → Sugar Bowl → 回酒店。
+- 已核对市府公共停车、Brown Avenue 扩建、Civic Center 公园、Sugar Bowl 官网及 Hideaway House 官网；市府列免费车库，现场限时和开放仍需遵守，没有实时余位数据。
+- 停车场、Hideaway 和 Sugar Bowl 的 PDF 导航可点击；以前保存的 A/B 选择不会隐藏当天实际路线。
+- 13 项测试、类型检查和生产构建通过；PDF 30 页、9 书签、18 个目录链接，目录、当天四页与新增地点汇总页已渲染检查，无近空白页。

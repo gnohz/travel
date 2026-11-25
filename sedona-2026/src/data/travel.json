@@ -2,7 +2,7 @@
   "title": "Sedona 2026｜感恩节红岩之旅",
   "dates": "2026.11.22—11.26",
   "party": "两个家庭 · 4 位成人 · 2 位约七岁儿童",
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "days": [
     {
       "date": "2026-11-22",
@@ -342,195 +342,141 @@
     {
       "date": "2026-11-25",
       "weekday": "星期三",
-      "title": "山口漫步 · 小镇 · Phoenix",
-      "subtitle": "09:45 前离开小屋，搭 10:20 接驳；午餐后逛小镇与艺术村，再南下 Phoenix",
+      "title": "Sedona 慢逛 · Scottsdale 夜游",
+      "subtitle": "白天实际路线已记录，傍晚按体力去 Old Town Scottsdale 散步",
       "image": "soldier-pass.jpg",
-      "summary": "Soldier Pass → 午餐（Wildflower / 蓝色麦当劳）→ Uptown → Tlaquepaque → Phoenix",
+      "summary": "蓝色麦当劳 → Tlaquepaque → Hideaway House → Tlaquepaque North → Phoenix 酒店 → Old Town",
       "activities": [
         {
-          "id": "pack4",
-          "time": "08:15",
-          "title": "早餐、整理行李",
-          "description": "计划 08:15–09:15 早餐、整理行李，随后完成装车与退房检查。",
-          "placeId": "airbnb",
-          "endTime": "09:15",
-          "status": "planned",
+          "id": "mcd-actual4",
+          "time": "10:30",
+          "timeLabel": "十点多",
+          "title": "蓝色麦当劳 · 实际到访",
+          "placeId": "blue-mcdonalds",
+          "description": "早上未赶上 Soldier Pass 班车，随后先去了蓝色麦当劳；用户回忆为十点多，未记录准确时间。",
+          "status": "confirmed",
           "notes": []
         },
         {
-          "id": "checkout4",
-          "time": "09:40",
-          "title": "小屋退房 · 09:45 前离开",
-          "description": "目标 09:40 从小屋出发，最晚 09:45 离开；房源要求 10:00 前退房。",
-          "placeId": "airbnb",
-          "status": "planned",
-          "notes": [
-            "车内有全部行李，贵重物品随身带；不要留在可见处。"
-          ]
-        },
-        {
-          "id": "park4",
-          "time": "10:00",
-          "title": "到达 Soldier Pass 接驳停车场",
-          "description": "目标 10:00 左右到 Posse Grounds Park & Ride（20 Carruth Dr），停车后排队搭 10:20 的 Route 14。",
-          "placeId": "posse-park",
-          "status": "planned",
-          "notes": [
-            "从小屋开车与停车为计划估算；预留约 20 分钟候车，不保证空位或当班有座。",
-            "11/25 周三有感恩节扩展运营；停车和固定线路接驳免费，无须预约。"
-          ],
-          "condition": {
-            "group": "hike4",
-            "option": "A"
-          }
-        },
-        {
-          "id": "shuttle4",
-          "time": "10:20",
-          "title": "Route 14 · 前往 Soldier Pass",
-          "description": "10:20 从 Posse Grounds Park & Ride 发车，10:28 到 Soldier Pass Trailhead。",
-          "placeId": "posse-park",
-          "status": "planned",
-          "notes": [
-            "若错过或满员，下一班 11:10 发车、11:18 到达；徒步与午餐顺延，优先取消 Uptown 停留。",
-            "班次核对于 2026/11/24；当天变化以运营方及现场为准。"
-          ],
-          "endTime": "10:28",
-          "duration": "约 8 分钟",
-          "condition": {
-            "group": "hike4",
-            "option": "A"
-          }
-        },
-        {
-          "id": "soldier4",
-          "time": "10:35",
-          "title": "首选 · Soldier Pass",
-          "description": "10:28 接驳车到步道口，目标 10:35 开始 Devil’s Kitchen 与 Seven Sacred Pools 短线，12:35 左右回到步道口附近。",
-          "placeId": "soldier",
-          "endTime": "12:35",
-          "duration": "徒步与拍照约 2 小时",
-          "status": "preferred",
-          "notes": [
-            "不走完整长线，不把非正式洞穴支线作为必达点；预留排队时间搭 12:58 回程车。"
-          ],
-          "optionGroup": "hike4",
-          "option": "A"
-        },
-        {
-          "id": "doe4",
-          "time": "10:35",
-          "title": "备选 · Doe Mountain",
-          "description": "Soldier Pass 关闭、接驳满员或停车不便时替换。",
-          "placeId": "doe",
-          "endTime": "12:35",
-          "duration": "计划约 2 小时，按体力缩短",
-          "status": "alternative",
-          "notes": [
-            "若在 Posse Grounds 候车后才临时切换本方案，起步与午餐需按实际车程顺延。"
-          ],
-          "optionGroup": "hike4",
-          "option": "B"
-        },
-        {
-          "id": "return4",
-          "time": "12:58",
-          "title": "Route 14 回程 · 回停车场",
-          "description": "12:58 从 Soldier Pass Trailhead 发车，13:06 回 Posse Grounds Park & Ride 取车，再去午餐。",
-          "placeId": "posse-park",
-          "status": "planned",
-          "notes": [
-            "下一班 13:48 发车、13:56 到停车场；若错过，午餐顺延并优先跳过 Uptown，给艺术村留时间。",
-            "目标 12:35 结束短线，预留走回站点与排队时间。"
-          ],
-          "endTime": "13:06",
-          "condition": {
-            "group": "hike4",
-            "option": "A"
-          }
-        },
-        {
-          "id": "lunch4",
-          "time": "13:20",
-          "title": "Wildflower 午餐",
-          "description": "推荐 Pinon Pointe 店：换成三明治、汤与沙拉等轻松午餐。餐厅在 Uptown 南端，吃完接着逛 Uptown，再去艺术村。",
-          "placeId": "wildflower",
-          "duration": "计划约 1 小时",
-          "status": "preferred",
-          "notes": [
-            "地址：101 Arizona 89A, Sedona, AZ 86336。",
-            "官网常规每日 08:00–20:00；11/26 感恩节关闭，11/25 按常规时间规划。",
-            "六人用餐与停车均预留时间；停车按商场现场指示，不保证到达即有位。",
-            "下午顺序：午餐 → Uptown → Tlaquepaque → SR-179 / I-17 → Phoenix。"
-          ],
-          "endTime": "14:20",
-          "optionGroup": "lunch4",
-          "option": "A"
-        },
-        {
-          "id": "lunch4b",
-          "time": "13:20",
-          "endTime": "14:20",
-          "title": "蓝色麦当劳 午餐备选",
-          "placeId": "blue-mcdonalds",
-          "description": "如果想吃得简单、顺便看蓝绿色拱门，就改去 West Sedona 的 McDonald’s；吃完向东去 Uptown，再向南去艺术村。",
-          "duration": "与首选共用午餐时段，实际可缩短",
-          "status": "alternative",
-          "optionGroup": "lunch4",
-          "option": "B",
-          "notes": [
-            "地址：2380 W State Route 89A, Sedona, AZ 86336。",
-            "这是替代 Wildflower 的午餐方案，只选一家；不是两顿午餐。",
-            "在 West Sedona，需开车到 Uptown；交通和候餐时间按当天情况调整。"
-          ]
-        },
-        {
-          "id": "uptown4",
-          "time": "14:30",
-          "title": "Uptown Sedona · 小镇逛街",
-          "description": "午餐后先逛 Uptown，买纪念品、咖啡或冰激凌，再向南去 Tlaquepaque。",
-          "placeId": "uptown",
-          "duration": "计划约 30 分钟",
-          "status": "planned",
-          "notes": [
-            "若午餐或交通延误，优先缩短或跳过这一站，保留艺术村及南下 Phoenix 的时间。"
-          ],
-          "endTime": "15:00"
-        },
-        {
-          "id": "village4",
-          "time": "15:15",
-          "title": "Tlaquepaque · 庭院与画廊",
-          "description": "作为离开 Sedona 前的最后一站，慢逛庭院、画廊和商店；结束后顺着 SR-179 向南出城。",
+          "id": "village-actual4",
+          "time": "11:00",
+          "timeLabel": "随后",
+          "title": "Tlaquepaque · 实际游逛",
           "placeId": "tlaquepaque",
-          "endTime": "16:15",
-          "duration": "计划约 1 小时",
-          "status": "planned",
-          "notes": [
-            "艺术村周三常规 10:00–17:00；11/25 是感恩节前一天，具体营业以店家当天为准。",
-            "艺术村结束后不再返回 Uptown 或 West Sedona；按导航经 SR-179、I-17 前往 Phoenix。"
-          ]
+          "description": "麦当劳之后游逛 Tlaquepaque Arts & Shopping Village；具体到达时间未记录。",
+          "status": "confirmed",
+          "notes": []
+        },
+        {
+          "id": "hideaway-actual4",
+          "time": "12:00",
+          "timeLabel": "中午",
+          "title": "Hideaway House · 实际午餐",
+          "placeId": "hideaway",
+          "description": "中午在 Hideaway House 用餐；具体到店与离店时间未记录。",
+          "status": "confirmed",
+          "notes": []
+        },
+        {
+          "id": "north-actual4",
+          "time": "13:00",
+          "timeLabel": "午餐后",
+          "title": "Tlaquepaque North · 实际游逛",
+          "placeId": "tlaquepaque-north",
+          "description": "午餐后又稍逛了 Tlaquepaque North，再离开 Sedona；具体停留时间未记录。",
+          "status": "confirmed",
+          "notes": []
         },
         {
           "id": "drive4",
-          "time": "16:15",
-          "title": "开往 Phoenix",
-          "description": "计划 16:15 左右从艺术村离开，经 SR-179 接 I-17 南下 Phoenix；预计 18:30–19:30 到酒店，实际以交通为准。",
+          "time": "14:00",
+          "timeLabel": "约 14:00",
+          "title": "离开 Sedona · 前往 Phoenix",
           "placeId": "doubletree",
-          "duration": "以当天交通为准",
-          "status": "planned",
-          "notes": [
-            "不为赶 16:00 入住而提前离开 Sedona。"
-          ]
+          "description": "用户回忆约 14:00 从 Sedona 出发，直接前往 Phoenix 的酒店。",
+          "status": "confirmed",
+          "notes": []
         },
         {
           "id": "hotel4",
-          "time": "19:00",
-          "title": "DoubleTree 入住与晚餐",
-          "description": "凤凰城住一晚；到达时间随交通调整。",
+          "time": "16:00",
+          "timeLabel": "约 16:00",
+          "title": "抵达 DoubleTree 酒店",
           "placeId": "doubletree",
-          "status": "planned",
+          "description": "用户回忆约 16:00 抵达酒店；休息后准备去 Old Town Scottsdale。",
+          "status": "confirmed",
           "notes": []
+        },
+        {
+          "id": "oldtown-park4",
+          "time": "17:00",
+          "timeLabel": "傍晚 · 建议",
+          "title": "前往 Old Town · 先停车",
+          "placeId": "civic-parking",
+          "description": "建议从酒店开车去 Civic Center Library Garage，停一次车步行逛老城。出发时间按你们休息进度安排。",
+          "duration": "车程预留约 25–40 分钟，属估算",
+          "status": "planned",
+          "notes": [
+            "导航：3737 N Drinkwater Blvd, Scottsdale, AZ 85251；从 Drinkwater Blvd 找公共车库入口。",
+            "市府列为免费公共停车，按现场限时与公共车位标示停车；没有实时余位保证。",
+            "Brown Avenue / 1st Street 停车结构正在扩建，今晚先避开。"
+          ]
+        },
+        {
+          "id": "civic-walk4",
+          "time": "17:45",
+          "timeLabel": "停车后",
+          "title": "Civic Center · LOVE 雕塑与草坪",
+          "placeId": "scottsdale-civic",
+          "description": "先在 Civic Center 看 LOVE 雕塑、草坪和公共艺术；适合孩子下车后活动一下。",
+          "duration": "建议约 20–30 分钟",
+          "status": "planned",
+          "notes": [
+            "公园官方开放至 22:30；Children’s Gardens 也在园区内，水景是否运行以现场为准。",
+            "今晚以户外散步为主，场馆与商店各自营业时间另看现场。"
+          ]
+        },
+        {
+          "id": "historic-walk4",
+          "time": "18:15",
+          "timeLabel": "随后",
+          "title": "Main Street / Brown Avenue · 老街",
+          "placeId": "oldtown-scottsdale",
+          "description": "从 Civic Center 向西走进 Main Street、Brown Avenue 一带，看西部风格街景、橱窗和纪念品。",
+          "duration": "建议约 30–45 分钟",
+          "status": "planned",
+          "notes": [
+            "商店营业时间各异，晚到也可看街景；按孩子体力随时缩短。",
+            "今晚是一条老城散步路线，停车后不用为每一站重新开车。"
+          ]
+        },
+        {
+          "id": "sugar-bowl4",
+          "time": "18:45",
+          "timeLabel": "晚餐／甜点 · 可选",
+          "title": "Sugar Bowl · 冰激凌与复古小店",
+          "placeId": "sugar-bowl",
+          "description": "在粉色复古店面休息，吃冰激凌、圣代或奶昔；若要正餐，可在厨房营业时间内点餐。",
+          "duration": "建议约 30–45 分钟",
+          "status": "planned",
+          "notes": [
+            "地址：4005 N Scottsdale Rd, Scottsdale, AZ 85251。",
+            "官网周三餐厅至 22:00、厨房至 20:00；感恩节前夕临时安排以门店为准。",
+            "吃完步行回车库；从停车到返回建议控制在约 2–3 小时，并以现场停车限时为准。"
+          ]
+        },
+        {
+          "id": "return-hotel4",
+          "time": "19:45",
+          "timeLabel": "逛完后",
+          "title": "回酒店休息",
+          "placeId": "doubletree",
+          "description": "取车后返回 DoubleTree；不追赶固定结束时间，按孩子体力安排。",
+          "duration": "车程按当时导航",
+          "status": "planned",
+          "notes": [
+            "明天有返程航班，今晚不用再加远处景点。"
+          ]
         }
       ]
     },
@@ -1005,11 +951,8 @@
       "address": "20 Carruth Dr, Sedona, AZ 86336",
       "description": "停车后乘 Route 14 前往 Soldier Pass。",
       "notes": [
-        "11/25 周三有感恩节扩展运营，停车与固定线路接驳免费，无须预约。",
-        "目标 10:00 到停车场；Route 14 去程 10:20 → 10:28，下一班 11:10 → 11:18。",
-        "计划回程 12:58 → 13:06，下一班 13:48 → 13:56；错过时午餐顺延，优先取消 Uptown 停留。",
-        "路线有每日 300 人接送上限；班次、空位及排队情况以运营方当天通知为准。",
-        "班次核对：2026/11/24。"
+        "11/25 原拟从此搭 Route 14；当天未赶上班车，实际未进行 Soldier Pass 徒步。",
+        "停车及固定线路接驳通常免费，无须预约；之后如需使用，请查官方当天班次及公告。"
       ],
       "verificationStatus": "needs_verification",
       "officialUrl": "https://sedonashuttle.com/routes/route-14/"
@@ -1022,6 +965,7 @@
       "address": null,
       "description": "Devil’s Kitchen Sinkhole 与 Seven Sacred Pools，轻量探索后折返。",
       "notes": [
+        "11/25 行程临时调整，实际未进行 Soldier Pass 徒步。",
         "到 Seven Sacred Pools 约 0.5 mile 单程；加入口连接、探索和等车。",
         "2–3 小时是家庭停留及接驳预算，并非全程徒步时长。",
         "不把非正式洞穴支线作为必走路线；入口无厕所和垃圾设施。",
@@ -1036,7 +980,7 @@
         "elevation": "短线待核实；全线 641 ft",
         "difficulty": "短线中等",
         "route": "Trailhead → Devil’s Kitchen → Seven Sacred Pools，视体力折返。",
-        "shuttle": "Route 14；开车到 Posse Grounds Park & Ride，20 Carruth Dr。11/25 计划去程 10:20–10:28、回程 12:58–13:06；下一班回程 13:48–13:56。"
+        "shuttle": "Route 14；开车到 Posse Grounds Park & Ride，20 Carruth Dr，班次以官网为准。11/25 未赶上班车，实际未走此路线。"
       },
       "image": "soldier-pass.jpg",
       "photoCredit": {
@@ -1100,6 +1044,7 @@
       "address": "336 AZ-179, Sedona, AZ 86336",
       "description": "西南风格庭院、画廊、商店与餐厅，停留约 1–1.5 小时。",
       "notes": [
+        "11/25 实际上午游逛主区，午餐后又到 North 区稍逛。",
         "11/25 周三计划可行；官方感恩节当天关闭。"
       ],
       "verificationStatus": "needs_verification",
@@ -1141,7 +1086,7 @@
       "chineseName": "Phoenix 住宿 · 一晚",
       "category": "hotel",
       "address": "320 North 44th St, Phoenix, AZ 85008",
-      "description": "11/25 晚住宿；傍晚或晚上抵达，不为入住时间提早离开 Sedona。",
+      "description": "11/25 晚住宿；用户回忆当天下午约 16:00 已抵达，傍晚准备前往 Old Town Scottsdale。",
       "notes": [
         "用户提供：11/25 16:00 后入住；11/26 11:00 前退房。"
       ],
@@ -1151,12 +1096,12 @@
     {
       "id": "wildflower",
       "name": "Wildflower · Sedona / Pinon Pointe",
-      "chineseName": "Wildflower · 周三午餐首选",
+      "chineseName": "Wildflower · 午餐参考",
       "category": "restaurant",
       "address": "101 Arizona 89A, Sedona, AZ 86336",
       "description": "Uptown 南端 Pinon Pointe 商场内的轻松午餐选择，提供三明治、汤、沙拉与烘焙食品；适合午餐后接着逛 Uptown。",
       "notes": [
-        "11/25 计划 13:20–14:20 午餐，与蓝色麦当劳二选一。",
+        "原为 11/25 午餐推荐；当天实际午餐改为 Hideaway House，未记录在此用餐。",
         "官网提供堂食及自取；六人出行预留点餐、等位及停车时间。",
         "地址与常规营业时间核对于 2026/11/24；节假日临时调整以店家当天为准。"
       ],
@@ -1169,20 +1114,111 @@
     {
       "id": "blue-mcdonalds",
       "name": "McDonald’s · 蓝色麦当劳",
-      "chineseName": "蓝色麦当劳 · 午餐备选",
+      "chineseName": "蓝色麦当劳 · 实际到访",
       "category": "restaurant",
       "address": "2380 W State Route 89A, Sedona, AZ 86336",
-      "description": "West Sedona 蓝绿色拱门麦当劳，作为周三午餐备选，适合简单用餐和外观打卡。",
+      "description": "West Sedona 蓝绿色拱门麦当劳；11/25 十点多实际到访。",
       "notes": [
-        "11/25 与 Wildflower 共用 13:20 午餐时段，只选一家。",
-        "城市旅游官网列出此店地址及蓝绿色拱门；营业时间、餐厅或 Drive-thru 的实际服务以门店当天为准。",
-        "用餐后向东去 Uptown，再向南去 Tlaquepaque；此店不在艺术村。"
+        "11/25 未赶上 Soldier Pass 班车后先到这里，用户回忆为十点多。",
+        "城市旅游官网列出此店地址及蓝绿色拱门；营业时间与服务以门店当天为准。"
       ],
       "verificationStatus": "needs_verification",
       "openingHours": "城市旅游官网列常规 05:30–23:00；当天及节假日安排以门店为准",
       "parkingNotes": "按餐厅现场指示停车，不保证空位。",
       "officialUrl": "https://www.scenicsedona.com/mcdonald-s/",
       "officialLinkLabel": "城市旅游官网 · 蓝色麦当劳"
+    },
+    {
+      "id": "hideaway",
+      "name": "Hideaway House",
+      "chineseName": "Hideaway House · 实际午餐",
+      "category": "restaurant",
+      "address": "231 Arizona 179, Sedona, AZ 86336",
+      "description": "11/25 实际午餐餐厅；意大利风味餐食，带庭院露台和红岩景观。",
+      "notes": [
+        "用户已确认当天在此午餐，具体到店时间未记录。",
+        "官网常规周日至周四 11:00–20:30；感恩节当天关闭。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "周日至周四 11:00–20:30；感恩节当天关闭",
+      "officialUrl": "https://sedonahideawayhouse.com/"
+    },
+    {
+      "id": "tlaquepaque-north",
+      "name": "Tlaquepaque North",
+      "chineseName": "Tlaquepaque North · 北区",
+      "category": "shopping",
+      "address": "Tlaquepaque North, Sedona, AZ 86336",
+      "description": "11/25 在 Hideaway House 午餐后实际稍逛的 Tlaquepaque 北区。",
+      "notes": [
+        "该条记录区分午餐前的主区和午餐后的 North 区；具体时间未记录。",
+        "导航使用北区名称；以艺术村现场地图及标示为准。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://tlaq.com/"
+    },
+    {
+      "id": "civic-parking",
+      "name": "Civic Center Library Garage",
+      "chineseName": "Old Town 停车首选 · Library Garage",
+      "category": "parking",
+      "address": "3737 N Drinkwater Blvd, Scottsdale, AZ 85251",
+      "description": "Scottsdale Civic Center 旁的公共车库，适合停车后步行去 LOVE 雕塑、Main Street 老街与 Sugar Bowl。",
+      "notes": [
+        "市府公共停车页面确认 Civic Center 车库可从 Drinkwater Blvd 或 2nd Street 进入。",
+        "市府列为免费公共停车；部分车位有限时，按现场标示，勿停专用或保留车位。",
+        "今晚建议走 2–3 小时轻松环线，没有实时空位数据。",
+        "Brown Avenue Parking Corral 正在扩建，今晚先避开该施工点。"
+      ],
+      "verificationStatus": "needs_verification",
+      "parkingNotes": "免费公共停车，以现场限时、开放及车位标示为准；从 Drinkwater Blvd 找公共车库入口。",
+      "officialUrl": "https://www.scottsdaleaz.gov/court/public-parking",
+      "officialLinkLabel": "市府官网 · 车库入口与停车须知"
+    },
+    {
+      "id": "scottsdale-civic",
+      "name": "Scottsdale Civic Center",
+      "chineseName": "Civic Center · LOVE 雕塑",
+      "category": "attraction",
+      "address": "3939 N Drinkwater Blvd, Scottsdale, AZ 85251",
+      "description": "户外草坪、公共艺术和 LOVE 雕塑，适合全家轻松散步拍照。",
+      "notes": [
+        "园区有 Children’s Gardens、Water and Fog Plaza 及洗手间；水景运行看现场。",
+        "停车首选 Civic Center Library Garage，随后步行游览。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "官方公园时间：日出至 22:30",
+      "officialUrl": "https://www.scottsdaleaz.gov/parks/find-a-park/scottsdale-civic-center"
+    },
+    {
+      "id": "oldtown-scottsdale",
+      "name": "Historic Old Town Scottsdale",
+      "chineseName": "Scottsdale 老街 · Main / Brown",
+      "category": "shopping",
+      "address": "E Main St & N Brown Ave, Scottsdale, AZ 85251",
+      "description": "西部风格街景、纪念品店与橱窗；与 Civic Center、Sugar Bowl 连成轻松步行路线。",
+      "notes": [
+        "今晚按 Old Town Scottsdale 安排；各家商店营业时间不同，晚到仍可看街景。",
+        "官方常规 ArtWalk 在周四；今天周三不按 ArtWalk 活动安排。",
+        "Scottsdazzle 点灯活动在 11/28，今天 11/25 不把正式节庆活动作为必达项。"
+      ],
+      "verificationStatus": "needs_verification",
+      "officialUrl": "https://oldtownscottsdaleaz.com/get-around/old-town-map/"
+    },
+    {
+      "id": "sugar-bowl",
+      "name": "Sugar Bowl",
+      "chineseName": "Sugar Bowl · 冰激凌休息站",
+      "category": "restaurant",
+      "address": "4005 N Scottsdale Rd, Scottsdale, AZ 85251",
+      "description": "粉色复古冰激凌与苏打店，适合带孩子休息、点圣代或奶昔。",
+      "notes": [
+        "官网周三餐厅开放至 22:00，厨房至 20:00；正餐和甜点的截止时间不同。",
+        "今天为感恩节前夕，临时调整与等位以门店为准。"
+      ],
+      "verificationStatus": "needs_verification",
+      "openingHours": "周三餐厅 11:00–22:00；厨房 11:00–20:00",
+      "officialUrl": "https://sugarbowlscottsdale.com/?page_id=250"
     }
   ],
   "flights": [
@@ -1297,6 +1333,18 @@
     {
       "title": "城市旅游官网 · 蓝色麦当劳",
       "url": "https://www.scenicsedona.com/mcdonald-s/"
+    },
+    {
+      "title": "Scottsdale · 公共停车及官方地图",
+      "url": "https://oldtownscottsdaleaz.com/get-around/public-parking/"
+    },
+    {
+      "title": "Scottsdale · Brown Avenue 车库施工",
+      "url": "https://www.scottsdaleaz.gov/capital-improvement/brown-avenue-parking-structure-expansion"
+    },
+    {
+      "title": "Scottsdale Civic Center · 公园与 LOVE 雕塑",
+      "url": "https://www.scottsdaleaz.gov/parks/find-a-park/scottsdale-civic-center"
     }
   ]
 }
