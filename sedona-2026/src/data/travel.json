@@ -358,7 +358,7 @@
       "title": "Sedona 慢逛 · Scottsdale 夜游",
       "subtitle": "实际记录：Sedona 慢逛后前往 Phoenix；晚上逛 Old Town 艺术街、吃晚餐，再回酒店休息",
       "image": "soldier-pass.jpg",
-      "summary": "蓝色麦当劳 → Tlaquepaque → Hideaway House → Tlaquepaque North → Phoenix 酒店 → Main / Brown 艺术街 → 中泰餐晚餐 → 回酒店",
+      "summary": "蓝色麦当劳 → Tlaquepaque → Hideaway House → Tlaquepaque North → Phoenix 酒店 → Main / Brown 艺术街 → China Basil 晚餐 → 回酒店",
       "activities": [
         {
           "id": "mcd-actual4",
@@ -434,12 +434,14 @@
           "id": "dinner4",
           "time": "19:00",
           "timeLabel": "逛街后",
-          "title": "Chinese and Thai · 实际晚餐",
-          "description": "艺术街游逛后，在用户回忆名为“Chinese and Thai”的餐厅用餐；店名尚待核对，具体到店时间未记录。",
+          "title": "China Basil Thai & Chinese Kitchen · 实际晚餐",
+          "description": "Main Street / Brown Avenue 艺术街游逛后，在 China Basil Thai & Chinese Kitchen 吃中泰餐晚餐；店名已由用户确认，具体到店时间未记录。",
           "status": "confirmed",
           "notes": [
-            "店名核对候选：China Basil Thai & Chinese Kitchen，2334 N Scottsdale Rd, Scottsdale, AZ 85257；尚未经用户确认，不作为已确定的实际用餐地点。"
-          ]
+            "地址：2334 N Scottsdale Rd, Scottsdale, AZ 85257。",
+            "晚餐后直接回酒店休息。"
+          ],
+          "placeId": "china-basil"
         },
         {
           "id": "return-hotel4",
@@ -1311,14 +1313,14 @@
     {
       "id": "china-basil",
       "name": "China Basil Thai & Chinese Kitchen",
-      "chineseName": "中泰餐晚餐 · 店名核对候选",
+      "chineseName": "11/25 实际晚餐 · 中泰餐厅",
       "category": "restaurant",
       "address": "2334 N Scottsdale Rd, Scottsdale, AZ 85257",
-      "description": "与用户回忆“Chinese and Thai”名称相近的餐厅，位于 Old Town 南侧；尚未确认是否为 11/25 实际用餐店。",
+      "description": "11/25 晚上逛完 Main Street / Brown Avenue 艺术街后，实际在这里吃中泰餐晚餐，之后直接返回酒店休息；店名已由用户确认。",
       "notes": [
-        "官网核对店名与地址；实际晚餐记录暂保留用户原称 Chinese and Thai，等待确认。"
+        "地址与店名已核对餐厅官网；具体到店、离店时间未记录。"
       ],
-      "verificationStatus": "estimated",
+      "verificationStatus": "confirmed",
       "officialUrl": "https://www.chinabasilaz.com/",
       "officialLinkLabel": "餐厅官网与菜单"
     }
