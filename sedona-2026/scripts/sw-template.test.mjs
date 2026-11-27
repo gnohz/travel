@@ -7,7 +7,12 @@ function environment() {
   let online = true; let contents = 'version one'; let failPath = ''; let skip = 0;
   const stores = new Map();
   const key = request => typeof request === 'string' ? new URL(request, 'https://example.org').href : request.url;
-  const fetcher = async request => { if (!online || key(request).endsWith(failPath || 'NO_FAILURE')) throw new Error('offline'); return new Response(contents); };
+  const fetcher = async request => {
+    if (!online || key(request).endsWith(failPath || 'NO_FAILURE')) throw new Error('offline');
+    return key(request).endsWith('.pdf')
+      ? new Response('%PDF-1.4\nactual PDF bytes', { headers: { 'Content-Type': 'application/pdf' } })
+      : new Response(contents);
+  };
   const caches = {
     open: async name => {
       if (!stores.has(name)) stores.set(name, new Map());
@@ -20,7 +25,7 @@ function environment() {
     const events = {};
     const self = { location: { origin: 'https://example.org' }, clients: { claim: async () => {} }, skipWaiting: () => { skip++; }, addEventListener: (name, fn) => { events[name] = fn; } };
     const files = [base + 'index.html', base + 'data/travel.json', base + 'sedona-2026-guide.pdf'];
-    vm.runInNewContext(serviceWorkerSource({ base, version, files }), { self, caches, fetch: fetcher, URL, Response, AbortSignal, Promise, Error });
+    vm.runInNewContext(serviceWorkerSource({ base, version, files }), { self, caches, fetch: fetcher, URL, Response, Headers, AbortSignal, Promise, Error });
     const emit = async (name, data = {}) => {
       let promise; let response;
       events[name]({ ...data, waitUntil: p => { promise = p; }, respondWith: p => { response = p; } });
@@ -57,6 +62,28 @@ test('travel data is network first and persists the last successful response', a
   assert.equal(await (await w.emit('fetch', { request })).text(), 'new itinerary');
   e.online(false);
   assert.equal(await (await w.emit('fetch', { request })).text(), 'new itinerary');
+});
+test('PDF navigation in an installed app returns a PDF download online and offline, never the HTML shell', async () => {
+  const e = environment(); const w = e.worker('pdf'); await w.emit('install');
+  for (const online of [true, false]) {
+    e.online(online);
+    const response = await w.emit('fetch', { request: { method: 'GET', url: 'https://example.org' + base + 'sedona-2026-guide.pdf', mode: 'navigate' } });
+    assert.equal(response.headers.get('Content-Type'), 'application/pdf');
+    assert.equal(response.headers.get('Content-Disposition'), 'attachment; filename="Sedona-2026-guide.pdf"');
+    assert.ok((await response.text()).startsWith('%PDF-'));
+  }
+});
+test('an uncached PDF navigation fetches the PDF and a missing offline PDF fails without HTML fallback', async () => {
+  const e = environment(); const w = e.worker('pdf'); await w.emit('install');
+  const url = 'https://example.org' + base + 'sedona-2026-guide.pdf';
+  const request = { method: 'GET', url, mode: 'navigate' };
+  e.stores.get('sedona-2026-pdf').delete(url);
+  const online = await w.emit('fetch', { request });
+  assert.ok((await online.text()).startsWith('%PDF-'));
+  e.stores.get('sedona-2026-pdf').delete(url); e.online(false);
+  const offline = await w.emit('fetch', { request });
+  assert.equal(offline.status, 503);
+  assert.notEqual(await offline.text(), 'version one');
 });
 test('new version waits for explicit update; activation only cleans its own caches', async () => {
   const e = environment(); const one = e.worker('one'); await one.emit('install');

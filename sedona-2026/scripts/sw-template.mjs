@@ -2,6 +2,13 @@ export function serviceWorkerSource({ base, version, files }) {
   return `const BASE = ${JSON.stringify(base)};
 const CACHE = 'sedona-2026-' + ${JSON.stringify(version)};
 const REQUIRED = ${JSON.stringify(files)};
+function downloadResponse(response, url) {
+  if (url.pathname !== BASE + 'sedona-2026-guide.pdf' || !response.ok) return response;
+  const headers = new Headers(response.headers);
+  headers.set('Content-Type', 'application/pdf');
+  headers.set('Content-Disposition', 'attachment; filename="Sedona-2026-guide.pdf"');
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+}
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
@@ -41,15 +48,15 @@ self.addEventListener('fetch', event => {
         return response;
       } catch { return await cache.match(request) || new Response('{}', { status: 503 }); }
     }
-    if (request.mode === 'navigate') {
+    if (request.mode === 'navigate' && (url.pathname === BASE || url.pathname === BASE + 'index.html')) {
       return await cache.match(BASE + 'index.html') || await cache.match(BASE + 'offline.html') || fetch(request);
     }
     const cached = await cache.match(request, { ignoreSearch: true });
-    if (cached) return cached;
+    if (cached) return downloadResponse(cached, url);
     try {
       const response = await fetch(request);
       if (response.ok) await cache.put(request, response.clone());
-      return response;
+      return downloadResponse(response, url);
     } catch { return new Response('Offline resource unavailable', { status: 503 }); }
   })());
 });\n`;
