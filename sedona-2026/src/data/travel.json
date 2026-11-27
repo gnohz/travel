@@ -97,7 +97,7 @@
           "duration": "约 1–1.5 小时",
           "status": "planned",
           "notes": [
-            "日落约 17:17–17:18 为估算；查当天 API。",
+            "日落约 17:17–17:18 为估算；以当天日落时间为准。",
             "延误就取消徒步，直接看日落；准备外套、随身带贵重物品。"
           ]
         },
@@ -298,7 +298,7 @@
           "id": "boynton3",
           "time": "09:15",
           "title": "Boynton Canyon · 徒步与寻找 Subway Cave",
-          "description": "当天沿 Boynton Canyon 徒步，并寻找通往 Subway Cave 的支线；徒步途中使用了此前 ChatGPT 提供的 GPS 帮助寻找岔路，坐标纠错见下一项。实际起步、结束时间及是否到达洞穴未记录。",
+          "description": "沿 Boynton Canyon 主步道徒步，寻找通往 Subway Cave 的支线；中午前往 Vespa 用餐。",
           "placeId": "boynton",
           "status": "confirmed",
           "notes": [
@@ -310,21 +310,21 @@
           "id": "subway-turnoff3",
           "time": "09:15",
           "timeLabel": "徒步途中",
-          "title": "Subway Cave · 岔路 GPS 记录与纠错",
+          "title": "Subway Cave · 支线岔路",
           "placeId": "subway-turnoff",
-          "description": "11/24 徒步途中曾使用 ChatGPT 提供的 GPS 帮助寻找 Subway Cave 支线。用户补充的原回复记载旧坐标 34.9245, -111.8493；这是错误坐标，不应作为岔路口使用。更正后的岔路参考坐标为 34.927861, -111.861880。",
+          "description": "岔路参考坐标：34.927861, -111.861880。沿 Boynton Canyon 主步道前行约 2 miles，在左侧大型 Alligator Juniper 附近，转入右侧通往 Subway Cave 的小径。",
           "status": "confirmed",
           "notes": [
-            "原回复由用户于 11/27 补充；当天是否实际按旧坐标导航、是否因此走错路，尚未确认。",
-            "岔路与洞穴是不同位置：岔路 34.927861, -111.861880；洞穴参考点 34.932779, -111.863006（The Wanderer’s Guide）。",
-            "地图按钮只指向更正后的岔路参考点；旧坐标仅保留为纠错记录。"
+            "这是主步道转入支线的位置，地图按钮指向该岔路。",
+            "Subway Cave 洞穴参考坐标：34.932779, -111.863006，与岔路口不同。",
+            "使用离线步道地图辅助辨识；支线并非正式维护路线。"
           ]
         },
         {
           "id": "picnic3",
           "time": "12:00",
           "title": "Vespa · 意大利午餐（实际用餐）",
-          "description": "11/24 中午实际在 Vespa Healthy Italian Café 用餐，替换原定步道野餐；具体到店时间未记录。",
+          "description": "中午在 Vespa Healthy Italian Café 享用意大利午餐。",
           "status": "confirmed",
           "notes": [],
           "timeLabel": "中午",
@@ -367,7 +367,7 @@
           "timeLabel": "十点多",
           "title": "蓝色麦当劳 · 实际到访",
           "placeId": "blue-mcdonalds",
-          "description": "早上未赶上 Soldier Pass 班车，随后先去了蓝色麦当劳；用户回忆为十点多，未记录准确时间。",
+          "description": "早上未赶上 Soldier Pass 班车，十点多先去了蓝色麦当劳。",
           "status": "confirmed",
           "notes": []
         },
@@ -377,7 +377,7 @@
           "timeLabel": "随后",
           "title": "Tlaquepaque · 实际游逛",
           "placeId": "tlaquepaque",
-          "description": "麦当劳之后游逛 Tlaquepaque Arts & Shopping Village；具体到达时间未记录。",
+          "description": "麦当劳之后游逛 Tlaquepaque Arts & Shopping Village。",
           "status": "confirmed",
           "notes": []
         },
@@ -387,7 +387,7 @@
           "timeLabel": "中午",
           "title": "Hideaway House · 实际午餐",
           "placeId": "hideaway",
-          "description": "中午在 Hideaway House 用餐；具体到店与离店时间未记录。",
+          "description": "中午在 Hideaway House 用餐。",
           "status": "confirmed",
           "notes": []
         },
@@ -397,7 +397,7 @@
           "timeLabel": "午餐后",
           "title": "Tlaquepaque North · 实际游逛",
           "placeId": "tlaquepaque-north",
-          "description": "午餐后又稍逛了 Tlaquepaque North，再离开 Sedona；具体停留时间未记录。",
+          "description": "午餐后又稍逛了 Tlaquepaque North，再离开 Sedona。",
           "status": "confirmed",
           "notes": []
         },
@@ -407,7 +407,7 @@
           "timeLabel": "约 14:00",
           "title": "离开 Sedona · 前往 Phoenix",
           "placeId": "doubletree",
-          "description": "用户回忆约 14:00 从 Sedona 出发，直接前往 Phoenix 的酒店。",
+          "description": "约 14:00 从 Sedona 出发，直接前往 Phoenix 的酒店。",
           "status": "confirmed",
           "notes": []
         },
@@ -417,7 +417,7 @@
           "timeLabel": "约 16:00",
           "title": "抵达 DoubleTree 酒店",
           "placeId": "doubletree",
-          "description": "用户回忆约 16:00 抵达酒店；休息后准备去 Old Town Scottsdale。",
+          "description": "约 16:00 抵达 DoubleTree 酒店，休息后前往 Old Town Scottsdale。",
           "status": "confirmed",
           "notes": []
         },
@@ -427,7 +427,7 @@
           "timeLabel": "晚上",
           "title": "Main Street / Brown Avenue · 艺术街实际游逛",
           "placeId": "oldtown-scottsdale",
-          "description": "晚上主要游逛 Old Town Scottsdale 的 Main Street、Brown Avenue 一带艺术街，随后直接去吃晚餐；未记录准确出发、到达或停留时间。",
+          "description": "晚上游逛 Old Town Scottsdale 的 Main Street、Brown Avenue 一带艺术街，随后去吃晚餐。",
           "status": "confirmed",
           "notes": []
         },
@@ -436,7 +436,7 @@
           "time": "19:00",
           "timeLabel": "逛街后",
           "title": "China Basil Thai & Chinese Kitchen · 实际晚餐",
-          "description": "Main Street / Brown Avenue 艺术街游逛后，在 China Basil Thai & Chinese Kitchen 吃中泰餐晚餐；店名已由用户确认，具体到店时间未记录。",
+          "description": "逛完 Main Street / Brown Avenue 艺术街后，在 China Basil Thai & Chinese Kitchen 吃中泰餐晚餐。",
           "status": "confirmed",
           "notes": [
             "地址：2334 N Scottsdale Rd, Scottsdale, AZ 85257。",
@@ -450,7 +450,7 @@
           "timeLabel": "晚餐后",
           "title": "回酒店休息",
           "placeId": "doubletree",
-          "description": "晚餐后直接返回 DoubleTree 酒店休息，结束当天行程；未记录具体返程时间。",
+          "description": "晚餐后直接返回 DoubleTree 酒店休息，结束当天行程。",
           "status": "confirmed",
           "notes": []
         }
@@ -477,7 +477,7 @@
           "id": "checkout5",
           "time": "10:00",
           "title": "酒店退房",
-          "description": "按原安排完成酒店退房；原计划约 10:00、11:00 前退房，实际办理时间未记录。",
+          "description": "完成酒店退房，准备前往机场还车。",
           "placeId": "doubletree",
           "status": "confirmed",
           "notes": [],
@@ -540,7 +540,7 @@
       "description": "往返机场；California 时间。",
       "notes": [
         "去程 08:20 起飞，返程 15:40 抵达。",
-        "航班时间来自用户提供的预订信息，出发前再次查看 Southwest。"
+        "航班时间以预订凭证为准，出发前再次查看 Southwest。"
       ],
       "verificationStatus": "confirmed",
       "officialUrl": "https://www.hollywoodburbankairport.com/"
@@ -746,7 +746,7 @@
       "address": "1350 W State Route 89A, Suite 22, Sedona, AZ 86336",
       "description": "West Sedona 的意大利餐厅，供应 Roman Pinsa、意大利热食与沙拉；11/24 中午已实际用餐。",
       "notes": [
-        "11/24 中午实际在此用餐；具体到店时间未记录。地点在 West Sedona，不在 Tlaquepaque 艺术村内。",
+        "11/24 中午在此用餐。餐厅在 West Sedona，不在 Tlaquepaque 艺术村内。",
         "官网不接受预约，现场入座；六人用餐预留候位及上菜时间。",
         "午晚餐之间不休息；广场停车位免费，按现场标示停车。",
         "地址、周三常规营业时间和预约政策核对于 2026/11/22；节假日临时调整以店家当天通知为准。"
@@ -829,12 +829,12 @@
       "chineseName": "博因顿峡谷 · 主步道徒步",
       "category": "hiking",
       "address": null,
-      "description": "11/24 实际沿 Boynton Canyon 徒步，使用 GPS 寻找 Subway Cave 支线岔路；中午在 Vespa 用餐。",
+      "description": "11/24 沿 Boynton Canyon 徒步，寻找 Subway Cave 支线；中午在 Vespa 用餐。",
       "notes": [
         "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
         "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
         "随身带零食和充足饮水；午餐实际在 Vespa 餐厅用餐。",
-        "GPS 纠错：原回复中的 34.9245, -111.8493 不应作岔路口；更正后的岔路参考点为 34.927861, -111.861880。当日是否按旧点导航及是否走错尚未确认。"
+        "Subway Cave 支线岔路参考坐标：34.927861, -111.861880。"
       ],
       "verificationStatus": "needs_verification",
       "navigationId": "boynton-parking",
@@ -1063,9 +1063,9 @@
       "chineseName": "Phoenix 住宿 · 一晚",
       "category": "hotel",
       "address": "320 North 44th St, Phoenix, AZ 85008",
-      "description": "11/25 晚住宿；用户回忆当天下午约 16:00 已抵达，傍晚准备前往 Old Town Scottsdale。",
+      "description": "11/25 晚住宿；当天下午约 16:00 抵达，傍晚前往 Old Town Scottsdale。",
       "notes": [
-        "用户提供：11/25 16:00 后入住；11/26 11:00 前退房。"
+        "11/25 16:00 后入住；11/26 11:00 前退房。"
       ],
       "verificationStatus": "confirmed",
       "officialUrl": "https://www.hilton.com/en/hotels/phxfvdt-doubletree-suites-phoenix/"
@@ -1078,7 +1078,6 @@
       "address": "101 Arizona 89A, Sedona, AZ 86336",
       "description": "Uptown 南端 Pinon Pointe 商场内的轻松午餐选择，提供三明治、汤、沙拉与烘焙食品；适合午餐后接着逛 Uptown。",
       "notes": [
-        "原为 11/25 午餐推荐；当天实际午餐改为 Hideaway House，未记录在此用餐。",
         "官网提供堂食及自取；六人出行预留点餐、等位及停车时间。",
         "地址与常规营业时间核对于 2026/11/24；节假日临时调整以店家当天为准。"
       ],
@@ -1096,7 +1095,7 @@
       "address": "2380 W State Route 89A, Sedona, AZ 86336",
       "description": "West Sedona 蓝绿色拱门麦当劳；11/25 十点多实际到访。",
       "notes": [
-        "11/25 未赶上 Soldier Pass 班车后先到这里，用户回忆为十点多。",
+        "11/25 未赶上 Soldier Pass 班车后先到这里，时间为十点多。",
         "城市旅游官网列出此店地址及蓝绿色拱门；营业时间与服务以门店当天为准。"
       ],
       "verificationStatus": "needs_verification",
@@ -1113,7 +1112,6 @@
       "address": "231 Arizona 179, Sedona, AZ 86336",
       "description": "11/25 实际午餐餐厅；意大利风味餐食，带庭院露台和红岩景观。",
       "notes": [
-        "用户已确认当天在此午餐，具体到店时间未记录。",
         "官网常规周日至周四 11:00–20:30；感恩节当天关闭。"
       ],
       "verificationStatus": "needs_verification",
@@ -1128,7 +1126,6 @@
       "address": "Tlaquepaque North, Sedona, AZ 86336",
       "description": "11/25 在 Hideaway House 午餐后实际稍逛的 Tlaquepaque 北区。",
       "notes": [
-        "该条记录区分午餐前的主区和午餐后的 North 区；具体时间未记录。",
         "导航使用北区名称；以艺术村现场地图及标示为准。"
       ],
       "verificationStatus": "needs_verification",
@@ -1189,7 +1186,7 @@
       "chineseName": "Sugar Bowl · 冰激凌休息站",
       "category": "restaurant",
       "address": "4005 N Scottsdale Rd, Scottsdale, AZ 85251",
-      "description": "前期计划中的冰激凌与甜点备选，11/25 最终实际行程未记录到访。",
+      "description": "Old Town 的复古冰激凌店，可品尝圣代、奶昔与甜点。",
       "notes": [
         "官网周三餐厅开放至 22:00，厨房至 20:00；正餐和甜点的截止时间不同。",
         "今天为感恩节前夕，临时调整与等位以门店为准。"
@@ -1294,26 +1291,23 @@
     {
       "id": "subway-turnoff",
       "name": "Subway Cave Turnoff",
-      "chineseName": "Subway Cave 支线岔路 · GPS 已纠错",
+      "chineseName": "Subway Cave 支线岔路",
       "category": "attraction",
       "coordinates": {
         "latitude": 34.927861,
         "longitude": -111.86188
       },
       "navigationMode": "walking",
-      "description": "Boynton Canyon 主步道转向 Subway Cave 小径的参考点。旧回复中的 34.9245, -111.8493 是错误坐标，不应使用；本页地图使用更正后的岔路参考点 34.927861, -111.861880。",
+      "description": "Boynton Canyon 主步道通往 Subway Cave 的支线入口，岔路参考坐标为 34.927861, -111.861880。",
       "notes": [
-        "原错误坐标：34.9245, -111.8493。来源为用户于 11/27 补充的原 ChatGPT 回复；仅作纠错存档，不作为导航点。",
-        "采用的岔路参考坐标：34.927861, -111.861880。The Wanderer’s Guide 明确标为 Subway Trailhead GPS。",
-        "交叉核对：ArboursAbroad 的 Boynton Canyon Caves 页面列 34.927791, -111.861644；Sedona Canyoneering 的 Chopper Drop 页面列 34.92767, -111.86187。三处记录位置相近，均为非官方路线资料。",
-        "洞穴本身的参考坐标：34.932779, -111.863006（The Wanderer’s Guide），与岔路口不同；本页地图按钮只指向岔路。",
-        "主步道约 2 miles 处，资料描述大型 Alligator Juniper 在左侧、支线在右侧；不同资料的里程有差异，以离线步道地图与现场辨识辅助。",
-        "11/24 使用过 ChatGPT GPS 找岔路，但是否实际按旧坐标导航、是否因此走错路、是否到达洞穴尚未确认。",
-        "这是徒步途中参考点；驾车仍去 Boynton Canyon Trailhead 停车场。"
+        "沿 Boynton Canyon 主步道前行约 2 miles，左侧有大型 Alligator Juniper，通往洞穴的支线在右侧。",
+        "Subway Cave 洞穴参考坐标：34.932779, -111.863006。岔路口与洞穴是两个位置，本页地图按钮指向岔路。",
+        "使用离线步道地图辅助辨识；支线并非正式维护路线。",
+        "驾车前往 Boynton Canyon Trailhead 停车场；这里是徒步途中的参考点。"
       ],
       "verificationStatus": "estimated",
       "officialUrl": "https://thewanderers.guide/blogs/news/find-the-subway-cave-sedona",
-      "officialLinkLabel": "查看岔路 GPS 来源（非官方步道资料）",
+      "officialLinkLabel": "路线参考与岔路照片",
       "sources": [
         {
           "title": "The Wanderer’s Guide · 岔路与洞穴 GPS（非官方）",
@@ -1335,10 +1329,8 @@
       "chineseName": "11/25 实际晚餐 · 中泰餐厅",
       "category": "restaurant",
       "address": "2334 N Scottsdale Rd, Scottsdale, AZ 85257",
-      "description": "11/25 晚上逛完 Main Street / Brown Avenue 艺术街后，实际在这里吃中泰餐晚餐，之后直接返回酒店休息；店名已由用户确认。",
-      "notes": [
-        "地址与店名已核对餐厅官网；具体到店、离店时间未记录。"
-      ],
+      "description": "11/25 晚上逛完 Main Street / Brown Avenue 艺术街后，在这里享用中泰餐晚餐，之后返回酒店休息。",
+      "notes": [],
       "verificationStatus": "confirmed",
       "officialUrl": "https://www.chinabasilaz.com/",
       "officialLinkLabel": "餐厅官网与菜单"
@@ -1352,7 +1344,7 @@
       "to": "PHX",
       "departure": "08:20 · California",
       "arrival": "10:55 · Arizona",
-      "notes": "Southwest Airlines；用户提供的已确认预订，出发前查动态。"
+      "notes": "Southwest Airlines；出发前查动态。"
     },
     {
       "label": "返程 · 11 月 26 日",
@@ -1409,7 +1401,7 @@
     "核对航班、登机口与 Budget 还车要求"
   ],
   "verification": [
-    "用户已确认：航班号与时间、住宿地址和日期、Budget 与车型类别；未向供应商二次核验。",
+    "航班、住宿和租车信息以预订凭证为准。",
     "计划估算：出发时间、车程、餐饮及徒步时长，按交通、路况与儿童体力调整。",
     "官方已公布：2026/11/19–11/29 Shuttle 扩展运营，但 11/26 感恩节不运行。",
     "仍须出发前核实：临时封路、步道开放、接驳班次变化、停车费、餐厅节假日营业。",

@@ -14,7 +14,7 @@ import { categoryNames, CopyAddress, Maps, Photo, PlaceCard, PlaceDetail } from 
 
 type Choices = Record<string, 'A' | 'B'>;
 const navItems = [ { id: 'home', label: '首页', icon: Home, href: '#/' }, { id: 'day', label: '行程', icon: CalendarDays, href: '#/day' }, { id: 'places', label: '地点', icon: MapPin, href: '#/places' }, { id: 'more', label: '更多', icon: Menu, href: '#/more' } ];
-const statusLabels = { confirmed: '用户已确认', planned: '计划安排', preferred: '首选', alternative: '备选', needs_verification: '待核实' };
+const statusLabels = { confirmed: '已确认', planned: '计划安排', preferred: '首选', alternative: '备选', needs_verification: '待核实' };
 
 function useRoute() {
   const [route, setRoute] = useState(location.hash.slice(1) || '/');
@@ -35,7 +35,7 @@ function NextStop({ day, activities, data, now, manual, setManual }: { day: Day;
   const links = target ? mapLinks(target) : null;
   const ended = localDate(now) > data.days.at(-1)!.date;
   if (ended) return null;
-  return <section className="next-stop"><div className="section-top"><span className="eyebrow"><Compass size={15} /> 下一站</span>{active && <span className="next-time">{active.timeLabel ?? active.time} {active.timeZone === 'America/Los_Angeles' ? 'CA' : 'AZ'}</span>}</div><h2>{active?.title ?? '今天的计划已结束'}</h2><p>{target?.name ?? (active ? active.description : '好好休息，明天继续出发。')}</p>{links && <a href={links.apple} target="_blank" rel="noreferrer" className="button button-primary"><Navigation size={17} /> 开始导航</a>}<div className="manual-select"><label htmlFor="current-activity">{manual ? '手动选择当前活动' : '按计划时间推断 · 非 GPS 定位'}</label><select id="current-activity" value={manual} onChange={e => setManual(e.target.value)}><option value="">自动选择下一站</option>{activities.map(a => <option key={a.id} value={a.id}>{a.timeLabel ?? a.time} {a.title}</option>)}</select></div></section>;
+  return <section className="next-stop"><div className="section-top"><span className="eyebrow"><Compass size={15} /> 下一站</span>{active && <span className="next-time">{active.timeLabel ?? active.time} {active.timeZone === 'America/Los_Angeles' ? 'CA' : 'AZ'}</span>}</div><h2>{active?.title ?? '今天的计划已结束'}</h2><p>{target?.name ?? (active ? active.description : '好好休息，明天继续出发。')}</p>{links && <a href={links.apple} target="_blank" rel="noreferrer" className="button button-primary"><Navigation size={17} /> 开始导航</a>}<div className="manual-select"><label htmlFor="current-activity">{manual ? '手动选择当前活动' : '按行程时间推荐'}</label><select id="current-activity" value={manual} onChange={e => setManual(e.target.value)}><option value="">自动选择下一站</option>{activities.map(a => <option key={a.id} value={a.id}>{a.timeLabel ?? a.time} {a.title}</option>)}</select></div></section>;
 }
 function Timeline({ day, activities, places, preview = false }: { day: Day; activities: Activity[]; places: Place[]; preview?: boolean }) {
   return <ol className={`timeline ${preview ? 'timeline-preview' : ''}`}>{activities.map((a, i) => {

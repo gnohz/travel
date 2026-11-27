@@ -113,7 +113,7 @@ for index, day in enumerate(data['days']):
                 para(f'{label}：{name}', 'option')
                 activity_details(option, seen_places)
             continue
-        suffix = ' [用户已确认]' if a['status'] == 'confirmed' else ''
+        suffix = ' [已确认]' if a['status'] == 'confirmed' else ''
         para(f"{a.get('timeLabel', a['time'])} {zone} | {a['title']}{suffix}", 'h2')
         activity_details(a, seen_places)
 newpage()
