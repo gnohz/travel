@@ -2,7 +2,7 @@
   "title": "Sedona 2026｜感恩节红岩之旅",
   "dates": "2026.11.22—11.26",
   "party": "两个家庭 · 4 位成人 · 2 位约七岁儿童",
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-27",
   "days": [
     {
       "date": "2026-11-22",
@@ -297,13 +297,26 @@
         {
           "id": "boynton3",
           "time": "09:15",
-          "title": "Boynton Canyon · 主步道徒步",
-          "description": "以 Boynton Canyon 主步道为主，按儿童体力折返；Subway Cave 仅作视情况考虑的支线。午餐已改为 Vespa 餐厅，实际徒步结束时间未记录。",
+          "title": "Boynton Canyon · 徒步与寻找 Subway Cave",
+          "description": "当天沿 Boynton Canyon 徒步，并寻找通往 Subway Cave 的支线；在主步道岔路处使用了此前 ChatGPT 提供的 GPS 定位。实际起步、结束时间及是否到达洞穴未记录。",
           "placeId": "boynton",
-          "status": "planned",
+          "status": "confirmed",
           "notes": [
-            "官方完整主线为 6 miles 往返，不以走完全程为目标；带孩子按体力及时折返。",
-            "下午不追加 Devil’s Bridge；若停车或徒步延误，后续可选参观直接取消。"
+            "中午实际在 Vespa 意大利餐厅用餐。"
+          ],
+          "timeLabel": "上午徒步"
+        },
+        {
+          "id": "subway-turnoff3",
+          "time": "09:15",
+          "timeLabel": "徒步途中",
+          "title": "Subway Cave · 岔路 GPS 定位",
+          "placeId": "subway-turnoff",
+          "description": "从 Boynton Canyon 主步道转向 Subway Cave 小径时，实际使用过 ChatGPT 提供的 GPS 定位。此次重新查得的岔路参考坐标为 34.927861, -111.861880；未找回原聊天坐标，不能确认与当时使用的点完全一致。",
+          "status": "confirmed",
+          "notes": [
+            "这是主步道转入支线的参考点，不是停车场，也不是洞穴本身。",
+            "路线资料描述为主步道约 2 miles 处：左侧有大型 Alligator Juniper，朝洞穴的小径在右侧。"
           ]
         },
         {
@@ -343,9 +356,9 @@
       "date": "2026-11-25",
       "weekday": "星期三",
       "title": "Sedona 慢逛 · Scottsdale 夜游",
-      "subtitle": "实际 Sedona 路线已记录；今晚三家晚餐候选、老街与运河步行路线均已补齐",
+      "subtitle": "实际记录：Sedona 慢逛后前往 Phoenix；晚上逛 Old Town 艺术街、吃晚餐，再回酒店休息",
       "image": "soldier-pass.jpg",
-      "summary": "蓝色麦当劳 → Tlaquepaque → Hideaway House → Tlaquepaque North → Phoenix 酒店 → Old Town",
+      "summary": "蓝色麦当劳 → Tlaquepaque → Hideaway House → Tlaquepaque North → Phoenix 酒店 → Main / Brown 艺术街 → 中泰餐晚餐 → 回酒店",
       "activities": [
         {
           "id": "mcd-actual4",
@@ -408,117 +421,35 @@
           "notes": []
         },
         {
-          "id": "oldtown-park4",
-          "time": "17:00",
-          "timeLabel": "17:00 · 建议",
-          "title": "前往 Old Town · 先停车",
-          "placeId": "oldtown-garage",
-          "description": "建议 17:00 从酒店出发，到 3rd Avenue Parking Garage 停车，随后步行串联老街、LOVE 雕塑、第五大道和运河。",
-          "duration": "开车估算 25–40 分钟，另留约 10 分钟停车",
-          "status": "planned",
-          "notes": [
-            "停车地址：7143 E 5th Ave, Scottsdale, AZ 85251；车库名称虽为 3rd Avenue，导航使用这个地址。",
-            "市府地图列免费公共停车；下两层限 3 小时，上两层不限时，现场标示优先。",
-            "Brown Avenue Parking Corral 正在扩建；Civic Center Library Garage 可作为南段停车备选。"
-          ]
-        },
-        {
           "id": "historic-walk4",
           "time": "18:00",
-          "timeLabel": "18:00 左右",
-          "title": "Main Street / Brown Avenue · 老街",
+          "timeLabel": "晚上",
+          "title": "Main Street / Brown Avenue · 艺术街实际游逛",
           "placeId": "oldtown-scottsdale",
-          "description": "停车后先沿 Marshall Way 向南看艺术街橱窗，再走 Main Street / Brown Avenue 老街；接着向东去 Civic Center。",
-          "duration": "艺术街与老街建议约 30–40 分钟",
-          "status": "planned",
-          "notes": [
-            "商店营业时间各异，晚到也可看街景；按孩子体力随时缩短。",
-            "今晚是一条老城散步路线，停车后不用为每一站重新开车。"
-          ]
-        },
-        {
-          "id": "civic-walk4",
-          "time": "18:30",
-          "timeLabel": "18:30 左右",
-          "title": "Civic Center · LOVE 雕塑与草坪",
-          "placeId": "scottsdale-civic",
-          "description": "从 Main Street 走进 Civic Center，看 LOVE 雕塑、草坪与公共艺术；再往第五大道和运河方向走。",
-          "duration": "建议约 20–30 分钟",
-          "status": "planned",
-          "notes": [
-            "公园官方开放至 22:30；Children’s Gardens 也在园区内，水景是否运行以现场为准。",
-            "今晚以户外散步为主，场馆与商店各自营业时间另看现场。"
-          ]
-        },
-        {
-          "id": "horse4",
-          "time": "18:50",
-          "timeLabel": "往北逛",
-          "title": "第五大道 · 马喷泉与小店",
-          "placeId": "horse-fountain",
-          "description": "从老街向北走到第五大道、Marshall Way 的马喷泉，看看公共艺术、橱窗和街景，再去北段餐厅。",
-          "duration": "建议约 20 分钟",
-          "status": "planned",
+          "description": "晚上主要游逛 Old Town Scottsdale 的 Main Street、Brown Avenue 一带艺术街，随后直接去吃晚餐；未记录准确出发、到达或停留时间。",
+          "status": "confirmed",
           "notes": []
         },
         {
           "id": "dinner4",
           "time": "19:00",
-          "timeLabel": "19:00 左右",
-          "title": "正式晚餐 · 三家任选一家",
-          "placeId": "culinary-dropout",
-          "description": "Culinary Dropout · Waterfront、Diego Pops、Rehab Burger Therapy：三家都是正式晚餐候选，任选一家；综合全家口味首推 Culinary Dropout。",
-          "duration": "用餐预留约 1 小时，候位另计",
-          "status": "planned",
+          "timeLabel": "逛街后",
+          "title": "Chinese and Thai · 实际晚餐",
+          "description": "艺术街游逛后，在用户回忆名为“Chinese and Thai”的餐厅用餐；店名尚待核对，具体到店时间未记录。",
+          "status": "confirmed",
           "notes": [
-            "三家餐厅均有地址和导航；Culinary Dropout、Diego Pops 在北段，Rehab 在南段。",
-            "如果选 Rehab，建议在逛南段时约 18:00 先吃；另外两家可逛到北段后约 19:00 吃。",
-            "六人桌出发前查看官网预约或候位情况；当前没有预订。"
-          ],
-          "placeOptions": [
-            "culinary-dropout",
-            "diego-pops",
-            "rehab-burger"
-          ]
-        },
-        {
-          "id": "canal4",
-          "time": "20:00",
-          "timeLabel": "饭后散步",
-          "title": "Waterfront / Soleri Bridge · 运河夜景",
-          "placeId": "soleri-bridge",
-          "description": "晚餐后沿运河走一小段，到 Soleri Bridge 拍照，再根据体力返回车库或去 Sugar Bowl。",
-          "duration": "建议约 30–45 分钟",
-          "status": "planned",
-          "notes": []
-        },
-        {
-          "id": "sugar-bowl4",
-          "time": "20:45",
-          "timeLabel": "饭后甜点 · 可选",
-          "title": "Sugar Bowl · 冰激凌（可选）",
-          "placeId": "sugar-bowl",
-          "description": "保留冰激凌休息站：正式晚餐另选上面三家中的一家，Sugar Bowl 只作圣代、奶昔或冰激凌的可选停留。也可逛老街时路过先吃。",
-          "duration": "建议约 30–45 分钟",
-          "status": "planned",
-          "notes": [
-            "地址：4005 N Scottsdale Rd, Scottsdale, AZ 85251。",
-            "官网周三餐厅至 22:00，厨房至 20:00；今晚以冰激凌和甜点为主，临时安排看门店通知。",
-            "如果在运河吃完晚餐后再来，需额外向南步行；可按孩子体力决定。"
+            "店名核对候选：China Basil Thai & Chinese Kitchen，2334 N Scottsdale Rd, Scottsdale, AZ 85257；尚未经用户确认，不作为已确定的实际用餐地点。"
           ]
         },
         {
           "id": "return-hotel4",
           "time": "21:15",
-          "timeLabel": "逛完后",
+          "timeLabel": "晚餐后",
           "title": "回酒店休息",
           "placeId": "doubletree",
-          "description": "回到 3rd Avenue 车库取车，再返回 DoubleTree；整圈按约 3–4 小时含晚餐规划，孩子累了随时缩短。",
-          "duration": "车程按当时导航",
-          "status": "planned",
-          "notes": [
-            "明天有返程航班，今晚不用再加远处景点。"
-          ]
+          "description": "晚餐后直接返回 DoubleTree 酒店休息，结束当天行程；未记录具体返程时间。",
+          "status": "confirmed",
+          "notes": []
         }
       ]
     },
@@ -543,10 +474,11 @@
           "id": "checkout5",
           "time": "10:00",
           "title": "酒店退房",
-          "description": "11:00 前退房，计划 10:00 左右离开。",
+          "description": "按原安排完成酒店退房；原计划约 10:00、11:00 前退房，实际办理时间未记录。",
           "placeId": "doubletree",
-          "status": "planned",
-          "notes": []
+          "status": "confirmed",
+          "notes": [],
+          "timeLabel": "退房时"
         },
         {
           "id": "return5",
@@ -894,12 +826,12 @@
       "chineseName": "博因顿峡谷 · 主步道徒步",
       "category": "hiking",
       "address": null,
-      "description": "11/24 徒步计划以 Boynton Canyon 主步道为主，按体力折返；午餐实际改为 Vespa 餐厅。",
+      "description": "11/24 实际沿 Boynton Canyon 徒步，使用 GPS 寻找 Subway Cave 支线岔路；中午在 Vespa 用餐。",
       "notes": [
         "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
         "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
         "随身带零食和充足饮水；午餐实际在 Vespa 餐厅用餐。",
-        "11/24 原计划 08:30 出发、09:00 到停车场；午餐已由步道野餐改为 Vespa，实际徒步结束时间未记录。"
+        "11/24 实际用过 GPS 找 Subway Cave 岔路；重新查得的参考点为 34.927861, -111.861880，未确认与原聊天坐标一致。"
       ],
       "verificationStatus": "needs_verification",
       "navigationId": "boynton-parking",
@@ -1254,7 +1186,7 @@
       "chineseName": "Sugar Bowl · 冰激凌休息站",
       "category": "restaurant",
       "address": "4005 N Scottsdale Rd, Scottsdale, AZ 85251",
-      "description": "今晚独立保留的冰激凌与甜点休息站；正式晚餐另有三家餐厅候选。",
+      "description": "前期计划中的冰激凌与甜点备选，11/25 最终实际行程未记录到访。",
       "notes": [
         "官网周三餐厅开放至 22:00，厨房至 20:00；正餐和甜点的截止时间不同。",
         "今天为感恩节前夕，临时调整与等位以门店为准。"
@@ -1273,7 +1205,7 @@
       "openingHours": "周三常规 11:00–22:00；感恩节当天关闭",
       "parkingNotes": "今晚可停 3rd Avenue Garage 后步行前往；店家也列有自助停车，按现场标示。",
       "notes": [
-        "今晚三家正式晚餐候选之一，推荐首选；没有代为预订。",
+        "11/25 前期晚餐候选，未实际选择；当天实际晚餐另有记录。",
         "地点为 Old Town Scottsdale Waterfront 店，非 Phoenix 其他分店。",
         "六人桌请提前查看官网预约；这是热闹的休闲餐厅。"
       ],
@@ -1290,7 +1222,7 @@
       "description": "活泼装饰与露台，适合拍照；创意 Taco、烤玉米、Quesadilla，官网有儿童菜单，想吃墨西哥口味可选它。",
       "openingHours": "周三常规 11:00–22:00；节假日安排以门店为准",
       "notes": [
-        "今晚三家正式晚餐候选之一，与另外两家任选一家。",
+        "11/25 前期晚餐候选，未实际选择；当天实际晚餐另有记录。",
         "位于老城北段，可逛完第五大道后用餐；官网可查看预约。",
         "儿童餐点可要求酱料分开；具体做法向餐厅确认。"
       ],
@@ -1307,7 +1239,7 @@
       "description": "海滩休闲风格的创意汉堡店，可选经典汉堡或特色 PBJ 培根汉堡；位于老城南段，适合先吃再继续逛。",
       "openingHours": "近期营业资料列周三 11:00–20:00；建议约 18:00 用餐，门店当天安排为准",
       "notes": [
-        "今晚三家正式晚餐候选之一，非冰激凌店。",
+        "11/25 前期晚餐候选，未实际选择；当天实际晚餐另有记录。",
         "如果选这家，把晚餐提前到逛南段时，不等走到运河后再折返。",
         "官网直接点餐菜单可查看菜品；现场候位情况须当天确认。"
       ],
@@ -1318,7 +1250,7 @@
     {
       "id": "oldtown-garage",
       "name": "3rd Avenue Parking Garage",
-      "chineseName": "今晚停车首选 · 3rd Avenue Garage",
+      "chineseName": "Old Town 停车参考 · 3rd Avenue Garage",
       "category": "parking",
       "address": "7143 E 5th Ave, Scottsdale, AZ 85251",
       "description": "位置居中的免费公共车库，适合一次停车后串联 Main Street、Civic Center、第五大道和 Waterfront。",
@@ -1355,6 +1287,40 @@
       "notes": [],
       "verificationStatus": "needs_verification",
       "officialUrl": "https://oldtownscottsdaleaz.com/get-around/old-town-map/"
+    },
+    {
+      "id": "subway-turnoff",
+      "name": "Subway Cave Turnoff",
+      "chineseName": "Subway Cave 支线岔路 · GPS 参考点",
+      "category": "attraction",
+      "coordinates": {
+        "latitude": 34.927861,
+        "longitude": -111.86188
+      },
+      "navigationMode": "walking",
+      "description": "Boynton Canyon 主步道转向 Subway Cave 小径的岔路参考点；11/24 实际用过 GPS 找岔路，但尚未找回当时 ChatGPT 提供的原坐标。",
+      "notes": [
+        "坐标：34.927861, -111.861880。来源为 The Wanderer’s Guide 路线资料，非当时聊天记录的恢复。",
+        "主步道约 2 miles 处，大型 Alligator Juniper 在左侧，向洞穴的小径在右侧；资料中的距离与地标只作辅助。",
+        "这是徒步途中参考点；驾车仍去 Boynton Canyon Trailhead 停车场。洞穴本身不在这个点。"
+      ],
+      "verificationStatus": "estimated",
+      "officialUrl": "https://thewanderers.guide/blogs/news/find-the-subway-cave-sedona",
+      "officialLinkLabel": "查看岔路 GPS 来源（非官方步道资料）"
+    },
+    {
+      "id": "china-basil",
+      "name": "China Basil Thai & Chinese Kitchen",
+      "chineseName": "中泰餐晚餐 · 店名核对候选",
+      "category": "restaurant",
+      "address": "2334 N Scottsdale Rd, Scottsdale, AZ 85257",
+      "description": "与用户回忆“Chinese and Thai”名称相近的餐厅，位于 Old Town 南侧；尚未确认是否为 11/25 实际用餐店。",
+      "notes": [
+        "官网核对店名与地址；实际晚餐记录暂保留用户原称 Chinese and Thai，等待确认。"
+      ],
+      "verificationStatus": "estimated",
+      "officialUrl": "https://www.chinabasilaz.com/",
+      "officialLinkLabel": "餐厅官网与菜单"
     }
   ],
   "flights": [
@@ -1481,6 +1447,10 @@
     {
       "title": "Scottsdale Civic Center · 公园与 LOVE 雕塑",
       "url": "https://www.scottsdaleaz.gov/parks/find-a-park/scottsdale-civic-center"
+    },
+    {
+      "title": "Subway Cave 岔路 GPS 参考 · The Wanderer’s Guide（非官方）",
+      "url": "https://thewanderers.guide/blogs/news/find-the-subway-cave-sedona"
     }
   ]
 }

@@ -5,8 +5,9 @@ export function destination(place: Place, places: Place[]) {
 export function mapLinks(place: Place) {
   const query = place.coordinates ? `${place.coordinates.latitude},${place.coordinates.longitude}` : place.address;
   if (!query) return null;
+  const walking = place.navigationMode === 'walking';
   return {
-    apple: `https://maps.apple.com/?daddr=${encodeURIComponent(query)}&dirflg=d`,
-    google: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(query)}&travelmode=driving`,
+    apple: `https://maps.apple.com/?daddr=${encodeURIComponent(query)}&dirflg=${walking ? 'w' : 'd'}`,
+    google: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(query)}&travelmode=${walking ? 'walking' : 'driving'}`,
   };
 }

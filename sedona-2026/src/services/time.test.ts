@@ -24,7 +24,7 @@ test('next stop converts California departures into correct Arizona instants', (
   assert.equal(nextActivity(day, day.activities, new Date('2026-11-22T16:00:00Z'))?.id, 'flight-out');
   assert.equal(nextActivity(day, day.activities, new Date('2026-11-23T05:00:00Z')), undefined);
 });
-test('all activities point to real places and all navigation resolves to vehicles destinations', () => {
+test('all activities point to real places and trailhead navigation resolves to parking', () => {
   assert.equal(trip.days.length, 5);
   const ids = trip.places.map(p => p.id);
   assert.equal(new Set(ids).size, ids.length);
@@ -40,6 +40,15 @@ test('all activities point to real places and all navigation resolves to vehicle
   assert.equal(destination(trip.places.find(p => p.id === 'cathedral')!, trip.places).id, 'north-park');
   assert.equal(destination(trip.places.find(p => p.id === 'bridge')!, trip.places).id, 'west-park');
   assert.equal(destination(trip.places.find(p => p.id === 'soldier')!, trip.places).id, 'posse-park');
+});
+test('Subway Cave turnoff uses walking directions while trailhead uses driving', () => {
+  const turnoff = trip.places.find(p => p.id === 'subway-turnoff')!;
+  const links = mapLinks(turnoff)!;
+  assert.equal(new URL(links.apple).searchParams.get('dirflg'), 'w');
+  assert.equal(new URL(links.google).searchParams.get('travelmode'), 'walking');
+  assert.equal(new URL(links.google).searchParams.get('destination'), '34.927861,-111.86188');
+  const trailhead = destination(trip.places.find(p => p.id === 'boynton')!, trip.places);
+  assert.equal(new URL(mapLinks(trailhead)!.google).searchParams.get('travelmode'), 'driving');
 });
 test('alternative choices have exactly one A and one B, with separate IDs', () => {
   for (const day of trip.days) {

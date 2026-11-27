@@ -39,13 +39,14 @@ def address(place):
     return f"{c['latitude']}, {c['longitude']}" if c else ''
 def location(place):
     target = places.get(place.get('navigationId'), place)
-    para('车辆目的地：' + target['name'], 'small')
+    walking = target.get('navigationMode') == 'walking'
+    para(('徒步参考点：' if walking else '车辆目的地：') + target['name'], 'small')
     if address(target): para(address(target), 'small')
     if target.get('parkingNotes'): para('停车：' + target['parkingNotes'], 'small')
-    if target['id'] in ['vespa', 'wildflower', 'blue-mcdonalds', 'hideaway', 'civic-parking', 'oldtown-garage', 'sugar-bowl', 'culinary-dropout', 'diego-pops', 'rehab-burger']:
+    if walking or target['id'] in ['vespa', 'wildflower', 'blue-mcdonalds', 'hideaway', 'civic-parking', 'oldtown-garage', 'sugar-bowl', 'culinary-dropout', 'diego-pops', 'rehab-burger', 'china-basil']:
         query = quote(address(target), safe='')
-        link('Apple Maps 导航到 ' + target['name'], f'https://maps.apple.com/?daddr={query}&dirflg=d')
-        link('Google Maps 导航到 ' + target['name'], f'https://www.google.com/maps/dir/?api=1&destination={query}&travelmode=driving')
+        link('Apple Maps ' + ('查看徒步参考点' if walking else '导航到 ') + target['name'], f'https://maps.apple.com/?daddr={query}&dirflg={"w" if walking else "d"}')
+        link('Google Maps ' + ('查看徒步参考点' if walking else '导航到 ') + target['name'], f'https://www.google.com/maps/dir/?api=1&destination={query}&travelmode={"walking" if walking else "driving"}')
 def newpage(): story.append(PageBreak())
 def chapter(text, label, key):
     heading = Paragraph(escape(text), styles['h1'])

@@ -7,6 +7,7 @@ export type Place = {
   description: string; parkingNotes?: string; openingHours?: string; officialUrl?: string; officialLinkLabel?: string;
   notes: string[]; verificationStatus: 'confirmed' | 'estimated' | 'needs_verification';
   navigationId?: string; image?: string; sources?: Source[];
+  navigationMode?: 'walking';
   photoCredit?: { author: string; source: string; license: string; licenseUrl: string };
   trail?: { distance: string; duration: string; elevation: string; difficulty: string; route: string; shuttle?: string };
 };
