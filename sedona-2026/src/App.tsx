@@ -9,6 +9,7 @@ import { applyUpdate, checkForUpdate, startOffline, subscribeOffline, type Offli
 import { destination, mapLinks } from './services/maps';
 import WeatherCard from './components/WeatherCard';
 import DinnerOptions from './components/DinnerOptions';
+import { fetchWithTimeout } from './services/request';
 import { categoryNames, CopyAddress, Maps, Photo, PlaceCard, PlaceDetail } from './components/Place';
 
 type Choices = Record<string, 'A' | 'B'>;
@@ -97,7 +98,7 @@ export default function App() {
     const unsubscribe = subscribeOffline(setOffline);
     return () => { clearInterval(timer); window.removeEventListener('online', connected); window.removeEventListener('offline', disconnected); unsubscribe(); };
   }, []);
-  useEffect(() => { void fetch(`${import.meta.env.BASE_URL}data/travel.json`, { signal: AbortSignal.timeout(8000) }).then(r => { if (!r.ok) throw new Error(); return r.json(); }).then((next: TravelData) => { if (next.days?.length === 5 && Array.isArray(next.places)) setData(next); }).catch(() => {}); }, []);
+  useEffect(() => { void fetchWithTimeout(`${import.meta.env.BASE_URL}data/travel.json`).then(r => { if (!r.ok) throw new Error(); return r.json(); }).then((next: TravelData) => { if (next.days?.length === 5 && Array.isArray(next.places)) setData(next); }).catch(() => {}); }, []);
   useEffect(() => { document.title = `${section === 'day' ? day.title : section === 'places' ? '地点' : section === 'more' ? '旅行准备' : '感恩节红岩之旅'}｜Sedona 2026`; }, [section, day.title]);
   const selectedDay = section === 'day' ? day : todayDay;
   const activities = useMemo(() => activeActivities(selectedDay, choices), [selectedDay, choices]);

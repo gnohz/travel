@@ -1,4 +1,5 @@
 import { readLocal, writeLocal } from './storage';
+import { fetchWithTimeout } from './request';
 export type Weather = {
   latitude: number; longitude: number; timezone: string;
   current: { time: string; temperature_2m: number; apparent_temperature: number; weather_code: number; wind_speed_10m: number; wind_gusts_10m: number };
@@ -33,7 +34,7 @@ export function cachedWeather(): SavedWeather | null {
   return value && isWeather(value.data) && Number.isFinite(Date.parse(value.updatedAt)) ? value : null;
 }
 export async function fetchWeather(): Promise<SavedWeather> {
-  const response = await fetch(WEATHER_URL, { signal: AbortSignal.timeout(12000), cache: 'no-store' });
+  const response = await fetchWithTimeout(WEATHER_URL, { cache: 'no-store' }, 12000);
   if (!response.ok) throw new Error(`Weather HTTP ${response.status}`);
   const data: unknown = await response.json();
   if (!isWeather(data)) throw new Error('Invalid weather response');

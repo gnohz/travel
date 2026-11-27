@@ -14,7 +14,17 @@
     <title>Sedona 2026｜感恩节红岩之旅</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><main id="startup" style="max-width:580px;margin:12vh auto;padding:28px;font:17px/1.8 -apple-system,BlinkMacSystemFont,sans-serif;color:#353b31">
+      <p>SEDONA 2026</p><h1 style="font-size:26px">正在打开旅行指南…</h1>
+      <div id="startup-help" hidden><p>如果一直停在这里，请联网后尝试恢复打开。</p><p><a href="/travel/sedona-recovery.html">恢复打开旅行指南</a></p><p><a href="%BASE_URL%sedona-2026-guide.pdf" download="Sedona-2026-guide.pdf">直接下载 PDF 指南</a></p></div>
+    </main></div>
+    <script>
+      (function () {
+        function showHelp() { var help = document.getElementById('startup-help'); if (help) help.hidden = false; }
+        setTimeout(showHelp, 8000);
+        window.addEventListener('error', showHelp, true);
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

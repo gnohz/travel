@@ -41,12 +41,15 @@ self.addEventListener('fetch', event => {
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     if (url.pathname === BASE + 'data/travel.json') {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 6000);
       try {
-        const response = await fetch(request, { cache: 'no-store', signal: AbortSignal.timeout(6000) });
+        const response = await fetch(request, { cache: 'no-store', signal: controller.signal });
         if (!response.ok) throw new Error('Network error');
         await cache.put(request, response.clone());
         return response;
       } catch { return await cache.match(request) || new Response('{}', { status: 503 }); }
+      finally { clearTimeout(timeout); }
     }
     if (request.mode === 'navigate' && (url.pathname === BASE || url.pathname === BASE + 'index.html')) {
       return await cache.match(BASE + 'index.html') || await cache.match(BASE + 'offline.html') || fetch(request);

@@ -25,7 +25,7 @@ function environment() {
     const events = {};
     const self = { location: { origin: 'https://example.org' }, clients: { claim: async () => {} }, skipWaiting: () => { skip++; }, addEventListener: (name, fn) => { events[name] = fn; } };
     const files = [base + 'index.html', base + 'data/travel.json', base + 'sedona-2026-guide.pdf'];
-    vm.runInNewContext(serviceWorkerSource({ base, version, files }), { self, caches, fetch: fetcher, URL, Response, Headers, AbortSignal, Promise, Error });
+    vm.runInNewContext(serviceWorkerSource({ base, version, files }), { self, caches, fetch: fetcher, URL, Response, Headers, AbortController, setTimeout, clearTimeout, Promise, Error });
     const emit = async (name, data = {}) => {
       let promise; let response;
       events[name]({ ...data, waitUntil: p => { promise = p; }, respondWith: p => { response = p; } });

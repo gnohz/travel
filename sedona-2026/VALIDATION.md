@@ -2,7 +2,7 @@
 
 ## 构建与类型检查
 
-- `npm test`：16 项通过，无失败（包含照片文件与署名完整性检查）。
+- `npm test`：20 项通过，无失败（包含照片文件与署名完整性检查）。
 - `npm run build`：TypeScript 检查、中文 PDF、Vite 生产构建和 Travel 总站组装成功。
 - 内容：5 天、42 项活动、44 个地点；同一 JSON 同时驱动网页和 PDF。
 - 发布路径固定 `/travel/sedona-2026/`；Travel 首页位于 `/travel/`。
@@ -148,3 +148,12 @@
 - PDF 响应明确 application/pdf 与 attachment 文件名 Sedona-2026-guide.pdf；网页下载文件名同步。
 - 新增联网／离线的 PDF 导航回归测试，以及缓存缺失后的联网恢复和离线失败测试，验证 %PDF- 字节与文件名，防止再次返回 HTML 首页。
 - 16 项测试、TypeScript 与生产构建通过。
+
+## 主屏幕安装版白屏恢复 · 2026-11-27
+
+- 用户反馈主屏幕安装版白屏；公开首页 HTTP 200、浏览器实际显示正常，无法直接读取手机安装版的错误日志，因此未断言设备根因。
+- 移除应用及 Service Worker 对 AbortSignal.timeout 的依赖，改用 AbortController + 定时取消；覆盖旧 Safari 无 timeout 方法及请求卡住的回归测试。
+- 在 React 加载前提供原生 HTML 启动画面与恢复入口，脚本错误或等待超过 8 秒时显示恢复操作；React 运行异常也有可点击恢复页面。
+- 独立 /travel/sedona-recovery.html 位于旧 Service Worker 范围之外；确认网络可用后，只移除该旅行的 Worker 与缓存，保留本地偏好和其他旅行数据。离线或网络错误时保留现有缓存。
+- 恢复页面同时提供 Safari 中重新添加主屏幕图标的步骤，处理手机安装版与 Safari 存储分离的情况。
+- 20 项测试、TypeScript 与生产构建通过；网站路径与既有 PDF 下载修复保留。
