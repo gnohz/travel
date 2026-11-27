@@ -298,7 +298,7 @@
           "id": "boynton3",
           "time": "09:15",
           "title": "Boynton Canyon · 徒步与寻找 Subway Cave",
-          "description": "当天沿 Boynton Canyon 徒步，并寻找通往 Subway Cave 的支线；在主步道岔路处使用了此前 ChatGPT 提供的 GPS 定位。实际起步、结束时间及是否到达洞穴未记录。",
+          "description": "当天沿 Boynton Canyon 徒步，并寻找通往 Subway Cave 的支线；徒步途中使用了此前 ChatGPT 提供的 GPS 帮助寻找岔路，坐标纠错见下一项。实际起步、结束时间及是否到达洞穴未记录。",
           "placeId": "boynton",
           "status": "confirmed",
           "notes": [
@@ -310,13 +310,14 @@
           "id": "subway-turnoff3",
           "time": "09:15",
           "timeLabel": "徒步途中",
-          "title": "Subway Cave · 岔路 GPS 定位",
+          "title": "Subway Cave · 岔路 GPS 记录与纠错",
           "placeId": "subway-turnoff",
-          "description": "从 Boynton Canyon 主步道转向 Subway Cave 小径时，实际使用过 ChatGPT 提供的 GPS 定位。此次重新查得的岔路参考坐标为 34.927861, -111.861880；未找回原聊天坐标，不能确认与当时使用的点完全一致。",
+          "description": "11/24 徒步途中曾使用 ChatGPT 提供的 GPS 帮助寻找 Subway Cave 支线。用户补充的原回复记载旧坐标 34.9245, -111.8493；这是错误坐标，不应作为岔路口使用。更正后的岔路参考坐标为 34.927861, -111.861880。",
           "status": "confirmed",
           "notes": [
-            "这是主步道转入支线的参考点，不是停车场，也不是洞穴本身。",
-            "路线资料描述为主步道约 2 miles 处：左侧有大型 Alligator Juniper，朝洞穴的小径在右侧。"
+            "原回复由用户于 11/27 补充；当天是否实际按旧坐标导航、是否因此走错路，尚未确认。",
+            "岔路与洞穴是不同位置：岔路 34.927861, -111.861880；洞穴参考点 34.932779, -111.863006（The Wanderer’s Guide）。",
+            "地图按钮只指向更正后的岔路参考点；旧坐标仅保留为纠错记录。"
           ]
         },
         {
@@ -833,7 +834,7 @@
         "Subway Cave 支线不是正式维护主路线，最后有陡峭、暴露岩面。",
         "不要仅根据游客经验判断儿童能否进入；湿滑、路线不明或有风险就留在主步道。",
         "随身带零食和充足饮水；午餐实际在 Vespa 餐厅用餐。",
-        "11/24 实际用过 GPS 找 Subway Cave 岔路；重新查得的参考点为 34.927861, -111.861880，未确认与原聊天坐标一致。"
+        "GPS 纠错：原回复中的 34.9245, -111.8493 不应作岔路口；更正后的岔路参考点为 34.927861, -111.861880。当日是否按旧点导航及是否走错尚未确认。"
       ],
       "verificationStatus": "needs_verification",
       "navigationId": "boynton-parking",
@@ -1293,22 +1294,40 @@
     {
       "id": "subway-turnoff",
       "name": "Subway Cave Turnoff",
-      "chineseName": "Subway Cave 支线岔路 · GPS 参考点",
+      "chineseName": "Subway Cave 支线岔路 · GPS 已纠错",
       "category": "attraction",
       "coordinates": {
         "latitude": 34.927861,
         "longitude": -111.86188
       },
       "navigationMode": "walking",
-      "description": "Boynton Canyon 主步道转向 Subway Cave 小径的岔路参考点；11/24 实际用过 GPS 找岔路，但尚未找回当时 ChatGPT 提供的原坐标。",
+      "description": "Boynton Canyon 主步道转向 Subway Cave 小径的参考点。旧回复中的 34.9245, -111.8493 是错误坐标，不应使用；本页地图使用更正后的岔路参考点 34.927861, -111.861880。",
       "notes": [
-        "坐标：34.927861, -111.861880。来源为 The Wanderer’s Guide 路线资料，非当时聊天记录的恢复。",
-        "主步道约 2 miles 处，大型 Alligator Juniper 在左侧，向洞穴的小径在右侧；资料中的距离与地标只作辅助。",
-        "这是徒步途中参考点；驾车仍去 Boynton Canyon Trailhead 停车场。洞穴本身不在这个点。"
+        "原错误坐标：34.9245, -111.8493。来源为用户于 11/27 补充的原 ChatGPT 回复；仅作纠错存档，不作为导航点。",
+        "采用的岔路参考坐标：34.927861, -111.861880。The Wanderer’s Guide 明确标为 Subway Trailhead GPS。",
+        "交叉核对：ArboursAbroad 的 Boynton Canyon Caves 页面列 34.927791, -111.861644；Sedona Canyoneering 的 Chopper Drop 页面列 34.92767, -111.86187。三处记录位置相近，均为非官方路线资料。",
+        "洞穴本身的参考坐标：34.932779, -111.863006（The Wanderer’s Guide），与岔路口不同；本页地图按钮只指向岔路。",
+        "主步道约 2 miles 处，资料描述大型 Alligator Juniper 在左侧、支线在右侧；不同资料的里程有差异，以离线步道地图与现场辨识辅助。",
+        "11/24 使用过 ChatGPT GPS 找岔路，但是否实际按旧坐标导航、是否因此走错路、是否到达洞穴尚未确认。",
+        "这是徒步途中参考点；驾车仍去 Boynton Canyon Trailhead 停车场。"
       ],
       "verificationStatus": "estimated",
       "officialUrl": "https://thewanderers.guide/blogs/news/find-the-subway-cave-sedona",
-      "officialLinkLabel": "查看岔路 GPS 来源（非官方步道资料）"
+      "officialLinkLabel": "查看岔路 GPS 来源（非官方步道资料）",
+      "sources": [
+        {
+          "title": "The Wanderer’s Guide · 岔路与洞穴 GPS（非官方）",
+          "url": "https://thewanderers.guide/blogs/news/find-the-subway-cave-sedona"
+        },
+        {
+          "title": "ArboursAbroad · Boynton Canyon Caves 岔路坐标（非官方）",
+          "url": "https://www.arboursabroad.com/boynton-canyon-caves/"
+        },
+        {
+          "title": "Sedona Canyoneering · Chopper Drop 接近路线岔路坐标（非官方）",
+          "url": "https://www.sedonacanyoneering.com/chopper-drop"
+        }
+      ]
     },
     {
       "id": "china-basil",
@@ -1453,6 +1472,14 @@
     {
       "title": "Subway Cave 岔路 GPS 参考 · The Wanderer’s Guide（非官方）",
       "url": "https://thewanderers.guide/blogs/news/find-the-subway-cave-sedona"
+    },
+    {
+      "title": "ArboursAbroad · Boynton Canyon Caves 岔路坐标（非官方）",
+      "url": "https://www.arboursabroad.com/boynton-canyon-caves/"
+    },
+    {
+      "title": "Sedona Canyoneering · Chopper Drop 接近路线岔路坐标（非官方）",
+      "url": "https://www.sedonacanyoneering.com/chopper-drop"
     }
   ]
 }

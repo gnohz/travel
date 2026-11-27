@@ -153,7 +153,7 @@ for p in data['places']:
     para(p['description']); location(p)
     if p.get('openingHours'): para(p['openingHours'], 'small')
     for n in p['notes']: para(n, 'small')
-    if p.get('officialUrl'): link('官方资料', p['officialUrl'])
+    if p.get('officialUrl'): link(p.get('officialLinkLabel', '官方资料'), p['officialUrl'])
 newpage()
 chapter('采购清单与出发前核实', '采购清单与出发前核实', 'checklist')
 para('到 Sedona 后采购', 'h2')
