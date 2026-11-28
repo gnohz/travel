@@ -4,11 +4,14 @@ import vm from 'node:vm';
 import { serviceWorkerSource } from './sw-template.mjs';
 const base = '/travel/sedona-2026/';
 function environment() {
-  let online = true; let contents = 'version one'; let failPath = ''; let skip = 0;
+  let online = true; let contents = 'version one'; let failPath = ''; let skip = 0; let staleHttpContents;
+  const fetched = [];
   const stores = new Map();
   const key = request => typeof request === 'string' ? new URL(request, 'https://example.org').href : request.url;
   const fetcher = async request => {
+    fetched.push({ url: key(request), cache: request.cache });
     if (!online || key(request).endsWith(failPath || 'NO_FAILURE')) throw new Error('offline');
+    if (key(request).endsWith('index.html') && request.cache !== 'reload' && staleHttpContents) return new Response(staleHttpContents);
     return key(request).endsWith('.pdf')
       ? new Response('%PDF-1.4\nactual PDF bytes', { headers: { 'Content-Type': 'application/pdf' } })
       : new Response(contents);
@@ -21,11 +24,11 @@ function environment() {
     },
     keys: async () => [...stores.keys()], delete: async name => stores.delete(name),
   };
-  function worker(version) {
+  function worker(version, extraFiles = []) {
     const events = {};
     const self = { location: { origin: 'https://example.org' }, clients: { claim: async () => {} }, skipWaiting: () => { skip++; }, addEventListener: (name, fn) => { events[name] = fn; } };
-    const files = [base + 'index.html', base + 'data/travel.json', base + 'sedona-2026-guide.pdf'];
-    vm.runInNewContext(serviceWorkerSource({ base, version, files }), { self, caches, fetch: fetcher, URL, Response, Headers, AbortController, setTimeout, clearTimeout, Promise, Error });
+    const files = [base + 'index.html', base + 'data/travel.json', base + 'sedona-2026-guide.pdf', ...extraFiles];
+    vm.runInNewContext(serviceWorkerSource({ base, version, files }), { self, caches, fetch: fetcher, URL, Request, Response, Headers, AbortController, setTimeout, clearTimeout, Promise, Error, Set });
     const emit = async (name, data = {}) => {
       let promise; let response;
       events[name]({ ...data, waitUntil: p => { promise = p; }, respondWith: p => { response = p; } });
@@ -33,8 +36,25 @@ function environment() {
     };
     return { emit, files };
   }
-  return { worker, stores, caches, online: v => { online = v; }, contents: v => { contents = v; }, fail: v => { failPath = v; }, skipped: () => skip };
+  return { worker, stores, caches, fetched, staleHttp: v => { staleHttpContents = v; }, online: v => { online = v; }, contents: v => { contents = v; }, fail: v => { failPath = v; }, skipped: () => skip };
 }
+test('install bypasses stale browser HTTP HTML and stores a matching app shell', async () => {
+  const e = environment();
+  e.staleHttp('<script src="' + base + 'assets/old.js"></script>');
+  const current = '<script src="' + base + 'assets/current.js"></script>';
+  e.contents(current);
+  const w = e.worker('fresh', [base + 'assets/current.js']); await w.emit('install');
+  assert.ok(e.fetched.every(request => request.cache === 'reload'));
+  e.online(false);
+  const html = await w.emit('fetch', { request: { method: 'GET', url: 'https://example.org' + base, mode: 'navigate' } });
+  assert.equal(await html.text(), current);
+});
+test('install rejects a stale server shell that references assets outside its manifest', async () => {
+  const e = environment();
+  e.contents('<script src="' + base + 'assets/old.js"></script>');
+  await assert.rejects(e.worker('mixed', [base + 'assets/current.js']).emit('install'), /assets do not match/);
+  assert.equal(e.stores.has('sedona-2026-mixed'), false);
+});
 test('offline readiness requires every resource, including the PDF', async () => {
   const e = environment(); const w = e.worker('one'); await w.emit('install');
   let ready;

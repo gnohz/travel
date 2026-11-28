@@ -12,7 +12,17 @@ function downloadResponse(response, url) {
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
-    try { await cache.addAll(REQUIRED); }
+    try {
+      // A new worker must not precache an older HTML shell from the HTTP cache.
+      await cache.addAll(REQUIRED.map(path => new Request(new URL(path, self.location.origin), { cache: 'reload' })));
+      const entry = await cache.match(BASE + 'index.html');
+      const html = entry ? await entry.text() : '';
+      const expected = new Set(REQUIRED.map(path => new URL(path, self.location.origin).href));
+      for (const match of html.matchAll(/(?:src|href)=["']([^"']+[.](?:js|css))["']/g)) {
+        const asset = new URL(match[1], self.location.origin + BASE).href;
+        if (!expected.has(asset) || !await cache.match(asset)) throw new Error('App shell assets do not match this version');
+      }
+    }
     catch (error) { await caches.delete(CACHE); throw error; }
   })());
 });
